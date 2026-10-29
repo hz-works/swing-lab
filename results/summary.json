@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "start": "2016-01-01",
+    "end": "2026-10-29",
+    "symbols": 1214,
+    "slippage_per_side_pct": 0.05
+  },
+  "patterns": {
+    "pullback": {
+      "trades": 5981,
+      "trades_per_year": 553.1,
+      "win_rate_pct": 42.6,
+      "avg_win_R": 1.45,
+      "avg_loss_R": -1.04,
+      "expectancy_R": 0.024,
+      "profit_factor": 1.04,
+      "max_drawdown_R": -182.8,
+      "avg_days_held": 4.9,
+      "by_year": {
+        "2016": {
+          "trades": 283,
+          "expectancy_R": -0.299
+        },
+        "2017": {
+          "trades": 336,
+          "expectancy_R": 0.011
+        },
+        "2018": {
+          "trades": 416,
+          "expectancy_R": -0.228
+        },
+        "2019": {
+          "trades": 314,
+          "expectancy_R": 0.24
+        },
+        "2020": {
+          "trades": 530,
+          "expectancy_R": 0.128
+        },
+        "2021": {
+          "trades": 932,
+          "expectancy_R": 0.02
+        },
+        "2022": {
+          "trades": 313,
+          "expectancy_R": -0.234
+        },
+        "2023": {
+          "trades": 522,
+          "expectancy_R": 0.06
+        },
+        "2024": {
+          "trades": 806,
+          "expectancy_R": 0.17
+        },
+        "2025": {
+          "trades": 609,
+          "expectancy_R": -0.028
+        },
+        "2026": {
+          "trades": 920,
+          "expectancy_R": 0.089
+        }
+      }
+    },
+    "breakout": {
+      "trades": 2746,
+      "trades_per_year": 255.5,
+      "win_rate_pct": 44.8,
+      "avg_win_R": 1.27,
+      "avg_loss_R": -1.03,
+      "expectancy_R": 0.002,
+      "profit_factor": 1.0,
+      "max_drawdown_R": -128.2,
+      "avg_days_held": 5.2,
+      "by_year": {
+        "2016": {
+          "trades": 256,
+          "expectancy_R": -0.155
+        },
+        "2017": {
+          "trades": 126,
+          "expectancy_R": -0.025
+        },
+        "2018": {
+          "trades": 161,
+          "expectancy_R": -0.092
+        },
+        "2019": {
+          "trades": 298,
+          "expectancy_R": 0.223
+        },
+        "2020": {
+          "trades": 280,
+          "expectancy_R": 0.072
+        },
+        "2021": {
+          "trades": 212,
+          "expectancy_R": -0.186
+        },
+        "2022": {
+          "trades": 241,
+          "expectancy_R": 0.028
+        },
+        "2023": {
+          "trades": 235,
+          "expectancy_R": 0.102
+        },
+        "2024": {
+          "trades": 279,
+          "expectancy_R": -0.195
+        },
+        "2025": {
+          "trades": 418,
+          "expectancy_R": 0.043
+        },
+        "2026": {
+          "trades": 240,
+          "expectancy_R": 0.088
+        }
+      }
+    },
+    "ep": {
+      "trades": 36,
+      "trades_per_year": 3.4,
+      "win_rate_pct": 47.2,
+      "avg_win_R": 1.04,
+      "avg_loss_R": -0.91,
+      "expectancy_R": 0.009,
+      "profit_factor": 1.02,
+      "max_drawdown_R": -6.9,
+      "avg_days_held": 6.4,
+      "by_year": {
+        "2016": {
+          "trades": 7,
+          "expectancy_R": -0.696
+        },
+        "2017": {
+          "trades": 1,
+          "expectancy_R": -1.034
+        },
+        "2018": {
+          "trades": 2,
+          "expectancy_R": -0.425
+        },
+        "2019": {
+          "trades": 1,
+          "expectancy_R": 2.221
+        },
+        "2020": {
+          "trades": 3,
+          "expectancy_R": 0.783
+        },
+        "2021": {
+          "trades": 3,
+          "expectancy_R": -0.137
+        },
+        "2022": {
+          "trades": 5,
+          "expectancy_R": 0.649
+        },
+        "2023": {
+          "trades": 1,
+          "expectancy_R": -0.014
+        },
+        "2024": {
+          "trades": 5,
+          "expectancy_R": -0.385
+        },
+        "2025": {
+          "trades": 6,
+          "expectancy_R": 0.45
+        },
+        "2026": {
+          "trades": 2,
+          "expectancy_R": -0.541
+        }
+      }
+    },
+    "rsi2": {
+      "trades": 19998,
+      "trades_per_year": 1848.7,
+      "win_rate_pct": 31.1,
+      "avg_win_R": 2.97,
+      "avg_loss_R": -1.35,
+      "expectancy_R": -0.006,
+      "profit_factor": 0.99,
+      "max_drawdown_R": -922.5,
+      "avg_days_held": 1.5,
+      "by_year": {
+        "2016": {
+          "trades": 912,
+          "expectancy_R": 0.13
+        },
+        "2017": {
+          "trades": 887,
+          "expectancy_R": 0.051
+        },
+        "2018": {
+          "trades": 1586,
+          "expectancy_R": -0.284
+        },
+        "2019": {
+          "trades": 1072,
+          "expectancy_R": -0.006
+        },
+        "2020": {
+          "trades": 1632,
+          "expectancy_R": -0.085
+        },
+        "2021": {
+          "trades": 2677,
+          "expectancy_R": 0.28
+        },
+        "2022": {
+          "trades": 1488,
+          "expectancy_R": -0.42
+        },
+        "2023": {
+          "trades": 1862,
+          "expectancy_R": -0.052
+        },
+        "2024": {
+          "trades": 2273,
+          "expectancy_R": 0.058
+        },
+        "2025": {
+          "trades": 2542,
+          "expectancy_R": -0.062
+        },
+        "2026": {
+          "trades": 3067,
+          "expectancy_R": 0.1
+        }
+      }
+    }
+  }
+}
