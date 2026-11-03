@@ -19,6 +19,16 @@
    "totalDebt": 73854000
   }
  },
+ "ALKS": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "marketCap": 7665103360,
+   "sector": "Healthcare",
+   "totalCash": 656577024,
+   "totalDebt": 1572563968
+  }
+ },
  "AMGN": {
   "checked": "2026-11-03",
   "info": {
@@ -219,6 +229,16 @@
    "totalDebt": 1277800960
   }
  },
+ "DGX": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Diagnostics & Research",
+   "marketCap": 27268841472,
+   "sector": "Healthcare",
+   "totalCash": 797000000,
+   "totalDebt": 6397000192
+  }
+ },
  "DINO": {
   "checked": "2026-11-03",
   "info": {
@@ -389,6 +409,16 @@
    "totalDebt": 10339000320
   }
  },
+ "HRMY": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Biotechnology",
+   "marketCap": 2155911168,
+   "sector": "Healthcare",
+   "totalCash": 667790976,
+   "totalDebt": 160191008
+  }
+ },
  "HUBG": {
   "checked": "2026-11-03",
   "info": {
@@ -407,6 +437,16 @@
    "sector": "Healthcare",
    "totalCash": 23871000576,
    "totalDebt": 14744000512
+  }
+ },
+ "KMB": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Household & Personal Products",
+   "marketCap": 64100818944,
+   "sector": "Consumer Defensive",
+   "totalCash": 956000000,
+   "totalDebt": 6538999808
   }
  },
  "KSS": {
@@ -497,6 +537,16 @@
    "sector": "Energy",
    "totalCash": 483875008,
    "totalDebt": 2263731968
+  }
+ },
+ "NBIX": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "marketCap": 16756868096,
+   "sector": "Healthcare",
+   "totalCash": 389800000,
+   "totalDebt": 461600000
   }
  },
  "NCLH": {
@@ -669,6 +719,16 @@
    "totalDebt": 12812000256
   }
  },
+ "SM": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 8722108416,
+   "sector": "Energy",
+   "totalCash": 620000000,
+   "totalDebt": 7432999936
+  }
+ },
  "SN": {
   "checked": "2026-11-03",
   "info": {
@@ -697,6 +757,26 @@
    "sector": "Healthcare",
    "totalCash": 7242947072,
    "totalDebt": 151695008
+  }
+ },
+ "VNOM": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Oil & Gas Midstream",
+   "marketCap": 15865636864,
+   "sector": "Energy",
+   "totalCash": 77000000,
+   "totalDebt": 1678000000
+  }
+ },
+ "VTRS": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "marketCap": 21731338240,
+   "sector": "Healthcare",
+   "totalCash": 1510499968,
+   "totalDebt": 13623700480
   }
  },
  "WING": {
