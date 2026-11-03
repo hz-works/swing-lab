@@ -86,6 +86,22 @@ def _google_news(symbol: str, company: str = ""):
     return items
 
 
+def translate_ar(texts):
+    """Machine-translate short headlines to Arabic (free Google Translate endpoint).
+    Returns a list of the same length; None where translation failed."""
+    out = []
+    for text in texts:
+        try:
+            r = requests.get("https://translate.googleapis.com/translate_a/single",
+                             params={"client": "gtx", "sl": "en", "tl": "ar", "dt": "t", "q": text},
+                             headers=HEADERS, timeout=15)
+            out.append("".join(seg[0] for seg in r.json()[0] if seg and seg[0]) or None)
+        except Exception as exc:
+            print(f"translate failed: {exc}")
+            out.append(None)
+    return out
+
+
 def fetch_extras(symbol: str, company: str = "", max_news: int = 2, news_days: int = 3) -> dict:
     import yfinance as yf
 
@@ -121,4 +137,6 @@ def fetch_extras(symbol: str, company: str = "", max_news: int = 2, news_days: i
     out["news"] = [{"title": i["title"], "url": i["url"], "provider": i["provider"],
                     "time_utc": i["_when"].astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M") if i["_when"] else None}
                    for i in items[:max_news]]
+    for n, ar in zip(out["news"], translate_ar([n["title"] for n in out["news"]])):
+        n["title_ar"] = ar
     return out
