@@ -2,6 +2,7 @@
 
 News: Yahoo (yfinance) first; if it returns nothing, Google News RSS as fallback.
 """
+import re
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -35,12 +36,32 @@ def _news_item(a: dict):
     return {"title": title, "url": url, "provider": provider, "_when": when}
 
 
+SUFFIXES = {"inc", "inc.", "corp", "corp.", "corporation", "company", "co", "co.", "holdings", "ltd",
+            "ltd.", "plc", "group", "the", "class", "a", "b", "n.v.", "s.a.", "lp", "l.p."}
+
+
+def company_core(company: str) -> str:
+    words = [w for w in company.replace(",", " ").split() if w.lower() not in SUFFIXES]
+    return " ".join(words) if words else company
+
+
+def is_relevant(title: str, symbol: str, company: str) -> bool:
+    """Keep a headline only if it names the company or the ticker in ticker form
+    (e.g. '(DT)', 'NYSE:DT', '$DT'); plain words like 'path' or 'wing' do not count."""
+    t = title.lower()
+    key = company_core(company).split()[0].lower() if company else ""
+    if key and len(key) >= 3 and key in t:
+        return True
+    s = re.escape(symbol.lower())
+    return bool(re.search(rf"(\({s}\)|:{s}\b|\${s}\b)", t))
+
+
 def _yahoo_news(t):
     return [i for i in (_news_item(a) for a in (t.get_news(count=10) or [])) if i]
 
 
 def _google_news(symbol: str, company: str = ""):
-    q = f'"{symbol}" stock' + (f' OR "{company}"' if company else "") + " when:3d"
+    q = (f'"{company_core(company)}" stock' if company else f'"{symbol}" stock') + " when:3d"
     url = f"https://news.google.com/rss/search?q={quote(q)}&hl=en-US&gl=US&ceid=US:en"
     root = ET.fromstring(requests.get(url, headers=HEADERS, timeout=20).content)
     items = []
@@ -78,7 +99,8 @@ def fetch_extras(symbol: str, company: str = "", max_news: int = 2, news_days: i
     items, errors = [], []
     for name, getter in (("yahoo", lambda: _yahoo_news(t)), ("google", lambda: _google_news(symbol, company))):
         try:
-            items = [i for i in getter() if i["_when"] is None or i["_when"] >= cutoff]
+            items = [i for i in getter() if (i["_when"] is None or i["_when"] >= cutoff)
+                     and (not company or is_relevant(i["title"], symbol, company))]
         except Exception as exc:
             errors.append(f"{name}: {type(exc).__name__}: {exc}"[:160])
             items = []
