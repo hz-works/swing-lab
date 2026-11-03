@@ -58,6 +58,15 @@
     padding: 7px 12px; font-size: 13px; white-space: nowrap;
   }
   .links { display: flex; gap: 6px; }
+  .stars { color: var(--amber); font-size: 15px; letter-spacing: 1px; margin-inline-start: 8px; }
+  .reasons { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 8px; }
+  .chip { font-size: 11.5px; background: rgba(255,255,255,.06); border: 1px solid var(--line); border-radius: 20px; padding: 2px 8px; color: var(--muted); }
+  .chip.warn { color: var(--amber); border-color: rgba(245,185,66,.5); }
+  .earn { font-size: 12.5px; color: var(--muted); margin-bottom: 6px; }
+  .earn.warn { color: var(--amber); }
+  .news { border-top: 1px dashed var(--line); margin-top: 8px; padding-top: 8px; }
+  .news a { display: block; color: var(--text); text-decoration: none; font-size: 12.5px; line-height: 1.45; margin-bottom: 6px; direction: ltr; text-align: left; }
+  .news a small { display: block; color: var(--muted); font-size: 11px; }
   a.chart.web { background: transparent; border: 1px solid var(--accent); color: var(--text); }
   .toast {
     position: fixed; left: 50%; bottom: max(24px, env(safe-area-inset-bottom)); transform: translateX(-50%);
@@ -78,7 +87,7 @@
   </div>
   <div class="actions">
     <button class="btn" id="langBtn" onclick="toggleLang()"></button>
-    <button class="btn" id="refreshBtn" onclick="load()"></button>
+    <button class="btn" id="refreshBtn" onclick="load(true)"></button>
   </div>
 </header>
 
@@ -107,8 +116,14 @@ const T = {
     epNote: (r) => `فجوة ${n(r.gap_pct + "%")} قبل ${n(r.days_since_gap)} يوم · حجم ${n("×" + r.gap_vol_x)} · قمة يوم الفجوة ${n(r.gap_day_high)} · قاعه ${n(r.gap_day_low)}`,
     debt: "ديون", cash: "نقد", pass: "✅ حلال مبدئياً", doubtful: "⚠️ مشكوك — تحقق في Zoya",
     app: "📱 التطبيق", web: "🌐 الويب", copied: (s) => `تم نسخ ${s} — الصقه في بحث TradingView`,
+    refreshed: (w) => `✓ محدّث — آخر مسح ${w}`,
+    earnIn: (d, dt) => `📅 الأرباح بعد ${n(d)} يوم (${n(dt)})`, news: "📰 آخر الأخبار",
+    reasons: { vol5: "حجم ×5+", vol10: "حجم ×10+", fresh: "فجوة حديثة", above_high: "فوق قمة الفجوة",
+      neglected: "كان ساكناً قبلها", rs80: "قوة 80+", rs95: "قائد السوق 95+", rsi5: "RSI2 تحت 5",
+      no_crash: "نزول طبيعي", crash: "⚠️ هبوط حاد — افحص الخبر", above200: "بعيد فوق م200",
+      earnings_soon: "⚠️ أرباح قريبة", quiet: "حجم هادئ", short_ma: "عند م10/20", tight: "تذبذب منخفض" },
     emptyOk: "لا توجد أسهم في هذا النمط اليوم", emptyBad: "السوق ضعيف — الماسح متوقف عن الإشارات",
-    footer: "الحلال: فحص النشاط ونسبتي الديون والنقد حسب AAOIFI. نسبة الدخل المحرّم غير متوفرة — أكّدها في Zoya قبل الدخول.<br>الماسح يعرض الأسهم فقط. الدخول والوقف والمبلغ قرارك أنت. لغرض تعليمي.",
+    footer: "الحلال: فحص النشاط ونسبتي الديون والنقد حسب AAOIFI. نسبة الدخل المحرّم غير متوفرة — أكّدها في Zoya قبل الدخول.<br>التقييم ⭐ من قواعد كل نمط، والأخبار عناوين من Yahoo بالإنجليزية.<br>الماسح يعرض الأسهم فقط. الدخول والوقف والمبلغ قرارك أنت. لغرض تعليمي.",
   },
   en: {
     dir: "ltr", other: "عربي", title: "Swing Scanner", refresh: "↻ Refresh", loading: "Loading…",
@@ -126,8 +141,14 @@ const T = {
     epNote: (r) => `Gap ${n(r.gap_pct + "%")} ${n(r.days_since_gap)} day(s) ago · volume ${n("×" + r.gap_vol_x)} · gap-day high ${n(r.gap_day_high)} · low ${n(r.gap_day_low)}`,
     debt: "debt", cash: "cash", pass: "✅ Halal (preliminary)", doubtful: "⚠️ Doubtful — check in Zoya",
     app: "📱 App", web: "🌐 Web", copied: (s) => `Copied ${s} — paste it in TradingView search`,
+    refreshed: (w) => `✓ Up to date — last scan ${w}`,
+    earnIn: (d, dt) => `📅 Earnings in ${n(d)} day(s) (${n(dt)})`, news: "📰 Latest news",
+    reasons: { vol5: "Volume ×5+", vol10: "Volume ×10+", fresh: "Fresh gap", above_high: "Above gap high",
+      neglected: "Quiet before gap", rs80: "RS 80+", rs95: "Leader RS 95+", rsi5: "RSI2 < 5",
+      no_crash: "Orderly dip", crash: "⚠️ Sharp drop — check news", above200: "Well above 200-day",
+      earnings_soon: "⚠️ Earnings soon", quiet: "Quiet volume", short_ma: "At 10/20 EMA", tight: "Low volatility" },
     emptyOk: "No stocks in this pattern today", emptyBad: "Market weak — scanner paused",
-    footer: "Halal: business activity plus debt and cash ratios per AAOIFI. Non-permissible income is not available — confirm in Zoya before entering.<br>The scanner only lists stocks. Entry, stop and size are your decision. For educational purposes.",
+    footer: "Halal: business activity plus debt and cash ratios per AAOIFI. Non-permissible income is not available — confirm in Zoya before entering.<br>⭐ rating comes from each pattern's rules; news headlines are from Yahoo.<br>The scanner only lists stocks. Entry, stop and size are your decision. For educational purposes.",
   },
 };
 const KEYS = ["ep", "rsi2", "pullback"];
@@ -140,13 +161,40 @@ function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;"
 
 const TV_APP = "https://www.tradingview.com/chart/";
 
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 2500);
+}
+
+function scanTime() {
+  const when = new Date(data.generated_utc.replace(" ", "T") + ":00Z");
+  return when.toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" });
+}
+
+function stars(k) { return k ? "★".repeat(k) + "☆".repeat(5 - k) : ""; }
+
+function extras(r, t) {
+  let h = "";
+  if (r.reasons && r.reasons.length) {
+    h += `<div class="reasons">${r.reasons.map(k =>
+      `<span class="chip ${["crash", "earnings_soon"].includes(k) ? "warn" : ""}">${t.reasons[k] || k}</span>`).join("")}</div>`;
+  }
+  if (r.earnings_in_days != null) {
+    h += `<div class="earn ${r.earnings_in_days <= 5 ? "warn" : ""}">${t.earnIn(r.earnings_in_days, r.earnings_date)}</div>`;
+  }
+  return h;
+}
+
+function newsBlock(r, t) {
+  if (!r.news || !r.news.length) return "";
+  return `<div class="news"><div class="earn">${t.news}</div>${r.news.map(a =>
+    `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}<small>${esc(a.provider)}${a.time_utc ? " · " + esc(a.time_utc) + " UTC" : ""}</small></a>`).join("")}</div>`;
+}
+
 function copySym(sym) {
-  const done = () => {
-    const t = document.getElementById("toast");
-    t.textContent = T[lang].copied(sym);
-    t.classList.add("show");
-    setTimeout(() => t.classList.remove("show"), 2500);
-  };
+  const done = () => toast(T[lang].copied(sym));
   const fallback = () => {
     const ta = document.createElement("textarea");
     ta.value = sym; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
@@ -186,9 +234,7 @@ function render() {
   mk.className = "market " + (m.ok ? "ok" : "bad");
   mk.innerHTML = `${m.ok ? t.marketOk : t.marketBad}<small>SPY ${n(m.spy)} ${m.ok ? t.above : t.below} (${n(m.spy_sma200)})</small>`;
 
-  const when = new Date(data.generated_utc.replace(" ", "T") + ":00Z");
-  document.getElementById("date").textContent =
-    `${t.session} ${data.date} · ${t.lastScan} ${when.toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" })}`;
+  document.getElementById("date").textContent = `${t.session} ${data.date} · ${t.lastScan} ${scanTime()}`;
 
   document.getElementById("tabs").innerHTML = KEYS.map(k =>
     `<button class="tab ${k === active ? "active" : ""}" onclick="active='${k}';render()">
@@ -199,7 +245,7 @@ function render() {
   document.getElementById("list").innerHTML = rows.length ? rows.map(r => `
     <div class="stock">
       <div class="row1">
-        <span class="sym">${esc(r.symbol)}</span>
+        <span class="sym">${esc(r.symbol)}<span class="stars">${stars(r.stars)}</span></span>
         <span class="price">${r.close}<span class="chg ${r.change_pct >= 0 ? "up" : "down"}">${fmtPct(r.change_pct)}</span></span>
       </div>
       <div class="metrics">
@@ -209,6 +255,7 @@ function render() {
         <span>${t.rs} <b>${n(r.rs_pct ?? "–")}</b></span>
       </div>
       ${active === "ep" ? `<div class="note">${t.epNote(r)}</div>` : ""}
+      ${extras(r, t)}
       <div class="row3">
         ${halalBadge(r, t)}
         <div class="links">
@@ -216,10 +263,11 @@ function render() {
           <a class="chart web" href="${esc(r.tradingview)}" target="_blank" rel="noopener">${t.web}</a>
         </div>
       </div>
+      ${newsBlock(r, t)}
     </div>`).join("") : `<div class="empty">${m.ok ? t.emptyOk : t.emptyBad}</div>`;
 }
 
-async function load() {
+async function load(manual) {
   try {
     const res = await fetch("signals.json?t=" + Date.now(), { cache: "no-store" });
     data = await res.json();
@@ -230,6 +278,7 @@ async function load() {
     return;
   }
   render();
+  if (manual) toast(T[lang].refreshed(scanTime()));
 }
 render();
 load();
