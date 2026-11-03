@@ -45,12 +45,19 @@ def company_core(company: str) -> str:
     return " ".join(words) if words else company
 
 
+COMMON = {"best", "flex", "target", "apple", "match", "block", "visa", "general", "first", "united",
+          "american", "national", "international", "global", "advanced", "applied", "digital", "energy",
+          "health", "home", "royal", "southern", "western", "north", "south", "central", "public",
+          "regional", "standard", "smart", "power", "pacific", "atlantic", "universal", "graphic"}
+
+
 def is_relevant(title: str, symbol: str, company: str) -> bool:
-    """Keep a headline only if it names the company or the ticker in ticker form
-    (e.g. '(DT)', 'NYSE:DT', '$DT'); plain words like 'path' or 'wing' do not count."""
+    """Keep a headline only if it names the company (distinctive first word, e.g.
+    'Glaukos', 'Palantir') or shows the ticker in ticker form ('(DT)', 'NYSE:DT', '$DT').
+    Plain words like 'path', 'wing', 'flex' or 'best' do not count."""
     t = title.lower()
     key = company_core(company).split()[0].lower() if company else ""
-    if key and len(key) >= 5 and key not in {"best", "flex", "target", "apple", "match", "block", "visa", "general", "first", "united", "american", "national", "international", "global", "advanced", "applied", "digital", "energy", "health", "home", "royal", "southern", "western", "north", "south", "central", "public", "regional", "standard", "smart", "power", "pacific", "atlantic", "universal", "graphic"} and key in t:
+    if key and len(key) >= 5 and key not in COMMON and re.search(rf"\b{re.escape(key)}", t):
         return True
     s = re.escape(symbol.lower())
     return bool(re.search(rf"(\({s}\)|:{s}\b|\${s}\b)", t))
