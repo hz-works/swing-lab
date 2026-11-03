@@ -195,10 +195,11 @@ def main():
     if args.csv_dir:
         data = {f[:-4]: pd.read_csv(os.path.join(args.csv_dir, f), index_col=0, parse_dates=True)
                 for f in os.listdir(args.csv_dir) if f.endswith(".csv")}
-        sectors = {}
+        sectors, names = {}, {}
     else:
         uni = load_universe()
         sectors = dict(zip(uni["Symbol"], uni["Sector"]))
+        names = dict(zip(uni["Symbol"], uni["Name"]))
         data = download(uni["Symbol"].tolist() + ["SPY"])
     spy = data.pop("SPY")
     asof, market_ok, found = scan(data, sectors, spy)
@@ -213,11 +214,11 @@ def main():
             v = verdicts[r["symbol"]]
             r.update(halal=v["label"], halal_status=v["status"],
                      debt_pct=v["debt_pct"], cash_pct=v["cash_pct"])
-    enrich(found, offline=bool(args.csv_dir))
+    enrich(found, names, offline=bool(args.csv_dir))
     write_outputs(asof, market_ok, found, spy)
 
 
-def enrich(found, offline=False):
+def enrich(found, names, offline=False):
     """Earnings date, news and quality stars for the best halal candidates,
     then re-rank each pattern by stars (ties keep the pattern's own order)."""
     cache = {}
@@ -227,7 +228,7 @@ def enrich(found, offline=False):
         for r in top:
             if r["symbol"] not in cache:
                 cache[r["symbol"]] = ({"earnings_date": None, "earnings_in_days": None, "news": []}
-                                      if offline else fetch_extras(r["symbol"]))
+                                      if offline else fetch_extras(r["symbol"], names.get(r["symbol"], "")))
             r.update(cache[r["symbol"]])
             r["stars"], r["reasons"] = scorer(r)
         top.sort(key=lambda r: -r["stars"])  # stable sort keeps original order on ties

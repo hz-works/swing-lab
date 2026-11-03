@@ -34,11 +34,13 @@ def _find_table(html: str) -> pd.DataFrame:
             table = table.rename(columns={sym: "Symbol"})
             sector = next(c for c in cols if "sector" in c.lower())
             sub = next((c for c in cols if "sub-industry" in c.lower()), None)
+            name = next((c for c in cols if c.lower() in ("security", "company", "company name")), None)
             out = pd.DataFrame(
                 {
                     "Symbol": table["Symbol"].astype(str),
                     "Sector": table[sector].astype(str),
                     "SubIndustry": table[sub].astype(str) if sub else "",
+                    "Name": table[name].astype(str) if name else "",
                 }
             )
             return out
@@ -59,8 +61,9 @@ def load_universe() -> pd.DataFrame:
     if not frames:
         df = pd.read_csv(FALLBACK_SP500).rename(columns={"GICS Sector": "Sector"})
         df["SubIndustry"] = df.get("GICS Sub-Industry", "")
+        df["Name"] = df.get("Security", "")
         df["Index"] = "SP500"
-        frames.append(df[["Symbol", "Sector", "SubIndustry", "Index"]])
+        frames.append(df[["Symbol", "Sector", "SubIndustry", "Name", "Index"]])
     uni = pd.concat(frames, ignore_index=True).drop_duplicates("Symbol")
     uni["Symbol"] = uni["Symbol"].str.strip().str.replace(".", "-", regex=False)
     before = len(uni)
