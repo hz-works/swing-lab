@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Swing Scanner">
+<meta name="theme-color" content="#0b1220">
+<title>Swing Scanner</title>
+<style>
+  :root {
+    --bg: #0b1220; --card: #131c2e; --line: #22304a; --text: #e8edf6; --muted: #8b98b0;
+    --green: #2ecc71; --red: #ff5c5c; --amber: #f5b942; --accent: #4f8cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "SF Arabic", "Segoe UI", Tahoma, sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) 14px 40px;
+  }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+  h1 { font-size: 20px; margin: 0; }
+  .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .actions { display: flex; gap: 6px; }
+  .btn {
+    background: var(--card); color: var(--text); border: 1px solid var(--line);
+    border-radius: 10px; padding: 8px 11px; font-size: 14px; white-space: nowrap;
+  }
+  .market { border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; font-weight: 600; }
+  .market.ok { background: rgba(46, 204, 113, .12); border: 1px solid rgba(46, 204, 113, .4); }
+  .market.bad { background: rgba(255, 92, 92, .12); border: 1px solid rgba(255, 92, 92, .4); }
+  .market small { display: block; font-weight: 400; color: var(--muted); margin-top: 3px; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 12px; overflow-x: auto; }
+  .tab {
+    flex: 1; white-space: nowrap; background: var(--card); color: var(--muted);
+    border: 1px solid var(--line); border-radius: 10px; padding: 9px 8px; font-size: 13px; text-align: center;
+  }
+  .tab.active { color: var(--text); border-color: var(--accent); background: rgba(79, 140, 255, .14); }
+  .tab b { display: block; font-size: 16px; color: var(--text); }
+  .hint { color: var(--muted); font-size: 12px; margin: 0 2px 10px; }
+  .stock { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; }
+  .row1 { display: flex; align-items: baseline; justify-content: space-between; }
+  .sym { font-size: 19px; font-weight: 700; direction: ltr; }
+  .price { font-size: 16px; direction: ltr; }
+  .chg { font-size: 13px; margin-inline-start: 6px; }
+  .n { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+  .up { color: var(--green); } .down { color: var(--red); }
+  .metrics { display: flex; gap: 12px; flex-wrap: wrap; color: var(--muted); font-size: 12px; margin: 8px 0; }
+  .metrics span b { color: var(--text); font-weight: 600; }
+  .note { font-size: 12.5px; background: rgba(79, 140, 255, .1); border-radius: 8px; padding: 6px 8px; margin-bottom: 8px; }
+  .row3 { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .halal { font-size: 12px; border-radius: 8px; padding: 4px 8px; }
+  .halal.pass { background: rgba(46, 204, 113, .14); color: var(--green); }
+  .halal.doubtful { background: rgba(245, 185, 66, .14); color: var(--amber); }
+  a.chart {
+    color: #fff; background: var(--accent); text-decoration: none; border-radius: 9px;
+    padding: 7px 12px; font-size: 13px; white-space: nowrap;
+  }
+  .empty { color: var(--muted); text-align: center; padding: 30px 0; }
+  footer { color: var(--muted); font-size: 11.5px; margin-top: 18px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1 id="title"></h1>
+    <div class="sub" id="date">…</div>
+  </div>
+  <div class="actions">
+    <button class="btn" id="langBtn" onclick="toggleLang()"></button>
+    <button class="btn" id="refreshBtn" onclick="load()"></button>
+  </div>
+</header>
+
+<div id="market" class="market">…</div>
+<div class="tabs" id="tabs"></div>
+<div class="hint" id="hint"></div>
+<div id="list"></div>
+<footer id="footer"></footer>
+
+<script>
+const T = {
+  ar: {
+    dir: "rtl", other: "English", title: "ماسح السوينج", refresh: "↻ تحديث", loading: "جارٍ التحميل…",
+    loadError: "تعذّر تحميل البيانات — حاول التحديث بعد قليل",
+    session: "جلسة", lastScan: "آخر مسح",
+    marketOk: "✅ السوق إيجابي", marketBad: "⛔ السوق ضعيف — لا إشارات",
+    above: "فوق متوسط 200 يوم", below: "تحت متوسط 200 يوم",
+    patterns: {
+      ep: ["فجوة الأرباح", "سهم قفز بفجوة قوية بعد خبر/نتائج ولا يزال فوق قاع يوم الفجوة. الأقوى في الاختبار."],
+      rsi2: ["تشبع بيعي", "سهم في ترند صاعد نزل بحدة لأيام (RSI-2 تحت 10). حركة الارتداد قصيرة عادة (أيام)."],
+      pullback: ["ارتداد الترند", "سهم قوي (أعلى 20% أداءً) صحّح بهدوء إلى متوسط متحرك."],
+    },
+    countLine: (c) => `(${c} إشارة حلال اليوم، المعروض أفضل 5)`,
+    rvol: "الحجم النسبي", adr: "التذبذب", rs: "قوة السهم",
+    epNote: (r) => `فجوة ${n(r.gap_pct + "%")} قبل ${n(r.days_since_gap)} يوم · حجم ${n("×" + r.gap_vol_x)} · قمة يوم الفجوة ${n(r.gap_day_high)} · قاعه ${n(r.gap_day_low)}`,
+    debt: "ديون", cash: "نقد", pass: "✅ حلال مبدئياً", doubtful: "⚠️ مشكوك — تحقق في Zoya",
+    chart: "الشارت ↗", emptyOk: "لا توجد أسهم في هذا النمط اليوم", emptyBad: "السوق ضعيف — الماسح متوقف عن الإشارات",
+    footer: "الحلال: فحص النشاط ونسبتي الديون والنقد حسب AAOIFI. نسبة الدخل المحرّم غير متوفرة — أكّدها في Zoya قبل الدخول.<br>الماسح يعرض الأسهم فقط. الدخول والوقف والمبلغ قرارك أنت. لغرض تعليمي.",
+  },
+  en: {
+    dir: "ltr", other: "عربي", title: "Swing Scanner", refresh: "↻ Refresh", loading: "Loading…",
+    loadError: "Could not load data — try refreshing in a moment",
+    session: "Session", lastScan: "last scan",
+    marketOk: "✅ Market positive", marketBad: "⛔ Market weak — no signals",
+    above: "above its 200-day average", below: "below its 200-day average",
+    patterns: {
+      ep: ["Earnings gap", "Stock gapped up strongly on news/earnings and is still above the gap-day low. Strongest in the backtest."],
+      rsi2: ["Oversold", "Stock in an uptrend dropped sharply for days (RSI-2 below 10). The bounce is usually short (days)."],
+      pullback: ["Trend pullback", "Strong stock (top 20% performance) pulled back quietly to a moving average."],
+    },
+    countLine: (c) => `(${c} halal signals today, showing top 5)`,
+    rvol: "Rel. volume", adr: "Volatility", rs: "Strength",
+    epNote: (r) => `Gap ${n(r.gap_pct + "%")} ${n(r.days_since_gap)} day(s) ago · volume ${n("×" + r.gap_vol_x)} · gap-day high ${n(r.gap_day_high)} · low ${n(r.gap_day_low)}`,
+    debt: "debt", cash: "cash", pass: "✅ Halal (preliminary)", doubtful: "⚠️ Doubtful — check in Zoya",
+    chart: "Chart ↗", emptyOk: "No stocks in this pattern today", emptyBad: "Market weak — scanner paused",
+    footer: "Halal: business activity plus debt and cash ratios per AAOIFI. Non-permissible income is not available — confirm in Zoya before entering.<br>The scanner only lists stocks. Entry, stop and size are your decision. For educational purposes.",
+  },
+};
+const KEYS = ["ep", "rsi2", "pullback"];
+let data = null, active = "ep", lang = "ar";
+try { lang = localStorage.getItem("lang") || "ar"; } catch (e) {}
+
+function n(x) { return `<span class="n">${x}</span>`; }
+function fmtPct(x) { return (x > 0 ? "+" : "") + x + "%"; }
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+function toggleLang() {
+  lang = lang === "ar" ? "en" : "ar";
+  try { localStorage.setItem("lang", lang); } catch (e) {}
+  render();
+}
+
+function halalBadge(r, t) {
+  const ratios = r.debt_pct != null ? ` · ${t.debt} ${n(r.debt_pct + "%")} · ${t.cash} ${n(r.cash_pct + "%")}` : "";
+  return r.halal_status === "pass"
+    ? `<span class="halal pass">${t.pass}${ratios}</span>`
+    : `<span class="halal doubtful">${t.doubtful}${ratios}</span>`;
+}
+
+function render() {
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = t.dir;
+  document.getElementById("title").textContent = t.title;
+  document.getElementById("langBtn").textContent = t.other;
+  document.getElementById("refreshBtn").textContent = t.refresh;
+  document.getElementById("footer").innerHTML = t.footer;
+  if (!data) { document.getElementById("market").textContent = t.loading; return; }
+
+  const m = data.market, mk = document.getElementById("market");
+  mk.className = "market " + (m.ok ? "ok" : "bad");
+  mk.innerHTML = `${m.ok ? t.marketOk : t.marketBad}<small>SPY ${n(m.spy)} ${m.ok ? t.above : t.below} (${n(m.spy_sma200)})</small>`;
+
+  const when = new Date(data.generated_utc.replace(" ", "T") + ":00Z");
+  document.getElementById("date").textContent =
+    `${t.session} ${data.date} · ${t.lastScan} ${when.toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" })}`;
+
+  document.getElementById("tabs").innerHTML = KEYS.map(k =>
+    `<button class="tab ${k === active ? "active" : ""}" onclick="active='${k}';render()">
+       <b>${(data.patterns[k] || []).length}</b>${t.patterns[k][0]}</button>`).join("");
+  document.getElementById("hint").textContent = `${t.patterns[active][1]} ${t.countLine(data.counts[active] ?? 0)}`;
+
+  const rows = data.patterns[active] || [];
+  document.getElementById("list").innerHTML = rows.length ? rows.map(r => `
+    <div class="stock">
+      <div class="row1">
+        <span class="sym">${esc(r.symbol)}</span>
+        <span class="price">${r.close}<span class="chg ${r.change_pct >= 0 ? "up" : "down"}">${fmtPct(r.change_pct)}</span></span>
+      </div>
+      <div class="metrics">
+        <span>${t.rvol} <b>${n("×" + r.rvol)}</b></span>
+        <span>${t.adr} <b>${n(r.adr_pct + "%")}</b></span>
+        <span>RSI2 <b>${n(r.rsi2)}</b></span>
+        <span>${t.rs} <b>${n(r.rs_pct ?? "–")}</b></span>
+      </div>
+      ${active === "ep" ? `<div class="note">${t.epNote(r)}</div>` : ""}
+      <div class="row3">
+        ${halalBadge(r, t)}
+        <a class="chart" href="${esc(r.tradingview)}" target="_blank" rel="noopener">${t.chart}</a>
+      </div>
+    </div>`).join("") : `<div class="empty">${m.ok ? t.emptyOk : t.emptyBad}</div>`;
+}
+
+async function load() {
+  try {
+    const res = await fetch("signals.json?t=" + Date.now(), { cache: "no-store" });
+    data = await res.json();
+  } catch (e) {
+    data = null;
+    render();
+    document.getElementById("market").textContent = T[lang].loadError;
+    return;
+  }
+  render();
+}
+render();
+load();
+</script>
+</body>
+</html>
