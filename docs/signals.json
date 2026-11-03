@@ -1,21 +1,21 @@
 {
   "date": "2026-11-03",
-  "generated_utc": "2026-11-03 19:22",
+  "generated_utc": "2026-11-03 19:39",
   "market": {
     "ok": true,
-    "spy": 755.81,
-    "spy_sma200": 726.66
+    "spy": 754.93,
+    "spy_sma200": 726.65
   },
   "counts": {
-    "ep": 4,
-    "rsi2": 9,
+    "ep": 5,
+    "rsi2": 11,
     "pullback": 16,
     "breakout": 4
   },
   "halal_excluded": {
     "ep": 1,
-    "rsi2": 12,
-    "pullback": 10,
+    "rsi2": 11,
+    "pullback": 11,
     "breakout": 3
   },
   "patterns": {
@@ -23,11 +23,11 @@
       {
         "symbol": "GKOS",
         "sector": "Health Care",
-        "close": 237.32,
-        "change_pct": -0.54,
-        "rvol": 0.6,
+        "close": 236.4,
+        "change_pct": -0.93,
+        "rvol": 0.63,
         "adr_pct": 5.46,
-        "rsi2": 76.6,
+        "rsi2": 70.6,
         "tradingview": "https://www.tradingview.com/chart/?symbol=GKOS",
         "days_since_gap": 3,
         "gap_pct": 33.6,
@@ -35,7 +35,7 @@
         "gap_day_high": 243.71,
         "gap_day_low": 207.41,
         "pre_run_pct": 6.4,
-        "rs_pct": 98,
+        "rs_pct": 97,
         "halal": "✅ متوافق مبدئياً (الديون 0.7%، النقد 2.4%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.7,
@@ -50,10 +50,10 @@
             "time_utc": "2026-11-03 12:00"
           },
           {
-            "title": "Glaukos (GKOS) Just Moved, What Is Drawing Fresh Attention?",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPemx4RS0tckVjcnN5cV9UTkxncE0yZ01lWTZlMDB5RUlwX2ZpZy1RandYYTAyTDFNRUhCN3ZPTzMxRVI0S1loVVd6ZFVWWF91UzVhNXZGRlgzakxwMmhlR0pzRXdOZUlZSEVrWS1OaFpNS2ctOHZCSGpHcGNyeWMzeHdUZkZyXzAxcjNweVFyc0Y2blVmMElPZktvS2Q1NmI3YXV4VVp4cVAtaUZkcG1ORGZ2cExQOVpkMUtlOW5R0gHDAUFVX3lxTE02S0hiR0NvVHpoaWdUOTRVTDdHQzk0SHltTWQ3OWwwdUdnZU50UUVzNkNoanNwNXkwc0V5WFBkZnA2UmNoM1AwSFlfUnkxUUNhYXlLcnQtZ3dTYWpkTmt3eTB3VUx5Njk3MEN1cE5tX3RKNWk5eDJwemNyNHEzX1VjZkVlbk9Ma1NIMzJ2djNwSHdpOHJ3TkRZYXFPYXk4UnNRdlN4QS1rc0RweS15eFVNQzUxMFFCZDR1ZUYySnVJN2Z3dw?oc=5",
-            "provider": "Simply Wall St",
-            "time_utc": "2026-11-02 14:26"
+            "title": "Glaukos Earnings Call Signals Strong Growth Ahead",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeHRxdTBoVWNnX2N6d0ZZRHY1bXotRVBDMDdiZ05NekQ4T1B2VVdGc1BSRXpoZVk3SGNNLWk4TTFITGhPU0NhRkk1X01NRlBNSk9PVWx6MlJkajBaTkgwY25ubU1Hdnd3dkowUW9JRmNkbDNGbmw5X1JCdGIzNTdINTNiVHE1Yzl4dFg3aFVLdXVMOFI0dXRfM2FqWExuTHlGS2Y0?oc=5",
+            "provider": "TipRanks",
+            "time_utc": "2026-11-03 00:44"
           }
         ],
         "news_src": "google",
@@ -69,9 +69,9 @@
       {
         "symbol": "CROX",
         "sector": "Consumer Discretionary",
-        "close": 154.3,
-        "change_pct": 0.77,
-        "rvol": 0.36,
+        "close": 154.05,
+        "change_pct": 0.6,
+        "rvol": 0.39,
         "adr_pct": 3.6,
         "rsi2": 99.6,
         "tradingview": "https://www.tradingview.com/chart/?symbol=CROX",
@@ -115,11 +115,11 @@
       {
         "symbol": "WING",
         "sector": "Consumer Discretionary",
-        "close": 161.05,
-        "change_pct": -1.22,
-        "rvol": 0.58,
+        "close": 160.68,
+        "change_pct": -1.44,
+        "rvol": 0.6,
         "adr_pct": 5.87,
-        "rsi2": 82.6,
+        "rsi2": 80.1,
         "tradingview": "https://www.tradingview.com/chart/?symbol=WING",
         "days_since_gap": 4,
         "gap_pct": 12.2,
@@ -159,13 +159,59 @@
         ]
       },
       {
+        "symbol": "LSCC",
+        "sector": "Information Technology",
+        "close": 106.5,
+        "change_pct": 11.58,
+        "rvol": 2.92,
+        "adr_pct": 5.15,
+        "rsi2": 82.3,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=LSCC",
+        "days_since_gap": 0,
+        "gap_pct": 11.6,
+        "gap_vol_x": 3.1,
+        "gap_day_high": 111.2,
+        "gap_day_low": 101.78,
+        "pre_run_pct": -26.6,
+        "rs_pct": 22,
+        "halal": "✅ متوافق مبدئياً (الديون 0.3%، النقد 1.1%) — أكّد الدخل المحرّم في Zoya",
+        "halal_status": "pass",
+        "debt_pct": 0.3,
+        "cash_pct": 1.1,
+        "earnings_date": null,
+        "earnings_in_days": null,
+        "news": [
+          {
+            "title": "AI Stocks Surge on Tuesday: AEHR, Fabrinet, and Lattice Semiconductor All Jump More than 10%",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUi1BNTk2bGR0MW52MVQ4RUl4a0l5b2wtMlV6S1R6WFZPaF9oWlJxSGh1WDJhZ1BUMTR6bkZTc3ZJVDVmaFpfYVRGVzNSY09VNS1EdUZta0pzUWtnVnNOaVk1SVpuNEZoazZqUzRLREZXS3IzbklOR0JKX3lUQUJXeA?oc=5",
+            "provider": "Yahoo Finance",
+            "time_utc": "2026-11-03 17:57"
+          },
+          {
+            "title": "Fabrinet, EverQuote, Lattice Semiconductor, Fiserv And Other Big Stocks Moving Higher On Tuesday",
+            "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUWtOOFU4Qy1teTdIUm9ibFNtY0JtVHFZaHVNS09qa2pwa0N1NmJKUUpORVFONmJ4QVMyRUgyUWNzOVUzVVhFVmRRRl9NQTAtdkJQb1V2cG54SDk1emdrNzZyTmdMSEFhQnNSSUJkMnZPalNJY0pEWG8tbVNQRlVRZVRrcXBxbkhhM0UxUUptRUl0WWl2d212R0VDU1J0TUZ5RDFiUUtMV1dLNVZwUTYzRV9IZjRhOXBnQXVkazFBelZpR29MUE5yaGFhYk5Ib09wU2FkXzVMT2F1NDd6LS1pc1J6NS0wRGMwbHc?oc=5",
+            "provider": "Benzinga",
+            "time_utc": "2026-11-03 17:02"
+          }
+        ],
+        "news_src": "google",
+        "news_err": [
+          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
+        ],
+        "stars": 3,
+        "reasons": [
+          "fresh",
+          "neglected"
+        ]
+      },
+      {
         "symbol": "FLEX",
         "sector": "Information Technology",
-        "close": 88.03,
-        "change_pct": 4.55,
-        "rvol": 0.34,
+        "close": 88.13,
+        "change_pct": 4.67,
+        "rvol": 0.37,
         "adr_pct": 6.82,
-        "rsi2": 62.1,
+        "rsi2": 62.6,
         "tradingview": "https://www.tradingview.com/chart/?symbol=FLEX",
         "days_since_gap": 4,
         "gap_pct": 11.6,
@@ -182,16 +228,16 @@
         "earnings_in_days": 85,
         "news": [
           {
-            "title": "Fantasy Football Full PPR FLEX Rankings for Week 9 from Justin Boone",
-            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVWJJc3NIZmplMXU5OWctemlFM1dxcXkzeFNIcVNJVHNvUkJ1M0hqeExEc0xZVzVTRXBadUJZLTQ3YWpDenFNRE42SjF6YVZRWjBUX1V2VFp5UHN5MjNzRWhXZVhZZ2FpWVFScThJNFYtRmp1ajZIQ1hEUzNvd3ZnWGE5YUJmcmJwVDU0N1g0TUcydEcwNVlDZk5NTjB5Z2h3ZUwyX2IzTmVOYmNfcTZUcUg0eHp6NG9aSUREZ1VqcGtqdw?oc=5",
-            "provider": "Yahoo Sports",
-            "time_utc": "2026-11-03 18:59"
+            "title": "FLEX or TER: Which Is the Better Value Stock Right Now?",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPc21OeGxtZF85dnJwZVh1T2VadHMwRU9DeDM2R0FESTB0cWdPdHQzcWo4LWpnX0VUVmV3V21Pd21XTlhMdV9XT1ZzOEh3M1VJTERPVFJ1MVlncjRaM29UWjlnTDlIYUk4TkxFM3dVVjdrSzlfMnBEMnRWYWt6cTZ2azNn?oc=5",
+            "provider": "Yahoo Finance Australia",
+            "time_utc": "2026-11-03 15:40"
           },
           {
-            "title": "Week 9 Fantasy Football FLEX r",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLTNkaWtOd29MYkZpV2RDUWhDY3BPZEROSlA0NDRXQW90YlhTVVJYQ0ZKaVJCUjh2Yk9TRUNKUDNwMVZzMzhGMG5uWlVGOFc2RGdaSkxGcm9oM0piektDeElwMkliamlWbTlYNEhPdm96dFJDeS00ZjNZdXJQY2l0X2RjRXJNUlpYUGNIY3pqUm55bkhib3I1aw?oc=5",
-            "provider": "Yahoo Sports",
-            "time_utc": "2026-11-03 18:39"
+            "title": "Flex's CPI Sales Surge 54%: Can AI Infrastructure Sustain Gains?",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWDZ1SlBhdDJCLXpubzEyYnJtdE1TZ3hHd3lYQW85Y0F1cGp6X19lMy1yVGFZNDFXaXE2TUgtcDMtU2xOQi1zLVdjMGNsazVmT2tRUmZodGM2YkREZGJmckN1dlhRZTMxcVMyRUVKbTJSUmtQZ1dqVUlYY1JidEpneTE1NFVIeVlSSEs1dGdvV2hzUjlnN3JHWTVEMTNmZzc0RmRPVXFSOGdSbUdJbzZ2d05CQTJjdEJI?oc=5",
+            "provider": "TradingView",
+            "time_utc": "2026-11-03 14:41"
           }
         ],
         "news_src": "google",
@@ -208,14 +254,14 @@
       {
         "symbol": "PLTR",
         "sector": "Information Technology",
-        "close": 175.26,
-        "change_pct": -1.73,
-        "rvol": 1.55,
+        "close": 173.49,
+        "change_pct": -2.72,
+        "rvol": 1.6,
         "adr_pct": 4.72,
-        "rsi2": 0.6,
+        "rsi2": 0.5,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PLTR",
-        "rs_pct": 83,
-        "dist200_pct": 14.1,
+        "rs_pct": 82,
+        "dist200_pct": 13.0,
         "halal": "✅ متوافق مبدئياً (الديون 0.1%، النقد 2.2%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.1,
@@ -224,16 +270,16 @@
         "earnings_in_days": 90,
         "news": [
           {
+            "title": "Most Active S&P 500 Stocks: Oracle, Palantir, Marvell Lead Nov. 3 Volume",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdk9GVDRqQ2tYc0w4RExzUWxCZmRmLTlnMzdRbzZmeU8yRG1ubXBrWnBsRXdHYkJZekZwOF9ybEFnZGkwdlNORTdMdUJxaFQtUnVVR0V6N1E0REc2QmRTUVNFRnRPQWRnQkprSW9MMFNjek5RTEotekJlbjdBenllZmFFMnp4M2JFUUFsOUZxNFZCZDNwRGFFVXJCYnhJUHFhd05ia1hldlpMRnp1cjFZOTNYdW9VR2M?oc=5",
+            "provider": "ChartMill",
+            "time_utc": "2026-11-03 19:06"
+          },
+          {
             "title": "Palantir’s 96% Revenue Growth Drives Analyst Optimism as Price Targets Rise",
             "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQN3JUdFZkdnFWelNpeTdFOXdRci1SR2Y2LUZlV1ZRc1ZBUlN3ZVp4ZUd3TnNteHl5Yl9ERElqS3lTZk44UWY2d3IyOG9YeEY2bEhON2h2dHVlZzl6SVJ6aHZqUk5SS2VmQlB6UGtwY0docW1QLW83TTdxOFRqWVFUMVZtU05xNnBzQVlmZG1hUG1TRTFLZ0VfdVI4c0dqNW9pN1lhYThablk3MEJrMFVPdzZkSGlZZk1I?oc=5",
             "provider": "24/7 Wall St.",
             "time_utc": "2026-11-03 18:33"
-          },
-          {
-            "title": "Palantir's $2.3 Billion Quarter Puts Its Premium Valuation to the Test",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXVVcEVFUWV5blpEUkdiMjBsNXdvOXlQaGZ6MEJxa2xaVlFZVEx6eEZ6Vm9OajFGdlZnN2YwYUdENG5YTWplT0tZNE1tbXAxNVBLOTFia0syb0ZDY1c0Z0xDQ1hVajlSVF8yU2F2Uml2TFRVemRkUHk2VW9tX2JyR0dSa2hvYTgyTm53cFdWOGN1WXN6cTAyVzdjZWhzQVZ1VF9qOFo1WQ?oc=5",
-            "provider": "MarketBeat",
-            "time_utc": "2026-11-03 18:23"
           }
         ],
         "news_src": "google",
@@ -251,14 +297,14 @@
       {
         "symbol": "PANW",
         "sector": "Information Technology",
-        "close": 348.65,
-        "change_pct": -0.87,
-        "rvol": 0.41,
-        "adr_pct": 4.78,
-        "rsi2": 4.5,
+        "close": 347.86,
+        "change_pct": -1.1,
+        "rvol": 0.43,
+        "adr_pct": 4.8,
+        "rsi2": 4.3,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PANW",
         "rs_pct": 99,
-        "dist200_pct": 28.4,
+        "dist200_pct": 28.2,
         "halal": "✅ متوافق مبدئياً (الديون 0.9%، النقد 1.1%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.9,
@@ -295,14 +341,14 @@
       {
         "symbol": "ANF",
         "sector": "Consumer Discretionary",
-        "close": 158.24,
-        "change_pct": -3.61,
+        "close": 158.1,
+        "change_pct": -3.7,
         "rvol": 0.21,
         "adr_pct": 3.58,
-        "rsi2": 9.9,
+        "rsi2": 9.7,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ANF",
         "rs_pct": 99,
-        "dist200_pct": 50.4,
+        "dist200_pct": 50.2,
         "halal": "✅ متوافق مبدئياً (الديون 19.1%، النقد 9.5%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 19.1,
@@ -338,14 +384,14 @@
       {
         "symbol": "CRM",
         "sector": "Information Technology",
-        "close": 223.33,
-        "change_pct": -1.26,
-        "rvol": 0.31,
+        "close": 222.49,
+        "change_pct": -1.63,
+        "rvol": 0.32,
         "adr_pct": 3.44,
-        "rsi2": 1.7,
+        "rsi2": 1.5,
         "tradingview": "https://www.tradingview.com/chart/?symbol=CRM",
         "rs_pct": 76,
-        "dist200_pct": 13.0,
+        "dist200_pct": 12.6,
         "halal": "✅ متوافق مبدئياً (الديون 23.1%، النقد 6.2%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 23.1,
@@ -355,9 +401,9 @@
         "news": [
           {
             "title": "Why is Salesforce stock falling today?",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObFhQSHo0ZEFjdEYwNWlVZXdCLWRSY2huRUZ3OVRKMTJPYU9JNklpOHp4VUZrbWFSV2FBdExQaGM1VGk3b3NnQ2ctMDhQVE1iY0JFbTBWUTBBY05NckZXN29kdjRQUkwtNGNNUjl5UlBHU056alBYYnlST2JpRFhzUHRndUNlUQ?oc=5",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVHRnV0hOVk9HaDQ1c2RNa0U0Q2ZhTGxJcDhLUXpSaXZmaHZYeEpxMGhLNnJQekNzSXlHWGFDcFIxMlhRZGpZYTJOZGlqM3ItOVFaOEp5RDE5NmQzVFJXZVdVMVFKdzg3UDJybGo0b3psVUNsSWRsRkNzMnBOMGdPQlF3?oc=5",
             "provider": "Invezz",
-            "time_utc": "2026-11-03 17:55"
+            "time_utc": "2026-11-03 18:06"
           },
           {
             "title": "Why Salesforce Is One of the Dow’s Worst Stocks Today",
@@ -380,14 +426,14 @@
       {
         "symbol": "PATH",
         "sector": "Information Technology",
-        "close": 13.2,
-        "change_pct": -1.04,
-        "rvol": 0.28,
+        "close": 13.12,
+        "change_pct": -1.61,
+        "rvol": 0.29,
         "adr_pct": 3.96,
-        "rsi2": 3.4,
+        "rsi2": 2.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PATH",
         "rs_pct": 78,
-        "dist200_pct": 6.7,
+        "dist200_pct": 6.1,
         "halal": "✅ متوافق مبدئياً (الديون 1.2%، النقد 18.5%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 1.2,
@@ -424,11 +470,11 @@
       {
         "symbol": "ANF",
         "sector": "Consumer Discretionary",
-        "close": 158.24,
-        "change_pct": -3.61,
+        "close": 158.1,
+        "change_pct": -3.7,
         "rvol": 0.21,
         "adr_pct": 3.58,
-        "rsi2": 9.9,
+        "rsi2": 9.7,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ANF",
         "rs_pct": 99,
         "near_ma": "ema10",
@@ -467,11 +513,11 @@
       {
         "symbol": "VEEV",
         "sector": "Health Care",
-        "close": 304.24,
-        "change_pct": -0.9,
-        "rvol": 0.46,
+        "close": 304.19,
+        "change_pct": -0.92,
+        "rvol": 0.49,
         "adr_pct": 3.01,
-        "rsi2": 12.1,
+        "rsi2": 12.0,
         "tradingview": "https://www.tradingview.com/chart/?symbol=VEEV",
         "rs_pct": 98,
         "near_ma": "ema20",
@@ -510,13 +556,13 @@
       {
         "symbol": "DOCU",
         "sector": "Information Technology",
-        "close": 81.97,
-        "change_pct": 0.39,
-        "rvol": 0.32,
+        "close": 81.42,
+        "change_pct": -0.28,
+        "rvol": 0.33,
         "adr_pct": 3.61,
-        "rsi2": 49.5,
+        "rsi2": 25.0,
         "tradingview": "https://www.tradingview.com/chart/?symbol=DOCU",
-        "rs_pct": 97,
+        "rs_pct": 96,
         "near_ma": "ema10",
         "halal": "✅ متوافق مبدئياً (الديون 1.2%، النقد 5.0%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
@@ -553,11 +599,11 @@
       {
         "symbol": "BBY",
         "sector": "Consumer Discretionary",
-        "close": 94.08,
-        "change_pct": -2.14,
-        "rvol": 0.41,
+        "close": 94.04,
+        "change_pct": -2.18,
+        "rvol": 0.44,
         "adr_pct": 3.28,
-        "rsi2": 17.6,
+        "rsi2": 17.4,
         "tradingview": "https://www.tradingview.com/chart/?symbol=BBY",
         "rs_pct": 96,
         "near_ma": "ema10",
@@ -594,34 +640,34 @@
         ]
       },
       {
-        "symbol": "ELF",
-        "sector": "Consumer Staples",
-        "close": 112.49,
-        "change_pct": 1.63,
-        "rvol": 0.4,
-        "adr_pct": 3.57,
-        "rsi2": 62.9,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=ELF",
+        "symbol": "HALO",
+        "sector": "Health Care",
+        "close": 129.93,
+        "change_pct": 0.76,
+        "rvol": 0.29,
+        "adr_pct": 2.86,
+        "rsi2": 55.0,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=HALO",
         "rs_pct": 99,
         "near_ma": "ema10",
-        "halal": "✅ متوافق مبدئياً (الديون 13.9%، النقد 5.2%) — أكّد الدخل المحرّم في Zoya",
+        "halal": "✅ متوافق مبدئياً (الديون 14.8%، النقد 1.6%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
-        "debt_pct": 13.9,
-        "cash_pct": 5.2,
-        "earnings_date": "2026-11-04",
-        "earnings_in_days": 1,
+        "debt_pct": 14.8,
+        "cash_pct": 1.6,
+        "earnings_date": "2026-11-05",
+        "earnings_in_days": 2,
         "news": [
           {
-            "title": "e.l.f. Beauty (ELF) reports Q3: everything you need to know ahead of earnings",
-            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcDV1VlRiODJYekF5X2FHMm1IbTlIRnVBNWtGa2x3UTdmQnNDOWNfX1VEQ0JfN0pzYUJIdndJRzV1VlFWcVNoN1NKZEhCUm85dU5jUmNvNkN4NVZHNkRGMHFBdzBIN3RKSVZkS1lxX2V5QW4zQmRLNHRTMHJ0S3g0LUpXZjVpSTJBSjg1d19rQUg3YUxGUWZSTloyM084Ny1SQTd2bjcxLXJ2U0JYb1NxWmVLOEtQTW9uak05QWVHaEp3dHdfaU1neTBUZkhPbUk?oc=5",
-            "provider": "TradingView",
-            "time_utc": "2026-11-03 03:06"
+            "title": "Halozyme Therapeutics (NDQ:HALO): A Royalty Compounder Entering Its Super Cycle!",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HMGVjY2FLLVM1NHp0czBYWEFjeEozR2pESm53Y0RlNGFla0xIXzRSN1ZxczFDLTNETG1STVdGQ3d6QkdOclF5MkVJbjRUeUR1bmdyQW5aUEVBdWVhMFVlWlRZQXhOY0VpMlE?oc=5",
+            "provider": "Stocks Down Under",
+            "time_utc": "2026-11-02 18:15"
           },
           {
-            "title": "“e.l.f. Made to Stand Out”: e.l.f. Creates Handcrafted Holiday Campaign to Celebrate Self Expression, Individuality and Inclusivity",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcV82NWFHZ216UlBpb2dvY2d3TzJORFhPZGo1Mm9FNmUxUnVsal9wdzdQcktIX2JQRDNOWmxwRjJxOUhtaTRXR2taNjc1N0RPeUI2NDZDSUhVRzg0QnlXbHNkeUx1aE5kM1FnLXV0ZENQckZKOXZfYUplSjhLQTJ3MndZVkhzWDI2T3lIUHB6WUdGNHRqOWFxb2pRZkVfd2NueTRMSnF0RQ?oc=5",
-            "provider": "e.l.f. Beauty",
-            "time_utc": "2026-11-02 19:50"
+            "title": "(HALO) as a Liquidity Pulse for Institutional Tactics",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNU3VKeHc4RkRvM2lyOXlLVzVWb1Q4NVJQb2dpeG9KNGl6QjlTdkJEekZUem0xVDV3RXBNajl6ZVRFMDRRRy1aYWlPN2dIOXNRb1lKbEZiWFNxdUhGTEhLRVlUTEcyN2s2UzZvRXdVT1ZMQVE5VnhoRmF0VWhENHJ0UnpONG1nem1iSG1kMzRCdm5ibjVTODJwOW1sWmZGN095U0VpVnRrWlptaWxOYTRyaGxYdTFTTzd3TmJXWXIwY1lpdS1hZWFMaWJ2TQ?oc=5",
+            "provider": "Stock Traders Daily",
+            "time_utc": "2026-11-01 16:22"
           }
         ],
         "news_src": "google",

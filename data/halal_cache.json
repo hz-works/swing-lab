@@ -199,6 +199,16 @@
    "totalDebt": 3975399936
   }
  },
+ "DDOG": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Software - Application",
+   "marketCap": 78141898752,
+   "sector": "Technology",
+   "totalCash": 4985438208,
+   "totalDebt": 1277800960
+  }
+ },
  "DINO": {
   "checked": "2026-11-03",
   "info": {
@@ -379,6 +389,16 @@
    "totalDebt": 6421000192
   }
  },
+ "LSCC": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Semiconductors",
+   "marketCap": 15082117120,
+   "sector": "Technology",
+   "totalCash": 173304992,
+   "totalDebt": 38082000
+  }
+ },
  "LTH": {
   "checked": "2026-11-03",
   "info": {
@@ -547,6 +567,16 @@
    "sector": "Technology",
    "totalCash": 9409098752,
    "totalDebt": 211400000
+  }
+ },
+ "PR": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 20155811840,
+   "sector": "Energy",
+   "totalCash": 131722000,
+   "totalDebt": 3150868992
   }
  },
  "PRGO": {
