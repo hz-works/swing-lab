@@ -1,21 +1,21 @@
 {
   "date": "2026-11-03",
-  "generated_utc": "2026-11-03 19:48",
+  "generated_utc": "2026-11-03 20:08",
   "market": {
     "ok": true,
-    "spy": 754.92,
+    "spy": 754.07,
     "spy_sma200": 726.65
   },
   "counts": {
     "ep": 4,
-    "rsi2": 10,
-    "pullback": 17,
+    "rsi2": 9,
+    "pullback": 16,
     "breakout": 4
   },
   "halal_excluded": {
     "ep": 0,
-    "rsi2": 12,
-    "pullback": 12,
+    "rsi2": 11,
+    "pullback": 10,
     "breakout": 4
   },
   "patterns": {
@@ -23,11 +23,11 @@
       {
         "symbol": "GKOS",
         "sector": "Health Care",
-        "close": 236.48,
-        "change_pct": -0.89,
-        "rvol": 0.66,
+        "close": 235.53,
+        "change_pct": -1.29,
+        "rvol": 0.71,
         "adr_pct": 5.46,
-        "rsi2": 71.1,
+        "rsi2": 65.7,
         "tradingview": "https://www.tradingview.com/chart/?symbol=GKOS",
         "days_since_gap": 3,
         "gap_pct": 33.6,
@@ -35,7 +35,7 @@
         "gap_day_high": 243.71,
         "gap_day_low": 207.41,
         "pre_run_pct": 6.4,
-        "rs_pct": 98,
+        "rs_pct": 97,
         "halal": "✅ متوافق مبدئياً (الديون 0.7%، النقد 2.4%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.7,
@@ -44,22 +44,13 @@
         "earnings_in_days": null,
         "news": [
           {
-            "title": "Conferences in New York, London and Miami are on Glaukos management's schedule.",
-            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQ3JQZTJ4NU9KVmpCSGFrbXJSU0dKV2JsN0ZyYVNYbFZ1ZzlKMXlwSGR4d05LdTFDODR5bXJzSjkwakJ4cmZYZjNsTnpPUkQ4RUFTS0p3WEgwdDFxZm5JV1ZZbWRGOGFFYmhGSktzeXRDd0NpQ19HUUMxZlJYX0lfSGhtMHZDVGRjNmhyb3VXYUtLRnE2SWlUUmR5by1tblhaSG9WbF9hNTFBdFk?oc=5",
-            "provider": "Stock Titan",
-            "time_utc": "2026-11-03 12:00"
-          },
-          {
-            "title": "Glaukos Earnings Call Signals Strong Growth Ahead",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeHRxdTBoVWNnX2N6d0ZZRHY1bXotRVBDMDdiZ05NekQ4T1B2VVdGc1BSRXpoZVk3SGNNLWk4TTFITGhPU0NhRkk1X01NRlBNSk9PVWx6MlJkajBaTkgwY25ubU1Hdnd3dkowUW9JRmNkbDNGbmw5X1JCdGIzNTdINTNiVHE1Yzl4dFg3aFVLdXVMOFI0dXRfM2FqWExuTHlGS2Y0?oc=5",
-            "provider": "TipRanks",
-            "time_utc": "2026-11-03 00:44"
+            "title": "iShares Russell 2000 (IWM) Adds Jackson Financial, Trims Glaukos on Thursday",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/ishares-russell-2000-iwm-adds-110501105.html",
+            "provider": "GuruFocus.com",
+            "time_utc": "2026-11-02 11:05"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 3,
         "reasons": [
           "vol5",
@@ -69,11 +60,11 @@
       {
         "symbol": "CROX",
         "sector": "Consumer Discretionary",
-        "close": 153.58,
-        "change_pct": 0.29,
-        "rvol": 0.42,
-        "adr_pct": 3.6,
-        "rsi2": 99.5,
+        "close": 152.57,
+        "change_pct": -0.36,
+        "rvol": 0.47,
+        "adr_pct": 3.61,
+        "rsi2": 90.0,
         "tradingview": "https://www.tradingview.com/chart/?symbol=CROX",
         "days_since_gap": 3,
         "gap_pct": 25.5,
@@ -90,22 +81,19 @@
         "earnings_in_days": null,
         "news": [
           {
-            "title": "Crocs (NASDAQ:CROX) Director Sells $2,302,650.00 in Stock",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQmM0VTA1NkdMQ3dvSXFlSFFDc3d6bXgwS1JyakRWRHhTVWVuWEc3QjcwY3d6QXFscTFVaXBETVp0R0NJeWNvOXh0MU1BSDVsRFVTNWpXd2FZdGZpRXRtbWtZTGlWaWdCZlFmLUI2a1c2S3o2Ni03bGFjQlhtZGFmbjQzY21ILVZBRlFOVU1IZkVRVEFXcE1PNFN5a0FTbWV4TE9zdFA0YThkQy1qSzJvT2FXYw?oc=5",
-            "provider": "MarketBeat",
-            "time_utc": "2026-11-03 18:16"
+            "title": "Here's How Much a $1000 Investment in Crocs Made 10 Years Ago Would Be Worth Today",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/heres-much-1000-investment-crocs-123001310.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-03 12:30"
           },
           {
-            "title": "Insider Selling: Crocs (NASDAQ:CROX) EVP Sells $399,051.15 in Stock",
-            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQmdTUEdwMzBFeEgzM1FpMHNPa2tKcVBWTnVhMUlNWkVYM2I0SDBZZzVSZWZWbVQzSEdqbEkzMTVyTmNkM1Z0dUJEUm8yZTBkcmRxSTNkU1c2MDYzZ1lqclRXRmZsdTZrWWxlbGJkVkFGVkNJbEdNUjhOWFJGaDBFRDZoT1A1NHh1TXJzZDI3NmJwaU1YaGs5akFKLXlDMGNnTi13V0lYMmw1cGhmTThCaHVYVEl6MndBQUNZdHlYUGY?oc=5",
-            "provider": "MarketBeat",
-            "time_utc": "2026-11-03 18:16"
+            "title": "Crocs (CROX) Is Up 26.24% in One Week: What You Should Know",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/crocs-crox-26-24-one-160006109.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-02 16:00"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 3,
         "reasons": [
           "above_high",
@@ -115,11 +103,11 @@
       {
         "symbol": "WING",
         "sector": "Consumer Discretionary",
-        "close": 160.43,
-        "change_pct": -1.6,
-        "rvol": 0.61,
+        "close": 159.54,
+        "change_pct": -2.15,
+        "rvol": 0.65,
         "adr_pct": 5.87,
-        "rsi2": 78.4,
+        "rsi2": 73.1,
         "tradingview": "https://www.tradingview.com/chart/?symbol=WING",
         "days_since_gap": 4,
         "gap_pct": 12.2,
@@ -127,7 +115,7 @@
         "gap_day_high": 143.66,
         "gap_day_low": 128.7,
         "pre_run_pct": -5.0,
-        "rs_pct": 61,
+        "rs_pct": 60,
         "halal": "⚠️ نشاط مشكوك (Restaurants) — الديون 29.5%، النقد 2.4% — تحقق في Zoya",
         "halal_status": "doubtful",
         "debt_pct": 29.5,
@@ -136,22 +124,19 @@
         "earnings_in_days": null,
         "news": [
           {
-            "title": "6 Green Days In A Row: Wingstop Stock Is Up 36%",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZHNrek5KOHdkUzB0UWNYZC02eTJJczhfaHFpSFRZZ3R3WGVxT01HYjFOR2prdmRFRmFYSFF1S0s2cV9SLTdzZW83VHBMekxRMU5QSnRsUmxfQjdwelAyaWxsQ0lWb1U0SHlqZXVSbDZ0c1l1azdkZkpNX3Zrdk1zeVBGM2ZkVXFTUmc1ZjRsendCTElxQXcwSDRSX3VwQ3lKRER5LWJWNnhSZw?oc=5",
-            "provider": "Trefis",
-            "time_utc": "2026-11-03 12:17"
+            "title": "Why Wingstop Stock Keeps Going Up",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/why-wingstop-stock-keeps-going-222526031.html",
+            "provider": "Motley Fool",
+            "time_utc": "2026-11-02 22:25"
           },
           {
-            "title": "Wingstop Stock: Early Recovery Signs Could Trigger A Valuation Re-Rating (NASDAQ:WING)",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN3FwMFhCOWRmcjJqSGtaMHAzdWg3R1Q2UzA2eUx2VWhPbmp6UXZTRU0wYkxGc3lmbG10S2lGVUNDYmhlVy13Wl9YNmZkRll1VWJGMWdtdzlIZkFaci1uSHBMQXc4UmFHa0U1R0k2Q3ZzWVdVSV9ZaFRHTmpCZGx5MXhkLXhkeGExOGJfSGRuemhsSEx4OGRDT2NGb1lqeW5CNVNJMWxVVTFNZw?oc=5",
-            "provider": "Seeking Alpha",
-            "time_utc": "2026-11-03 08:48"
+            "title": "Stocktwits Retail Therapy: Defensive Bets Extend Streak As Crocs, Wingstop, Carvana Lead Weekly Consumer Gains",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/stocktwits-retail-therapy-defensive-bets-082440519.html",
+            "provider": "Stocktwits",
+            "time_utc": "2026-11-02 08:24"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 3,
         "reasons": [
           "above_high",
@@ -161,11 +146,11 @@
       {
         "symbol": "FLEX",
         "sector": "Information Technology",
-        "close": 88.04,
-        "change_pct": 4.56,
-        "rvol": 0.38,
+        "close": 87.79,
+        "change_pct": 4.26,
+        "rvol": 0.4,
         "adr_pct": 6.82,
-        "rsi2": 62.2,
+        "rsi2": 60.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=FLEX",
         "days_since_gap": 4,
         "gap_pct": 11.6,
@@ -173,7 +158,7 @@
         "gap_day_high": 93.74,
         "gap_day_low": 83.76,
         "pre_run_pct": -29.0,
-        "rs_pct": 29,
+        "rs_pct": 28,
         "halal": "✅ متوافق مبدئياً (الديون 18.1%، النقد 9.3%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 18.1,
@@ -182,22 +167,13 @@
         "earnings_in_days": 85,
         "news": [
           {
-            "title": "FLEX or TER: Which Is the Better Value Stock Right Now?",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPc21OeGxtZF85dnJwZVh1T2VadHMwRU9DeDM2R0FESTB0cWdPdHQzcWo4LWpnX0VUVmV3V21Pd21XTlhMdV9XT1ZzOEh3M1VJTERPVFJ1MVlncjRaM29UWjlnTDlIYUk4TkxFM3dVVjdrSzlfMnBEMnRWYWt6cTZ2azNn?oc=5",
-            "provider": "Yahoo Finance Australia",
-            "time_utc": "2026-11-03 15:40"
-          },
-          {
-            "title": "Flex's CPI Sales Surge 54%: Can AI Infrastructure Sustain Gains?",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWDZ1SlBhdDJCLXpubzEyYnJtdE1TZ3hHd3lYQW85Y0F1cGp6X19lMy1yVGFZNDFXaXE2TUgtcDMtU2xOQi1zLVdjMGNsazVmT2tRUmZodGM2YkREZGJmckN1dlhRZTMxcVMyRUVKbTJSUmtQZ1dqVUlYY1JidEpneTE1NFVIeVlSSEs1dGdvV2hzUjlnN3JHWTVEMTNmZzc0RmRPVXFSOGdSbUdJbzZ2d05CQTJjdEJI?oc=5",
-            "provider": "TradingView",
-            "time_utc": "2026-11-03 14:41"
+            "title": "Are Computer and Technology Stocks Lagging  Flex (FLEX) This Year?",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/computer-technology-stocks-lagging-flex-134003463.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-03 13:40"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 2,
         "reasons": [
           "neglected"
@@ -208,14 +184,14 @@
       {
         "symbol": "PLTR",
         "sector": "Information Technology",
-        "close": 174.35,
-        "change_pct": -2.24,
-        "rvol": 1.63,
+        "close": 175.55,
+        "change_pct": -1.56,
+        "rvol": 1.67,
         "adr_pct": 4.72,
-        "rsi2": 0.6,
+        "rsi2": 0.7,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PLTR",
-        "rs_pct": 83,
-        "dist200_pct": 13.5,
+        "rs_pct": 84,
+        "dist200_pct": 14.3,
         "halal": "✅ متوافق مبدئياً (الديون 0.1%، النقد 2.2%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.1,
@@ -224,22 +200,19 @@
         "earnings_in_days": 90,
         "news": [
           {
-            "title": "Most Active S&P 500 Stocks: Oracle, Palantir, Marvell Lead Nov. 3 Volume",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdk9GVDRqQ2tYc0w4RExzUWxCZmRmLTlnMzdRbzZmeU8yRG1ubXBrWnBsRXdHYkJZekZwOF9ybEFnZGkwdlNORTdMdUJxaFQtUnVVR0V6N1E0REc2QmRTUVNFRnRPQWRnQkprSW9MMFNjek5RTEotekJlbjdBenllZmFFMnp4M2JFUUFsOUZxNFZCZDNwRGFFVXJCYnhJUHFhd05ia1hldlpMRnp1cjFZOTNYdW9VR2M?oc=5",
-            "provider": "ChartMill",
-            "time_utc": "2026-11-03 19:06"
+            "title": "Palantir's AI demand is accelerating, but its backlog tells a more complicated story",
+            "url": "https://finance.yahoo.com/technology/ai/articles/palantirs-ai-demand-accelerating-backlog-191500198.html",
+            "provider": "Proactive",
+            "time_utc": "2026-11-03 19:15"
           },
           {
-            "title": "Palantir’s 96% Revenue Growth Drives Analyst Optimism as Price Targets Rise",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQN3JUdFZkdnFWelNpeTdFOXdRci1SR2Y2LUZlV1ZRc1ZBUlN3ZVp4ZUd3TnNteHl5Yl9ERElqS3lTZk44UWY2d3IyOG9YeEY2bEhON2h2dHVlZzl6SVJ6aHZqUk5SS2VmQlB6UGtwY0docW1QLW83TTdxOFRqWVFUMVZtU05xNnBzQVlmZG1hUG1TRTFLZ0VfdVI4c0dqNW9pN1lhYThablk3MEJrMFVPdzZkSGlZZk1I?oc=5",
+            "title": "Palantir’s CEO Just Sent Wall Street a Message It Won’t Soon Forget",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-ceo-just-sent-wall-190950480.html",
             "provider": "24/7 Wall St.",
-            "time_utc": "2026-11-03 18:33"
+            "time_utc": "2026-11-03 19:09"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 5,
         "reasons": [
           "rs80",
@@ -251,14 +224,14 @@
       {
         "symbol": "PANW",
         "sector": "Information Technology",
-        "close": 347.96,
-        "change_pct": -1.07,
-        "rvol": 0.44,
+        "close": 349.56,
+        "change_pct": -0.61,
+        "rvol": 0.47,
         "adr_pct": 4.8,
-        "rsi2": 4.3,
+        "rsi2": 4.7,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PANW",
         "rs_pct": 99,
-        "dist200_pct": 28.2,
+        "dist200_pct": 28.8,
         "halal": "✅ متوافق مبدئياً (الديون 0.9%، النقد 1.1%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.9,
@@ -267,22 +240,19 @@
         "earnings_in_days": 15,
         "news": [
           {
-            "title": "Palo Alto Networks to Announce Fiscal First Quarter 2027 Financial Results on Wednesday, November 18, 2026",
-            "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOT0NmbElCMi1GejJqdlFwM2tvTzBtTUZITE41TUtkeUEtaEZKS21FVHM2b1ZRTlVQWEtzNnFhY3ZWdzZSYW1oemlzdmxjWDc0TExjSGprY1FaWnN0bjVUZmhGMGpId3ZhVGxRNEM0RXhpa0pxV0g1MEJSb192d0ZuWnhYYUEwbmFvVnhpTWMxeE9XZTh2bVg3SmgyZ1RLUmFDYXQ1M0RCX1ZweWRNeEI1NUpJNE9CWnE1UXpuam9GVlppUU1pRF9BUlUxNnpLRERuQ2ZHZndLYVJPMVV5Z1ZudWR4RzBlYnl5d0pxYlBwMA?oc=5",
-            "provider": "Palo Alto Networks",
-            "time_utc": "2026-11-03 17:55"
+            "title": "Palo Alto Networks (PANW) Registers a Bigger Fall Than the Market: Important Facts to Note",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-networks-panw-registers-214501235.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-02 21:45"
           },
           {
-            "title": "Intuit vs. Palo Alto Networks: Which Technology Stock Is a Better Buy in 2027?",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFp1b3RybHNZdTdBQmRreUpCVXlkbDg1VDQ5dU1EZ1pxRTZzN1k3eFFKM3V0VFZmQzFWb0xfQXJCSEREOHltSXhUTGVaVjZ0QkVZQ25LN2NTaUs2QzI4VFl0Ul95ak1qQ2xfN05EbW5DWGxwc1BLbGNhNHJEblc0ZmFmbTNWQktVWUNHRWc0cU0wT3hlM2dyX3Z1V1RqdjZkWnlzNEFTQ19YOVJCcnZkREhwR1hwZExFTy1CNjE5d1JfUWhMTl93?oc=5",
-            "provider": "The Motley Fool",
-            "time_utc": "2026-11-03 17:00"
+            "title": "Palo Alto Networks (PANW) Brings Browser Security To Small Businesses Through MSPs",
+            "url": "https://finance.yahoo.com/small-business/articles/palo-alto-networks-panw-brings-171010566.html",
+            "provider": "Simply Wall St.",
+            "time_utc": "2026-11-02 17:10"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 5,
         "reasons": [
           "rs80",
@@ -295,14 +265,14 @@
       {
         "symbol": "ANF",
         "sector": "Consumer Discretionary",
-        "close": 157.78,
-        "change_pct": -3.89,
-        "rvol": 0.22,
+        "close": 158.23,
+        "change_pct": -3.62,
+        "rvol": 0.23,
         "adr_pct": 3.58,
-        "rsi2": 9.3,
+        "rsi2": 9.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ANF",
         "rs_pct": 99,
-        "dist200_pct": 49.9,
+        "dist200_pct": 50.3,
         "halal": "✅ متوافق مبدئياً (الديون 19.1%، النقد 9.5%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 19.1,
@@ -312,21 +282,18 @@
         "news": [
           {
             "title": "What Makes Abercrombie & Fitch (ANF) a Strong Momentum Stock: Buy Now?",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR1NHQk4xVGotUXNEOGhxaDhESldjSEVLNkFXRDhCUzJERG5uR3EzNE5kcl9GeTM0djU2T3ZiLUlWbmgyaWh4WVdGYW9Oc0VkZVlOV3lMQThUQnJ6NjROZU9JWVZEdUQzWjgtLWlJMkNYQkZuZFJhTTFoaHdMMmM0LU9fWVM2OGs5cXQyOE11Zzc3SDNjQUVYeDk3Ynpha3lq?oc=5",
-            "provider": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/makes-abercrombie-fitch-anf-strong-160006819.html",
+            "provider": "Zacks",
             "time_utc": "2026-11-03 16:00"
           },
           {
             "title": "Abercrombie & Fitch Company (ANF) Hits Fresh High: Is There Still Room to Run?",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVTRXVF9rTHdsUzFKUENTTVVwMDVuMV8tX0ZsaFBteGpwVHRFWUhTMFBBbkRVZ1RkdTZXMnJQQ1BDLXZvMzBSTVd0LXVvRzk1aWNtWHRCMjVvUHZhQ0ZsclN3Z2ZSVFRxRmhkZnh1OEx5c0QyYTBmcE9RRXBHOVlXMWhlU01tNXE3c29XeDRXNEtsWnpvT0JiRThBczAtTldN?oc=5",
-            "provider": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/abercrombie-fitch-company-anf-hits-131502562.html",
+            "provider": "Zacks",
             "time_utc": "2026-11-03 13:15"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 5,
         "reasons": [
           "rs80",
@@ -338,14 +305,14 @@
       {
         "symbol": "CRM",
         "sector": "Information Technology",
-        "close": 222.41,
-        "change_pct": -1.67,
-        "rvol": 0.33,
+        "close": 222.69,
+        "change_pct": -1.54,
+        "rvol": 0.35,
         "adr_pct": 3.44,
-        "rsi2": 1.5,
+        "rsi2": 1.6,
         "tradingview": "https://www.tradingview.com/chart/?symbol=CRM",
         "rs_pct": 76,
-        "dist200_pct": 12.6,
+        "dist200_pct": 12.7,
         "halal": "✅ متوافق مبدئياً (الديون 23.1%، النقد 6.2%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 23.1,
@@ -354,22 +321,19 @@
         "earnings_in_days": 29,
         "news": [
           {
-            "title": "Why is Salesforce stock falling today?",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZ1ZaZnZvdHo3OVRBd0ZnZVhKYzV3WjZEdlJ6RE9mR051QWxRT1E0T19iTUdZdXlSQXBpT1pIWXV5VTBDUTQ0dlpVOUR1eFBCTkxBTkdfTHhfTDY1WmFJa2QyQVo2QWQ2a3hpMVE4bXNBWjIzWkEzZkRuZTFsaXVIR0FR?oc=5",
-            "provider": "Invezz",
-            "time_utc": "2026-11-03 18:23"
+            "title": "Salesforce Is Down 16% This Year. Another AI Deal Didn’t Help.",
+            "url": "https://www.barrons.com/articles/salesforce-stock-artificial-intelligence-cresta-8d4ff6a8?siteid=yhoof2&yptr=yahoo",
+            "provider": "Barrons.com",
+            "time_utc": "2026-11-03 17:08"
           },
           {
-            "title": "Why Salesforce Is One of the Dow’s Worst Stocks Today",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMHlxZ3U2NzRlWVg0bkN1aHhtTS1xQXRfUjFyeHhLQmhvWWNzMWlmajVjaVhqYk1HbExlQ1l0ajlzVS1OSEVvOVpvbk9ua2NmUVhnQXhLc3hBTGJULXBGRExHQ3lkamdTdWp2QzluUnhfdGZZY1ViRUJfbjRVNmxwT3c4WTFER3dKYy1xVW1GcldKdUE?oc=5",
-            "provider": "Barron's",
-            "time_utc": "2026-11-03 17:08"
+            "title": "Salesforce (CRM) Files Share Offering, Is The Pullback A Valuation Opportunity?",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/salesforce-crm-files-share-offering-161757085.html",
+            "provider": "Simply Wall St.",
+            "time_utc": "2026-11-03 16:17"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 4,
         "reasons": [
           "rsi5",
@@ -380,14 +344,14 @@
       {
         "symbol": "PATH",
         "sector": "Information Technology",
-        "close": 13.11,
-        "change_pct": -1.69,
-        "rvol": 0.3,
+        "close": 13.15,
+        "change_pct": -1.42,
+        "rvol": 0.32,
         "adr_pct": 3.96,
-        "rsi2": 2.8,
+        "rsi2": 3.0,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PATH",
         "rs_pct": 78,
-        "dist200_pct": 6.0,
+        "dist200_pct": 6.3,
         "halal": "✅ متوافق مبدئياً (الديون 1.2%، النقد 18.5%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 1.2,
@@ -396,22 +360,19 @@
         "earnings_in_days": 29,
         "news": [
           {
-            "title": "Is There Now An Opportunity In UiPath, Inc. (NYSE:PATH)?",
-            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQYkZVdFFMZ0VNSUxMZzNHOXdybTRiZkF6LVNJZkZZXzh2ZmJBTXA4bDFhQUFxRzhESTVSc2FWajdsazk1dXBMZWcyMlBnMFhvWFhRYUN3SjN3NlFaQ0ZUX3g1WXl2YVVRNXhfWi1tOGt3THd3eHJmNTdXSndlRTdTdXhOR29BSE1kX1BrVDhMQjRTSDk4NHpGV2RXRQ?oc=5",
-            "provider": "Moomoo",
-            "time_utc": "2026-11-03 11:22"
+            "title": "UiPath vs. SentinelOne: Which Technology Stock Is a Better Buy for 2027?",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/uipath-vs-sentinelone-technology-stock-221638496.html",
+            "provider": "Motley Fool",
+            "time_utc": "2026-11-02 22:16"
           },
           {
-            "title": "UiPath vs. SentinelOne: Which Technology Stock Is a Better Buy for 2027?",
-            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbEhSalRPOVdEcFhJbkFqSm5UcjVCaFBGTUZ2Z3JKS1gxSjJjdFk0eGZOS3BVTHZKbDl2VmtkS01HWHZ4c1ZscTdpSXdoaVZhLTZ2TlhIaUgwU2E5T3NkTzdURGptWmRxRzJHWC03MUlWNk1pRHlWZGtiOGRFR0FGZHlNOGVQem90NU91WTNrUldDZlhnV08zQ3RmQ1ZOVDV1cGpFMzYxZXV1cFVQUThZVXZKUUI3Tkp4Y3ZlVG5Oaw?oc=5",
-            "provider": "The Motley Fool",
-            "time_utc": "2026-11-02 21:56"
+            "title": "UiPath (PATH) Falls More Steeply Than Broader Market: What Investors Need to Know",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/uipath-path-falls-more-steeply-214501321.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-02 21:45"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 4,
         "reasons": [
           "rsi5",
@@ -424,11 +385,11 @@
       {
         "symbol": "ANF",
         "sector": "Consumer Discretionary",
-        "close": 157.78,
-        "change_pct": -3.89,
-        "rvol": 0.22,
+        "close": 158.23,
+        "change_pct": -3.62,
+        "rvol": 0.23,
         "adr_pct": 3.58,
-        "rsi2": 9.3,
+        "rsi2": 9.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ANF",
         "rs_pct": 99,
         "near_ma": "ema10",
@@ -441,21 +402,18 @@
         "news": [
           {
             "title": "What Makes Abercrombie & Fitch (ANF) a Strong Momentum Stock: Buy Now?",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR1NHQk4xVGotUXNEOGhxaDhESldjSEVLNkFXRDhCUzJERG5uR3EzNE5kcl9GeTM0djU2T3ZiLUlWbmgyaWh4WVdGYW9Oc0VkZVlOV3lMQThUQnJ6NjROZU9JWVZEdUQzWjgtLWlJMkNYQkZuZFJhTTFoaHdMMmM0LU9fWVM2OGs5cXQyOE11Zzc3SDNjQUVYeDk3Ynpha3lq?oc=5",
-            "provider": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/makes-abercrombie-fitch-anf-strong-160006819.html",
+            "provider": "Zacks",
             "time_utc": "2026-11-03 16:00"
           },
           {
             "title": "Abercrombie & Fitch Company (ANF) Hits Fresh High: Is There Still Room to Run?",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVTRXVF9rTHdsUzFKUENTTVVwMDVuMV8tX0ZsaFBteGpwVHRFWUhTMFBBbkRVZ1RkdTZXMnJQQ1BDLXZvMzBSTVd0LXVvRzk1aWNtWHRCMjVvUHZhQ0ZsclN3Z2ZSVFRxRmhkZnh1OEx5c0QyYTBmcE9RRXBHOVlXMWhlU01tNXE3c29XeDRXNEtsWnpvT0JiRThBczAtTldN?oc=5",
-            "provider": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/abercrombie-fitch-company-anf-hits-131502562.html",
+            "provider": "Zacks",
             "time_utc": "2026-11-03 13:15"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
+        "news_src": "yahoo",
         "stars": 5,
         "reasons": [
           "rs95",
@@ -467,11 +425,11 @@
       {
         "symbol": "VEEV",
         "sector": "Health Care",
-        "close": 304.23,
-        "change_pct": -0.9,
-        "rvol": 0.51,
+        "close": 304.45,
+        "change_pct": -0.83,
+        "rvol": 0.54,
         "adr_pct": 3.01,
-        "rsi2": 12.1,
+        "rsi2": 12.4,
         "tradingview": "https://www.tradingview.com/chart/?symbol=VEEV",
         "rs_pct": 98,
         "near_ma": "ema20",
@@ -484,21 +442,52 @@
         "news": [
           {
             "title": "Veeva Systems (VEEV): Turning Industry Expertise into Growth",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZUlCUVNmb2FEQV9nLWRydEhWNzk4VmhSWFdiX2xiMWQyNTZFYXBkd0tPenBrWWxqeGlzdEliME1DM3Jnek5IRDNRX2J4NVFYbUl6bGNXLW1ETVNfdjlTUjVkSjlXNFFPVmU3d0JJU2RNNFVTUWFISzd0djhUaTE1QWs0Q2tYSWlvdGRvTm9ONW9uODBhTmxxUUxfMmdobFhpeEE?oc=5",
-            "provider": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/veeva-systems-veev-turning-industry-142825862.html",
+            "provider": "Insider Monkey",
             "time_utc": "2026-11-03 14:28"
           },
           {
-            "title": "Veeva Systems: AI Is The Icing, Not The Cake",
-            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTy12anJwNVQ2M1ItVGc5aE9FYUNLemticmJndE83VVZiSTJ2RjVQVjdhTTJ4MHZnTmZka0x3b2h4YV9vMDE5NXdsY0NsVHVaNTRVeTNEVHVIOFJHeDdHd1VRcUc3eFdMa1RXSTVwU1Y5Nk1NX3FjejNnX25oYS1keDdaakRJNUV1cF9WcEZZVkNPRF9EZFRyX0lUdC1YQVVveHVoN0tlQ01TSlVUQ0JDM0Q4YVZTLXdCNklnYkYwaFg?oc=5",
-            "provider": "Seeking Alpha",
-            "time_utc": "2026-11-03 12:28"
+            "title": "Why Veeva Systems (VEEV) Dipped More Than Broader Market Today",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/why-veeva-systems-veev-dipped-214502014.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-02 21:45"
           }
         ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
+        "news_src": "yahoo",
+        "stars": 5,
+        "reasons": [
+          "rs95",
+          "quiet",
+          "short_ma",
+          "tight"
+        ]
+      },
+      {
+        "symbol": "BBY",
+        "sector": "Consumer Discretionary",
+        "close": 93.86,
+        "change_pct": -2.38,
+        "rvol": 0.48,
+        "adr_pct": 3.28,
+        "rsi2": 16.6,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=BBY",
+        "rs_pct": 96,
+        "near_ma": "ema20",
+        "halal": "✅ متوافق مبدئياً (الديون 21.0%، النقد 12.2%) — أكّد الدخل المحرّم في Zoya",
+        "halal_status": "pass",
+        "debt_pct": 21.0,
+        "cash_pct": 12.2,
+        "earnings_date": "2026-11-24",
+        "earnings_in_days": 21,
+        "news": [
+          {
+            "title": "Fast-paced Momentum Stock Best Buy (BBY) Is Still Trading at a Bargain",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/fast-paced-momentum-stock-best-125501117.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-02 12:55"
+          }
         ],
+        "news_src": "yahoo",
         "stars": 5,
         "reasons": [
           "rs95",
@@ -510,13 +499,13 @@
       {
         "symbol": "DOCU",
         "sector": "Information Technology",
-        "close": 81.35,
-        "change_pct": -0.37,
-        "rvol": 0.34,
+        "close": 81.15,
+        "change_pct": -0.61,
+        "rvol": 0.36,
         "adr_pct": 3.61,
-        "rsi2": 23.5,
+        "rsi2": 20.2,
         "tradingview": "https://www.tradingview.com/chart/?symbol=DOCU",
-        "rs_pct": 97,
+        "rs_pct": 96,
         "near_ma": "ema10",
         "halal": "✅ متوافق مبدئياً (الديون 1.2%، النقد 5.0%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
@@ -539,52 +528,6 @@
           }
         ],
         "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
-        "stars": 5,
-        "reasons": [
-          "rs95",
-          "quiet",
-          "short_ma",
-          "tight"
-        ]
-      },
-      {
-        "symbol": "BBY",
-        "sector": "Consumer Discretionary",
-        "close": 93.9,
-        "change_pct": -2.32,
-        "rvol": 0.45,
-        "adr_pct": 3.28,
-        "rsi2": 16.8,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=BBY",
-        "rs_pct": 96,
-        "near_ma": "ema20",
-        "halal": "✅ متوافق مبدئياً (الديون 21.0%، النقد 12.2%) — أكّد الدخل المحرّم في Zoya",
-        "halal_status": "pass",
-        "debt_pct": 21.0,
-        "cash_pct": 12.2,
-        "earnings_date": "2026-11-24",
-        "earnings_in_days": 21,
-        "news": [
-          {
-            "title": "Best Buy’s Invites Are Open For Pokémon Delta Reign Booster Boxes",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTUJYRTFuT0xKUllHQnNZTjlVMUF6dVc3U1JmajhQandqYTByd1RlcW05a0o2TzUyZjhpRjhIZFYxbnQyei1LY3Z5dzRac0tibWc4eDFvNU9EVHBiTzBSbDF1OWVaZFVQR01neC1KRW5jR0hzRmR0TTRUc2NRbVdUOE5uY1hvS1g3aUl5VGc3MWlwYjFIX1IzYVlvQVozcnJNaDhUeER0LW5GUQ?oc=5",
-            "provider": "ComicBook.com",
-            "time_utc": "2026-11-03 19:42"
-          },
-          {
-            "title": "Investors Are Beginning to Say That Meta Is The Best Buy And Hold Stock Through 2030",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQekVac0tXM3pEX253R1RuMlJoeXlHUEc5T0dIeHEwVkJQOHZ0SWI1XzlNWk5EZURWbl9xOEQ2Um5mTE1KeDhuMkIzTG83aGhPQ2R4WGFSMmctT0laR2VIOVRUUXg0NllPMU9TMlRpRWx5TUJPcVNLc1U5SWp2WnJEdHlqZHdZU0FLYk9Lc2h5OFMyMjEyUWdrSS1BMWpKa1U?oc=5",
-            "provider": "Yahoo Finance",
-            "time_utc": "2026-11-03 17:45"
-          }
-        ],
-        "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
         "stars": 5,
         "reasons": [
           "rs95",
@@ -596,11 +539,11 @@
       {
         "symbol": "HALO",
         "sector": "Health Care",
-        "close": 129.95,
-        "change_pct": 0.78,
-        "rvol": 0.3,
+        "close": 129.83,
+        "change_pct": 0.68,
+        "rvol": 0.32,
         "adr_pct": 2.86,
-        "rsi2": 55.4,
+        "rsi2": 53.0,
         "tradingview": "https://www.tradingview.com/chart/?symbol=HALO",
         "rs_pct": 99,
         "near_ma": "ema10",
@@ -625,9 +568,6 @@
           }
         ],
         "news_src": "google",
-        "news_err": [
-          "yahoo: YFDataException: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***"
-        ],
         "stars": 4,
         "reasons": [
           "rs95",

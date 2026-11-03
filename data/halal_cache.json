@@ -19,6 +19,16 @@
    "totalDebt": 73854000
   }
  },
+ "AMGN": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Drug Manufacturers - General",
+   "marketCap": 249466519552,
+   "sector": "Healthcare",
+   "totalCash": 13989000192,
+   "totalDebt": 57303998464
+  }
+ },
  "AMRX": {
   "checked": "2026-11-03",
   "info": {
@@ -277,6 +287,16 @@
    "sector": "Utilities",
    "totalCash": 171000000,
    "totalDebt": 42714001408
+  }
+ },
+ "EL": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Household & Personal Products",
+   "marketCap": 37921509376,
+   "sector": "Consumer Defensive",
+   "totalCash": 3198000128,
+   "totalDebt": 9200000000
   }
  },
  "ELF": {
