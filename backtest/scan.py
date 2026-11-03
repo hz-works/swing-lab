@@ -21,10 +21,13 @@ import numpy as np
 import pandas as pd
 
 from halal import screen
+from info import fetch_extras
+from quality import SCORERS
 from patterns import indicators, sig_breakout, sig_ep, sig_pullback, sig_rsi2
 from universe import load_universe
 
 TOP_N = 5
+ENRICH_N = 10  # candidates per pattern that get earnings/news + quality score
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 NAMES = {
     "ep": "فجوة الأرباح",
@@ -98,15 +101,21 @@ def scan(data, sectors, spy):
                         "gap_vol_x": round(float(gd["Volume"] / d["vol50"].iloc[g - 1]), 1),
                         "gap_day_high": round(float(gd["High"]), 2),
                         "gap_day_low": round(float(gd["Low"]), 2),
+                        "pre_run_pct": round(100 * (float(d["Close"].iloc[g - 1]) /
+                                                    float(d["Close"].iloc[max(0, g - 61)]) - 1), 1),
                         "rs_pct": rs_r, "_score": float(gd["Volume"] / d["vol50"].iloc[g - 1]),
                     }))
                 break
         if bool(sig_rsi2(d).iloc[-1]):
             found["rsi2"].append(row(s, d, sectors.get(s, ""), {
-                "rs_pct": rs_r, "_score": -float(d["rsi2"].iloc[-1])}))
+                "rs_pct": rs_r, "_score": -float(d["rsi2"].iloc[-1]),
+                "dist200_pct": round(100 * (float(d["Close"].iloc[-1]) / float(d["sma200"].iloc[-1]) - 1), 1)}))
         if bool(sig_pullback(d).iloc[-1]) and rs_r is not None and rs_r >= 80:
+            last = d.iloc[-1]
+            near = next((ma for ma in ("ema10", "ema20", "sma50")
+                         if last["Low"] <= last[ma] * 1.02 and last["Close"] >= last[ma] * 0.98), None)
             found["pullback"].append(row(s, d, sectors.get(s, ""), {
-                "rs_pct": rs_r, "_score": rs}))
+                "rs_pct": rs_r, "_score": rs, "near_ma": near}))
         if bool(sig_breakout(d).iloc[-1]):
             found["breakout"].append(row(s, d, sectors.get(s, ""), {
                 "rs_pct": rs_r, "_score": rs if not np.isnan(rs) else 0}))
@@ -204,7 +213,26 @@ def main():
             v = verdicts[r["symbol"]]
             r.update(halal=v["label"], halal_status=v["status"],
                      debt_pct=v["debt_pct"], cash_pct=v["cash_pct"])
+    enrich(found, offline=bool(args.csv_dir))
     write_outputs(asof, market_ok, found, spy)
+
+
+def enrich(found, offline=False):
+    """Earnings date, news and quality stars for the best halal candidates,
+    then re-rank each pattern by stars (ties keep the pattern's own order)."""
+    cache = {}
+    for p, scorer in SCORERS.items():
+        ok = [r for r in found[p] if r["halal_status"] != "fail"]
+        top, rest = ok[:ENRICH_N], ok[ENRICH_N:]
+        for r in top:
+            if r["symbol"] not in cache:
+                cache[r["symbol"]] = ({"earnings_date": None, "earnings_in_days": None, "news": []}
+                                      if offline else fetch_extras(r["symbol"]))
+            r.update(cache[r["symbol"]])
+            r["stars"], r["reasons"] = scorer(r)
+        top.sort(key=lambda r: -r["stars"])  # stable sort keeps original order on ties
+        failed = [r for r in found[p] if r["halal_status"] == "fail"]
+        found[p] = top + rest + failed
 
 
 if __name__ == "__main__":
