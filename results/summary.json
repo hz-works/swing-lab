@@ -1,236 +1,633 @@
 {
   "meta": {
     "start": "2016-01-01",
-    "end": "2026-10-29",
-    "symbols": 1214,
-    "slippage_per_side_pct": 0.05
+    "end": "2026-10-06",
+    "symbols": 1209,
+    "entry": "next open",
+    "costs": "none"
+  },
+  "baseline": {
+    "signals": 980531,
+    "per_year": 91106.3,
+    "excess_5d_pct": 0.01,
+    "excess_10d_pct": 0.05,
+    "excess_20d_pct": 0.14,
+    "median_excess_20d_pct": -0.28,
+    "beat_market_20d_pct": 48.6,
+    "raw_20d_pct": 1.44,
+    "by_year": {
+      "2016": {
+        "signals": 57837,
+        "excess_10d_pct": 0.36
+      },
+      "2017": {
+        "signals": 44086,
+        "excess_10d_pct": 0.04
+      },
+      "2018": {
+        "signals": 78318,
+        "excess_10d_pct": 0.0
+      },
+      "2019": {
+        "signals": 69688,
+        "excess_10d_pct": -0.06
+      },
+      "2020": {
+        "signals": 93963,
+        "excess_10d_pct": 0.18
+      },
+      "2021": {
+        "signals": 85291,
+        "excess_10d_pct": 0.06
+      },
+      "2022": {
+        "signals": 113688,
+        "excess_10d_pct": 0.25
+      },
+      "2023": {
+        "signals": 92130,
+        "excess_10d_pct": -0.09
+      },
+      "2024": {
+        "signals": 94398,
+        "excess_10d_pct": -0.24
+      },
+      "2025": {
+        "signals": 132284,
+        "excess_10d_pct": 0.04
+      },
+      "2026": {
+        "signals": 118848,
+        "excess_10d_pct": 0.06
+      }
+    }
   },
   "patterns": {
     "pullback": {
-      "trades": 5981,
-      "trades_per_year": 553.1,
-      "win_rate_pct": 42.6,
-      "avg_win_R": 1.45,
-      "avg_loss_R": -1.04,
-      "expectancy_R": 0.024,
-      "profit_factor": 1.04,
-      "max_drawdown_R": -182.8,
-      "avg_days_held": 4.9,
-      "by_year": {
-        "2016": {
-          "trades": 283,
-          "expectancy_R": -0.299
-        },
-        "2017": {
-          "trades": 336,
-          "expectancy_R": 0.011
-        },
-        "2018": {
-          "trades": 416,
-          "expectancy_R": -0.228
-        },
-        "2019": {
-          "trades": 314,
-          "expectancy_R": 0.24
-        },
-        "2020": {
-          "trades": 530,
-          "expectancy_R": 0.128
-        },
-        "2021": {
-          "trades": 932,
-          "expectancy_R": 0.02
-        },
-        "2022": {
-          "trades": 313,
-          "expectancy_R": -0.234
-        },
-        "2023": {
-          "trades": 522,
-          "expectancy_R": 0.06
-        },
-        "2024": {
-          "trades": 806,
-          "expectancy_R": 0.17
-        },
-        "2025": {
-          "trades": 609,
-          "expectancy_R": -0.028
-        },
-        "2026": {
-          "trades": 920,
-          "expectancy_R": 0.089
+      "all": {
+        "signals": 12392,
+        "per_year": 1151.4,
+        "excess_5d_pct": -0.02,
+        "excess_10d_pct": -0.08,
+        "excess_20d_pct": 0.05,
+        "median_excess_20d_pct": -0.37,
+        "beat_market_20d_pct": 48.0,
+        "raw_20d_pct": 1.17,
+        "by_year": {
+          "2016": {
+            "signals": 512,
+            "excess_10d_pct": -0.29
+          },
+          "2017": {
+            "signals": 667,
+            "excess_10d_pct": -0.11
+          },
+          "2018": {
+            "signals": 958,
+            "excess_10d_pct": -0.29
+          },
+          "2019": {
+            "signals": 671,
+            "excess_10d_pct": -0.23
+          },
+          "2020": {
+            "signals": 1146,
+            "excess_10d_pct": 0.46
+          },
+          "2021": {
+            "signals": 2019,
+            "excess_10d_pct": -0.3
+          },
+          "2022": {
+            "signals": 797,
+            "excess_10d_pct": 0.36
+          },
+          "2023": {
+            "signals": 1055,
+            "excess_10d_pct": -0.29
+          },
+          "2024": {
+            "signals": 1542,
+            "excess_10d_pct": 0.29
+          },
+          "2025": {
+            "signals": 1344,
+            "excess_10d_pct": -0.2
+          },
+          "2026": {
+            "signals": 1681,
+            "excess_10d_pct": -0.27
+          }
+        }
+      },
+      "market": {
+        "signals": 11270,
+        "per_year": 1047.2,
+        "excess_5d_pct": 0.05,
+        "excess_10d_pct": 0.0,
+        "excess_20d_pct": 0.14,
+        "median_excess_20d_pct": -0.32,
+        "beat_market_20d_pct": 48.2,
+        "raw_20d_pct": 1.23,
+        "by_year": {
+          "2016": {
+            "signals": 483,
+            "excess_10d_pct": -0.1
+          },
+          "2017": {
+            "signals": 667,
+            "excess_10d_pct": -0.11
+          },
+          "2018": {
+            "signals": 850,
+            "excess_10d_pct": -0.29
+          },
+          "2019": {
+            "signals": 643,
+            "excess_10d_pct": -0.34
+          },
+          "2020": {
+            "signals": 1052,
+            "excess_10d_pct": 0.76
+          },
+          "2021": {
+            "signals": 2019,
+            "excess_10d_pct": -0.3
+          },
+          "2022": {
+            "signals": 213,
+            "excess_10d_pct": 1.92
+          },
+          "2023": {
+            "signals": 1016,
+            "excess_10d_pct": -0.23
+          },
+          "2024": {
+            "signals": 1542,
+            "excess_10d_pct": 0.29
+          },
+          "2025": {
+            "signals": 1206,
+            "excess_10d_pct": -0.04
+          },
+          "2026": {
+            "signals": 1579,
+            "excess_10d_pct": -0.08
+          }
+        }
+      },
+      "market+RS": {
+        "signals": 6110,
+        "per_year": 567.7,
+        "excess_5d_pct": 0.16,
+        "excess_10d_pct": 0.22,
+        "excess_20d_pct": 0.46,
+        "median_excess_20d_pct": -0.08,
+        "beat_market_20d_pct": 49.7,
+        "raw_20d_pct": 1.44,
+        "by_year": {
+          "2016": {
+            "signals": 251,
+            "excess_10d_pct": -0.37
+          },
+          "2017": {
+            "signals": 407,
+            "excess_10d_pct": 0.5
+          },
+          "2018": {
+            "signals": 539,
+            "excess_10d_pct": -0.09
+          },
+          "2019": {
+            "signals": 374,
+            "excess_10d_pct": -0.23
+          },
+          "2020": {
+            "signals": 555,
+            "excess_10d_pct": 1.62
+          },
+          "2021": {
+            "signals": 794,
+            "excess_10d_pct": -0.36
+          },
+          "2022": {
+            "signals": 146,
+            "excess_10d_pct": 2.86
+          },
+          "2023": {
+            "signals": 627,
+            "excess_10d_pct": -0.25
+          },
+          "2024": {
+            "signals": 833,
+            "excess_10d_pct": 0.44
+          },
+          "2025": {
+            "signals": 801,
+            "excess_10d_pct": -0.12
+          },
+          "2026": {
+            "signals": 783,
+            "excess_10d_pct": 0.3
+          }
         }
       }
     },
     "breakout": {
-      "trades": 2746,
-      "trades_per_year": 255.5,
-      "win_rate_pct": 44.8,
-      "avg_win_R": 1.27,
-      "avg_loss_R": -1.03,
-      "expectancy_R": 0.002,
-      "profit_factor": 1.0,
-      "max_drawdown_R": -128.2,
-      "avg_days_held": 5.2,
-      "by_year": {
-        "2016": {
-          "trades": 256,
-          "expectancy_R": -0.155
-        },
-        "2017": {
-          "trades": 126,
-          "expectancy_R": -0.025
-        },
-        "2018": {
-          "trades": 161,
-          "expectancy_R": -0.092
-        },
-        "2019": {
-          "trades": 298,
-          "expectancy_R": 0.223
-        },
-        "2020": {
-          "trades": 280,
-          "expectancy_R": 0.072
-        },
-        "2021": {
-          "trades": 212,
-          "expectancy_R": -0.186
-        },
-        "2022": {
-          "trades": 241,
-          "expectancy_R": 0.028
-        },
-        "2023": {
-          "trades": 235,
-          "expectancy_R": 0.102
-        },
-        "2024": {
-          "trades": 279,
-          "expectancy_R": -0.195
-        },
-        "2025": {
-          "trades": 418,
-          "expectancy_R": 0.043
-        },
-        "2026": {
-          "trades": 240,
-          "expectancy_R": 0.088
+      "all": {
+        "signals": 11201,
+        "per_year": 1040.7,
+        "excess_5d_pct": -0.06,
+        "excess_10d_pct": -0.14,
+        "excess_20d_pct": -0.26,
+        "median_excess_20d_pct": -0.58,
+        "beat_market_20d_pct": 46.9,
+        "raw_20d_pct": 1.1,
+        "by_year": {
+          "2016": {
+            "signals": 809,
+            "excess_10d_pct": -0.12
+          },
+          "2017": {
+            "signals": 551,
+            "excess_10d_pct": -0.46
+          },
+          "2018": {
+            "signals": 664,
+            "excess_10d_pct": -0.29
+          },
+          "2019": {
+            "signals": 1050,
+            "excess_10d_pct": -0.34
+          },
+          "2020": {
+            "signals": 1154,
+            "excess_10d_pct": 0.17
+          },
+          "2021": {
+            "signals": 848,
+            "excess_10d_pct": -0.39
+          },
+          "2022": {
+            "signals": 1079,
+            "excess_10d_pct": 0.23
+          },
+          "2023": {
+            "signals": 1134,
+            "excess_10d_pct": -0.28
+          },
+          "2024": {
+            "signals": 1138,
+            "excess_10d_pct": -0.35
+          },
+          "2025": {
+            "signals": 1688,
+            "excess_10d_pct": 0.06
+          },
+          "2026": {
+            "signals": 1086,
+            "excess_10d_pct": -0.11
+          }
+        }
+      },
+      "market": {
+        "signals": 9325,
+        "per_year": 866.4,
+        "excess_5d_pct": -0.12,
+        "excess_10d_pct": -0.13,
+        "excess_20d_pct": -0.27,
+        "median_excess_20d_pct": -0.69,
+        "beat_market_20d_pct": 46.6,
+        "raw_20d_pct": 0.82,
+        "by_year": {
+          "2016": {
+            "signals": 650,
+            "excess_10d_pct": -0.23
+          },
+          "2017": {
+            "signals": 551,
+            "excess_10d_pct": -0.46
+          },
+          "2018": {
+            "signals": 601,
+            "excess_10d_pct": -0.27
+          },
+          "2019": {
+            "signals": 841,
+            "excess_10d_pct": -0.52
+          },
+          "2020": {
+            "signals": 969,
+            "excess_10d_pct": 0.45
+          },
+          "2021": {
+            "signals": 848,
+            "excess_10d_pct": -0.39
+          },
+          "2022": {
+            "signals": 229,
+            "excess_10d_pct": -0.31
+          },
+          "2023": {
+            "signals": 1098,
+            "excess_10d_pct": -0.26
+          },
+          "2024": {
+            "signals": 1138,
+            "excess_10d_pct": -0.35
+          },
+          "2025": {
+            "signals": 1415,
+            "excess_10d_pct": 0.23
+          },
+          "2026": {
+            "signals": 985,
+            "excess_10d_pct": 0.13
+          }
+        }
+      },
+      "market+RS": {
+        "signals": 2940,
+        "per_year": 273.2,
+        "excess_5d_pct": -0.03,
+        "excess_10d_pct": 0.07,
+        "excess_20d_pct": 0.23,
+        "median_excess_20d_pct": -0.48,
+        "beat_market_20d_pct": 47.6,
+        "raw_20d_pct": 1.24,
+        "by_year": {
+          "2016": {
+            "signals": 169,
+            "excess_10d_pct": -1.58
+          },
+          "2017": {
+            "signals": 234,
+            "excess_10d_pct": 0.07
+          },
+          "2018": {
+            "signals": 213,
+            "excess_10d_pct": 1.04
+          },
+          "2019": {
+            "signals": 226,
+            "excess_10d_pct": -1.14
+          },
+          "2020": {
+            "signals": 307,
+            "excess_10d_pct": 1.0
+          },
+          "2021": {
+            "signals": 288,
+            "excess_10d_pct": -0.82
+          },
+          "2022": {
+            "signals": 56,
+            "excess_10d_pct": 1.84
+          },
+          "2023": {
+            "signals": 329,
+            "excess_10d_pct": -0.38
+          },
+          "2024": {
+            "signals": 363,
+            "excess_10d_pct": 0.28
+          },
+          "2025": {
+            "signals": 459,
+            "excess_10d_pct": 0.79
+          },
+          "2026": {
+            "signals": 296,
+            "excess_10d_pct": -0.05
+          }
         }
       }
     },
     "ep": {
-      "trades": 36,
-      "trades_per_year": 3.4,
-      "win_rate_pct": 47.2,
-      "avg_win_R": 1.04,
-      "avg_loss_R": -0.91,
-      "expectancy_R": 0.009,
-      "profit_factor": 1.02,
-      "max_drawdown_R": -6.9,
-      "avg_days_held": 6.4,
-      "by_year": {
-        "2016": {
-          "trades": 7,
-          "expectancy_R": -0.696
-        },
-        "2017": {
-          "trades": 1,
-          "expectancy_R": -1.034
-        },
-        "2018": {
-          "trades": 2,
-          "expectancy_R": -0.425
-        },
-        "2019": {
-          "trades": 1,
-          "expectancy_R": 2.221
-        },
-        "2020": {
-          "trades": 3,
-          "expectancy_R": 0.783
-        },
-        "2021": {
-          "trades": 3,
-          "expectancy_R": -0.137
-        },
-        "2022": {
-          "trades": 5,
-          "expectancy_R": 0.649
-        },
-        "2023": {
-          "trades": 1,
-          "expectancy_R": -0.014
-        },
-        "2024": {
-          "trades": 5,
-          "expectancy_R": -0.385
-        },
-        "2025": {
-          "trades": 6,
-          "expectancy_R": 0.45
-        },
-        "2026": {
-          "trades": 2,
-          "expectancy_R": -0.541
+      "all": {
+        "signals": 1073,
+        "per_year": 99.7,
+        "excess_5d_pct": -0.16,
+        "excess_10d_pct": 0.32,
+        "excess_20d_pct": 1.0,
+        "median_excess_20d_pct": -0.23,
+        "beat_market_20d_pct": 49.3,
+        "raw_20d_pct": 1.97,
+        "by_year": {
+          "2016": {
+            "signals": 66,
+            "excess_10d_pct": 2.32
+          },
+          "2017": {
+            "signals": 49,
+            "excess_10d_pct": 0.95
+          },
+          "2018": {
+            "signals": 69,
+            "excess_10d_pct": -0.28
+          },
+          "2019": {
+            "signals": 74,
+            "excess_10d_pct": 1.36
+          },
+          "2020": {
+            "signals": 102,
+            "excess_10d_pct": 0.28
+          },
+          "2021": {
+            "signals": 71,
+            "excess_10d_pct": -1.02
+          },
+          "2022": {
+            "signals": 80,
+            "excess_10d_pct": 0.57
+          },
+          "2023": {
+            "signals": 111,
+            "excess_10d_pct": 0.44
+          },
+          "2024": {
+            "signals": 151,
+            "excess_10d_pct": 0.39
+          },
+          "2025": {
+            "signals": 170,
+            "excess_10d_pct": -0.09
+          },
+          "2026": {
+            "signals": 130,
+            "excess_10d_pct": -0.21
+          }
+        }
+      },
+      "market": {
+        "signals": 937,
+        "per_year": 87.1,
+        "excess_5d_pct": -0.12,
+        "excess_10d_pct": 0.51,
+        "excess_20d_pct": 1.36,
+        "median_excess_20d_pct": -0.17,
+        "beat_market_20d_pct": 49.5,
+        "raw_20d_pct": 2.1,
+        "by_year": {
+          "2016": {
+            "signals": 50,
+            "excess_10d_pct": 2.84
+          },
+          "2017": {
+            "signals": 49,
+            "excess_10d_pct": 0.95
+          },
+          "2018": {
+            "signals": 59,
+            "excess_10d_pct": -0.19
+          },
+          "2019": {
+            "signals": 68,
+            "excess_10d_pct": 1.27
+          },
+          "2020": {
+            "signals": 86,
+            "excess_10d_pct": 0.96
+          },
+          "2021": {
+            "signals": 71,
+            "excess_10d_pct": -1.02
+          },
+          "2022": {
+            "signals": 18,
+            "excess_10d_pct": -0.86
+          },
+          "2023": {
+            "signals": 105,
+            "excess_10d_pct": 0.53
+          },
+          "2024": {
+            "signals": 151,
+            "excess_10d_pct": 0.39
+          },
+          "2025": {
+            "signals": 154,
+            "excess_10d_pct": 0.63
+          },
+          "2026": {
+            "signals": 126,
+            "excess_10d_pct": 0.08
+          }
         }
       }
     },
     "rsi2": {
-      "trades": 19998,
-      "trades_per_year": 1848.7,
-      "win_rate_pct": 31.1,
-      "avg_win_R": 2.97,
-      "avg_loss_R": -1.35,
-      "expectancy_R": -0.006,
-      "profit_factor": 0.99,
-      "max_drawdown_R": -922.5,
-      "avg_days_held": 1.5,
-      "by_year": {
-        "2016": {
-          "trades": 912,
-          "expectancy_R": 0.13
-        },
-        "2017": {
-          "trades": 887,
-          "expectancy_R": 0.051
-        },
-        "2018": {
-          "trades": 1586,
-          "expectancy_R": -0.284
-        },
-        "2019": {
-          "trades": 1072,
-          "expectancy_R": -0.006
-        },
-        "2020": {
-          "trades": 1632,
-          "expectancy_R": -0.085
-        },
-        "2021": {
-          "trades": 2677,
-          "expectancy_R": 0.28
-        },
-        "2022": {
-          "trades": 1488,
-          "expectancy_R": -0.42
-        },
-        "2023": {
-          "trades": 1862,
-          "expectancy_R": -0.052
-        },
-        "2024": {
-          "trades": 2273,
-          "expectancy_R": 0.058
-        },
-        "2025": {
-          "trades": 2542,
-          "expectancy_R": -0.062
-        },
-        "2026": {
-          "trades": 3067,
-          "expectancy_R": 0.1
+      "all": {
+        "signals": 20729,
+        "per_year": 1926.0,
+        "excess_5d_pct": 0.16,
+        "excess_10d_pct": 0.21,
+        "excess_20d_pct": 0.39,
+        "median_excess_20d_pct": -0.2,
+        "beat_market_20d_pct": 48.9,
+        "raw_20d_pct": 1.52,
+        "by_year": {
+          "2016": {
+            "signals": 1034,
+            "excess_10d_pct": 0.27
+          },
+          "2017": {
+            "signals": 1002,
+            "excess_10d_pct": 0.36
+          },
+          "2018": {
+            "signals": 1786,
+            "excess_10d_pct": -0.09
+          },
+          "2019": {
+            "signals": 1158,
+            "excess_10d_pct": 0.04
+          },
+          "2020": {
+            "signals": 1864,
+            "excess_10d_pct": 0.56
+          },
+          "2021": {
+            "signals": 2648,
+            "excess_10d_pct": 0.32
+          },
+          "2022": {
+            "signals": 1556,
+            "excess_10d_pct": 0.28
+          },
+          "2023": {
+            "signals": 2011,
+            "excess_10d_pct": -0.25
+          },
+          "2024": {
+            "signals": 2390,
+            "excess_10d_pct": 0.05
+          },
+          "2025": {
+            "signals": 2574,
+            "excess_10d_pct": 0.44
+          },
+          "2026": {
+            "signals": 2706,
+            "excess_10d_pct": 0.3
+          }
+        }
+      },
+      "market": {
+        "signals": 18114,
+        "per_year": 1683.1,
+        "excess_5d_pct": 0.24,
+        "excess_10d_pct": 0.27,
+        "excess_20d_pct": 0.49,
+        "median_excess_20d_pct": -0.16,
+        "beat_market_20d_pct": 49.1,
+        "raw_20d_pct": 1.58,
+        "by_year": {
+          "2016": {
+            "signals": 866,
+            "excess_10d_pct": 0.46
+          },
+          "2017": {
+            "signals": 1002,
+            "excess_10d_pct": 0.36
+          },
+          "2018": {
+            "signals": 1408,
+            "excess_10d_pct": -0.02
+          },
+          "2019": {
+            "signals": 1095,
+            "excess_10d_pct": 0.02
+          },
+          "2020": {
+            "signals": 1698,
+            "excess_10d_pct": 0.64
+          },
+          "2021": {
+            "signals": 2648,
+            "excess_10d_pct": 0.32
+          },
+          "2022": {
+            "signals": 333,
+            "excess_10d_pct": 0.43
+          },
+          "2023": {
+            "signals": 1840,
+            "excess_10d_pct": -0.14
+          },
+          "2024": {
+            "signals": 2390,
+            "excess_10d_pct": 0.05
+          },
+          "2025": {
+            "signals": 2275,
+            "excess_10d_pct": 0.55
+          },
+          "2026": {
+            "signals": 2559,
+            "excess_10d_pct": 0.36
+          }
         }
       }
     }
