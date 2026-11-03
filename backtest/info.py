@@ -50,7 +50,7 @@ def is_relevant(title: str, symbol: str, company: str) -> bool:
     (e.g. '(DT)', 'NYSE:DT', '$DT'); plain words like 'path' or 'wing' do not count."""
     t = title.lower()
     key = company_core(company).split()[0].lower() if company else ""
-    if key and len(key) >= 3 and key in t:
+        if key and len(key) >= 5 and key not in {"best", "flex", "target", "apple", "match", "block", "visa", "general", "first", "united", "american", "national", "international", "global", "advanced", "applied", "digital", "energy", "health", "home", "royal", "southern", "western", "north", "south", "central", "public", "regional", "standard", "smart", "power", "pacific", "atlantic", "universal", "graphic"} and key in t:
         return True
     s = re.escape(symbol.lower())
     return bool(re.search(rf"(\({s}\)|:{s}\b|\${s}\b)", t))
