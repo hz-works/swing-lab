@@ -7,6 +7,9 @@ Shown (ranked, top 5 each), only when SPY is above its 200-day average:
   3. Trend pullback + stock in the top 20 % by 6-month return
 Logged only (not shown): breakout.
 
+Every candidate goes through the AAOIFI halal screen (halal.py); non-compliant
+stocks are dropped from the lists (still logged).
+
 Writes docs/signals.json, docs/latest.md and appends data/signal_log.csv.
 """
 import argparse
@@ -17,6 +20,7 @@ from datetime import datetime, timezone
 import numpy as np
 import pandas as pd
 
+from halal import screen
 from patterns import indicators, sig_breakout, sig_ep, sig_pullback, sig_rsi2
 from universe import load_universe
 
@@ -60,7 +64,6 @@ def row(sym, d, sector, extra):
         "rvol": round(float(last["Volume"] / last["vol50"]), 2) if last["vol50"] else None,
         "adr_pct": round(float(last["adr"]), 2),
         "rsi2": round(float(last["rsi2"]), 1),
-        "halal": "مبدئي (قطاع) - تحقق في Zoya",
         "tradingview": f"https://www.tradingview.com/chart/?symbol={sym.replace('-', '.')}",
     }
     r.update(extra)
@@ -116,13 +119,15 @@ def scan(data, sectors, spy):
 def write_outputs(asof, market_ok, found, spy):
     date = str(asof.date())
     spy_c = spy["Close"]
-    shown = {p: (found[p][:TOP_N] if market_ok else []) for p in ("ep", "rsi2", "pullback")}
+    ok = {p: [r for r in rows if r["halal_status"] != "fail"] for p, rows in found.items()}
+    shown = {p: (ok[p][:TOP_N] if market_ok else []) for p in ("ep", "rsi2", "pullback")}
     out = {
         "date": date,
         "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
         "market": {"ok": market_ok, "spy": round(float(spy_c.iloc[-1]), 2),
                    "spy_sma200": round(float(spy_c.rolling(200).mean().iloc[-1]), 2)},
-        "counts": {p: len(v) for p, v in found.items()},
+        "counts": {p: len(v) for p, v in ok.items()},
+        "halal_excluded": {p: len(found[p]) - len(ok[p]) for p in found},
         "patterns": {p: [{k: v for k, v in r.items() if k != "_score"} for r in rows]
                      for p, rows in shown.items()},
     }
@@ -137,30 +142,32 @@ def write_outputs(asof, market_ok, found, spy):
         L.append(f"⛔ السوق ضعيف: SPY {out['market']['spy']} تحت متوسط 200 ({out['market']['spy_sma200']}) — لا إشارات اليوم")
     L.append("")
     for p, rows in out["patterns"].items():
-        L += [f"## {NAMES[p]} ({out['counts'][p]} إشارة، أفضل {len(rows)})", ""]
+        L += [f"## {NAMES[p]} ({out['counts'][p]} إشارة حلال، أفضل {len(rows)} · "
+              f"استُبعد {out['halal_excluded'][p]} غير متوافق)", ""]
         if not rows:
             L += ["لا يوجد", ""]
             continue
-        L += ["| السهم | السعر | التغير | الحجم النسبي | التذبذب | RSI2 | قوة السهم | ملاحظة |",
-              "|---|---|---|---|---|---|---|---|"]
+        L += ["| السهم | السعر | التغير | الحجم النسبي | التذبذب | RSI2 | قوة السهم | الحلال | ملاحظة |",
+              "|---|---|---|---|---|---|---|---|---|"]
         for r in rows:
             note = ""
             if p == "ep":
                 note = f"فجوة {r['gap_pct']}% قبل {r['days_since_gap']} يوم، حجم ×{r['gap_vol_x']}، قمة {r['gap_day_high']}"
             L.append(f"| [{r['symbol']}]({r['tradingview']}) | {r['close']} | {r['change_pct']}% | "
-                     f"×{r['rvol']} | {r['adr_pct']}% | {r['rsi2']} | {r['rs_pct']} | {note} |")
+                     f"×{r['rvol']} | {r['adr_pct']}% | {r['rsi2']} | {r['rs_pct']} | {r['halal']} | {note} |")
         L.append("")
-    L.append("الحلال: فلتر قطاع مبدئي فقط — تحقق من كل سهم في Zoya قبل الدخول.")
+    L.append("الحلال: فحص النشاط ونسبتي الديون والنقد (AAOIFI). نسبة الدخل المحرّم غير متوفرة مجاناً — أكّدها في Zoya قبل الدخول.")
     with open(os.path.join(ROOT, "docs", "latest.md"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(L) + "\n")
 
     # signal log: every signal (shown or not) for later evaluation
     log_rows = []
     for p, rows in found.items():
+        shown_syms = {r["symbol"] for r in shown.get(p, [])}
         for rank, r in enumerate(rows, 1):
             log_rows.append({"date": date, "symbol": r["symbol"], "pattern": p, "rank": rank,
                              "close": r["close"], "market_ok": market_ok,
-                             "shown": market_ok and p != "breakout" and rank <= TOP_N})
+                             "halal": r["halal_status"], "shown": r["symbol"] in shown_syms})
     os.makedirs(os.path.join(ROOT, "data"), exist_ok=True)
     path = os.path.join(ROOT, "data", "signal_log.csv")
     log = pd.DataFrame(log_rows)
@@ -186,6 +193,17 @@ def main():
         data = download(uni["Symbol"].tolist() + ["SPY"])
     spy = data.pop("SPY")
     asof, market_ok, found = scan(data, sectors, spy)
+    candidates = sorted({r["symbol"] for rows in found.values() for r in rows})
+    if args.csv_dir:  # offline test: no fundamentals
+        verdicts = {s: {"status": "doubtful", "label": "⚠️ اختبار", "debt_pct": None, "cash_pct": None}
+                    for s in candidates}
+    else:
+        verdicts = screen(candidates, os.path.join(ROOT, "data", "halal_cache.json"))
+    for rows in found.values():
+        for r in rows:
+            v = verdicts[r["symbol"]]
+            r.update(halal=v["label"], halal_status=v["status"],
+                     debt_pct=v["debt_pct"], cash_pct=v["cash_pct"])
     write_outputs(asof, market_ok, found, spy)
 
 
