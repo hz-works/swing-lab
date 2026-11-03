@@ -1,4 +1,16 @@
-"""Backtest the four swing patterns and write results/ (summary + trades)."""
+"""Pattern-quality test: after a pattern appears, does the stock beat the market?
+
+No entries, stops or position sizes are simulated (those are decided by hand).
+For every signal on day t we measure the return from the NEXT day's open to the
+close 5, 10 and 20 trading days later, minus SPY's return over the same window
+("excess return"). Each pattern is compared with a baseline: all liquid
+stock-days in the universe, so we see whether the pattern adds anything.
+
+Variants:
+  all      every signal
+  market   only when SPY closes above its 200-day average
+  market+RS  market filter + stock in the top 20 % by 6-month return
+"""
 import argparse
 import json
 import os
@@ -7,15 +19,17 @@ import time
 import numpy as np
 import pandas as pd
 
-from patterns import indicators, simulate
+from patterns import base_filter, indicators, sig_breakout, sig_ep, sig_pullback, sig_rsi2
 from universe import load_universe
 
-NAMES_AR = {
-    "pullback": "ارتداد الترند",
-    "breakout": "الاختراق",
-    "ep": "فجوة الأرباح (EP)",
-    "rsi2": "التشبع البيعي RSI-2",
+HORIZONS = (5, 10, 20)
+PATTERNS = {
+    "pullback": ("ارتداد الترند", sig_pullback, True),
+    "breakout": ("الاختراق", sig_breakout, True),
+    "ep": ("فجوة الأرباح (EP)", sig_ep, False),
+    "rsi2": ("التشبع البيعي RSI-2", sig_rsi2, False),
 }
+VARIANT_AR = {"all": "كل الإشارات", "market": "مع فلتر السوق", "market+RS": "فلتر السوق + قوة السهم"}
 
 
 def download(symbols, start):
@@ -46,58 +60,72 @@ def download(symbols, start):
     return data
 
 
-def max_drawdown_r(r_by_exit: pd.Series) -> float:
-    eq = r_by_exit.cumsum()
-    return float((eq - eq.cummax()).min()) if len(eq) else 0.0
+def dedupe(sig: pd.DataFrame, days: int = 5) -> pd.DataFrame:
+    """Keep a signal only if the same stock had no signal in the previous `days` days."""
+    prev = sig.shift(1, fill_value=False).astype(int).rolling(days, min_periods=1).max()
+    return sig & ~prev.astype(bool)
 
 
-def summarize(tr: pd.DataFrame) -> dict:
-    r = tr["R"]
-    wins, losses = r[r > 0], r[r <= 0]
-    gross_loss = -losses.sum()
-    years = (tr["exit_date"].max() - tr["entry_date"].min()).days / 365.25
-    by_year = tr.groupby(tr["exit_date"].dt.year)["R"].agg(["count", "mean"]).round(3)
-    return {
-        "trades": int(len(r)),
-        "trades_per_year": round(len(r) / years, 1) if years > 0 else None,
-        "win_rate_pct": round(100 * len(wins) / len(r), 1),
-        "avg_win_R": round(float(wins.mean()), 2) if len(wins) else 0,
-        "avg_loss_R": round(float(losses.mean()), 2) if len(losses) else 0,
-        "expectancy_R": round(float(r.mean()), 3),
-        "profit_factor": round(float(wins.sum() / gross_loss), 2) if gross_loss > 0 else None,
-        "max_drawdown_R": round(max_drawdown_r(tr.sort_values("exit_date")["R"]), 1),
-        "avg_days_held": round(float(tr["days"].mean()), 1),
-        "by_year": {int(y): {"trades": int(row["count"]), "expectancy_R": float(row["mean"])}
-                    for y, row in by_year.iterrows()},
-    }
+def stats(mask: pd.DataFrame, excess: dict, raw20: pd.DataFrame, years: float) -> dict:
+    m = mask.to_numpy()
+    out = {"signals": int(m.sum())}
+    out["per_year"] = round(out["signals"] / years, 1)
+    if out["signals"] == 0:
+        return out
+    for h in HORIZONS:
+        x = excess[h].to_numpy()[m]
+        x = x[~np.isnan(x)]
+        out[f"excess_{h}d_pct"] = round(100 * float(np.mean(x)), 2)
+    x20 = excess[20].to_numpy()[m]
+    x20 = x20[~np.isnan(x20)]
+    out["median_excess_20d_pct"] = round(100 * float(np.median(x20)), 2)
+    out["beat_market_20d_pct"] = round(100 * float(np.mean(x20 > 0)), 1)
+    r20 = raw20.to_numpy()[m]
+    out["raw_20d_pct"] = round(100 * float(np.nanmean(r20)), 2)
+    by_year = {}
+    dates = np.repeat(mask.index.year.to_numpy()[:, None], mask.shape[1], axis=1)[m]
+    x10 = excess[10].to_numpy()[m]
+    for y in np.unique(dates):
+        sel = (dates == y) & ~np.isnan(x10)
+        if sel.any():
+            by_year[int(y)] = {"signals": int(sel.sum()),
+                               "excess_10d_pct": round(100 * float(np.mean(x10[sel])), 2)}
+    out["by_year"] = by_year
+    return out
 
 
-def write_markdown(summary: dict, meta: dict, path: str):
-    lines = [
-        "# نتائج الاختبار التاريخي — أنماط السوينج",
+def write_markdown(res: dict, meta: dict, path: str):
+    L = [
+        "# جودة الأنماط — هل يتفوق السهم على السوق بعد ظهور النمط؟",
         "",
-        f"الفترة: {meta['start']} حتى {meta['end']} · الأسهم المختبرة: {meta['symbols']}",
+        f"الفترة: {meta['start']} حتى {meta['end']} · الأسهم: {meta['symbols']} · "
+        "الدخول افتراضياً عند افتتاح اليوم التالي · بدون تكاليف",
         "",
-        "| النمط | الصفقات | بالسنة | نسبة الربح | متوسط الربح | متوسط الخسارة | التوقع لكل صفقة | معامل الربح | أسوأ تراجع |",
-        "|---|---|---|---|---|---|---|---|---|",
+        "العائد الزائد = عائد السهم ناقص عائد SPY في نفس الفترة.",
+        "",
+        "| النمط | النسخة | إشارات بالسنة | زائد 5 أيام | زائد 10 أيام | زائد 20 يوم | تفوّق على السوق (20 يوم) |",
+        "|---|---|---|---|---|---|---|",
     ]
-    for p, s in summary.items():
-        lines.append(
-            f"| {NAMES_AR[p]} | {s['trades']} | {s['trades_per_year']} | {s['win_rate_pct']}% "
-            f"| {s['avg_win_R']}R | {s['avg_loss_R']}R | {s['expectancy_R']}R "
-            f"| {s['profit_factor']} | {s['max_drawdown_R']}R |"
-        )
-    lines += ["", "R = مقدار المخاطرة في الصفقة (المسافة بين الدخول والوقف).", ""]
+    b = res["baseline"]
+    L.append(f"| **المرجع: كل الأسهم** | أيام عشوائية | — | {b['excess_5d_pct']}% | "
+             f"{b['excess_10d_pct']}% | {b['excess_20d_pct']}% | {b['beat_market_20d_pct']}% |")
+    for p, variants in res["patterns"].items():
+        for v, s in variants.items():
+            if s["signals"] == 0:
+                continue
+            L.append(f"| {PATTERNS[p][0]} | {VARIANT_AR[v]} | {s['per_year']} | {s['excess_5d_pct']}% "
+                     f"| {s['excess_10d_pct']}% | {s['excess_20d_pct']}% | {s['beat_market_20d_pct']}% |")
+    L.append("")
     with open(path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(lines))
+        fh.write("\n".join(L))
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--start", default="2016-01-01")
     ap.add_argument("--data-start", default="2014-06-01")
-    ap.add_argument("--limit", type=int, default=0, help="test with first N symbols")
-    ap.add_argument("--csv-dir", default="", help="read OHLCV CSVs instead of downloading")
+    ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--csv-dir", default="")
     ap.add_argument("--out", default="results")
     args = ap.parse_args()
 
@@ -108,29 +136,56 @@ def main():
         symbols = load_universe()["Symbol"].tolist()
         if args.limit:
             symbols = symbols[: args.limit]
-        data = download(symbols, args.data_start)
+        data = download(symbols + ["SPY"], args.data_start)
+    spy = data.pop("SPY")
+    idx = spy.index
 
-    trades = []
-    for sym, df in data.items():
+    opens = pd.DataFrame({s: df["Open"] for s, df in data.items()}).reindex(idx)
+    closes = pd.DataFrame({s: df["Close"] for s, df in data.items()}).reindex(idx)
+    spy_c, spy_o = spy["Close"], spy["Open"]
+    market_ok = (spy_c > spy_c.rolling(200).mean()).to_numpy()[:, None]
+    rs_top = (closes.pct_change(126, fill_method=None).rank(axis=1, pct=True) >= 0.8).to_numpy()
+
+    excess, raw20 = {}, None
+    for h in HORIZONS:
+        stock = closes.shift(-h) / opens.shift(-1) - 1
+        bench = spy_c.shift(-h) / spy_o.shift(-1) - 1
+        excess[h] = stock.sub(bench, axis=0)
+        if h == 20:
+            raw20 = stock
+
+    sigs = {p: {} for p in PATTERNS}
+    base = {}
+    for s, df in data.items():
         d = indicators(df)
-        for t in simulate(d, args.start):
-            t["symbol"] = sym
-            trades.append(t)
-    tr = pd.DataFrame(trades)
-    os.makedirs(args.out, exist_ok=True)
-    if tr.empty:
-        print("no trades")
-        return
-    tr = tr.drop(columns=["entry_i", "exit_i"])
-    tr["R"] = tr["R"].round(3)
-    tr.to_csv(os.path.join(args.out, "trades.csv"), index=False)
+        base[s] = base_filter(d, 8).reindex(idx, fill_value=False)
+        for p, (_, fn, _) in PATTERNS.items():
+            sigs[p][s] = fn(d).fillna(False).astype(bool).reindex(idx, fill_value=False)
 
-    summary = {p: summarize(tr[tr["pattern"] == p]) for p in NAMES_AR if (tr["pattern"] == p).any()}
-    meta = {"start": args.start, "end": str(tr["exit_date"].max().date()), "symbols": len(data),
-            "slippage_per_side_pct": 0.05}
+    in_period = np.asarray(idx >= pd.Timestamp(args.start))[:, None]
+    has_fwd = excess[20].notna().to_numpy()
+    valid = in_period & has_fwd
+    years = (idx[-21] - pd.Timestamp(args.start)).days / 365.25
+
+    base_mask = pd.DataFrame(base).reindex(columns=closes.columns).to_numpy() & valid
+    res = {"baseline": stats(pd.DataFrame(base_mask, index=idx), excess, raw20, years), "patterns": {}}
+    for p, (_, _, use_rs) in PATTERNS.items():
+        sig = dedupe(pd.DataFrame(sigs[p]).reindex(columns=closes.columns)).to_numpy() & valid
+        variants = {"all": sig, "market": sig & market_ok}
+        if use_rs:
+            variants["market+RS"] = sig & market_ok & rs_top
+        res["patterns"][p] = {v: stats(pd.DataFrame(m, index=idx), excess, raw20, years)
+                              for v, m in variants.items()}
+
+    os.makedirs(args.out, exist_ok=True)
+    for old in ("trades.csv",):
+        if os.path.exists(os.path.join(args.out, old)):
+            os.remove(os.path.join(args.out, old))
+    meta = {"start": args.start, "end": str(idx[-21].date()), "symbols": len(data),
+            "entry": "next open", "costs": "none"}
     with open(os.path.join(args.out, "summary.json"), "w", encoding="utf-8") as fh:
-        json.dump({"meta": meta, "patterns": summary}, fh, ensure_ascii=False, indent=2, default=str)
-    write_markdown(summary, meta, os.path.join(args.out, "summary.md"))
+        json.dump({"meta": meta, **res}, fh, ensure_ascii=False, indent=2)
+    write_markdown(res, meta, os.path.join(args.out, "summary.md"))
     print(open(os.path.join(args.out, "summary.md"), encoding="utf-8").read())
 
 
