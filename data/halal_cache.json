@@ -9,6 +9,16 @@
    "totalDebt": 4148000000
   }
  },
+ "ACAD": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Biotechnology",
+   "marketCap": 3544582656,
+   "sector": "Healthcare",
+   "totalCash": 956473984,
+   "totalDebt": 73854000
+  }
+ },
  "AMRX": {
   "checked": "2026-11-03",
   "info": {
@@ -99,6 +109,16 @@
    "totalDebt": 2081016064
   }
  },
+ "CDW": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Information Technology Services",
+   "marketCap": 18863878144,
+   "sector": "Technology",
+   "totalCash": 361800000,
+   "totalDebt": 6429499904
+  }
+ },
  "CERT": {
   "checked": "2026-11-03",
   "info": {
@@ -117,6 +137,16 @@
    "sector": "Healthcare",
    "totalCash": 23586000896,
    "totalDebt": 15541999616
+  }
+ },
+ "CNK": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Entertainment",
+   "marketCap": 4546063360,
+   "sector": "Communication Services",
+   "totalCash": 507600000,
+   "totalDebt": 2967600128
   }
  },
  "COO": {
