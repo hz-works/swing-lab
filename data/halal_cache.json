@@ -59,6 +59,16 @@
    "totalDebt": 4140999936
   }
  },
+ "BIIB": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Drug Manufacturers - General",
+   "marketCap": 37076271104,
+   "sector": "Healthcare",
+   "totalCash": 1303900032,
+   "totalDebt": 7801299968
+  }
+ },
  "BOX": {
   "checked": "2026-11-03",
   "info": {
@@ -189,6 +199,16 @@
    "totalDebt": 159272992
   }
  },
+ "DVN": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 52778000384,
+   "sector": "Energy",
+   "totalCash": 950000000,
+   "totalDebt": 11893000192
+  }
+ },
  "DXC": {
   "checked": "2026-11-03",
   "info": {
@@ -197,6 +217,16 @@
    "sector": "Technology",
    "totalCash": 1599000064,
    "totalDebt": 3692999936
+  }
+ },
+ "EAT": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Restaurants",
+   "marketCap": 8666846208,
+   "sector": "Consumer Cyclical",
+   "totalCash": 30700000,
+   "totalDebt": 1799100032
   }
  },
  "EIX": {
@@ -267,6 +297,16 @@
    "sector": "Consumer Defensive",
    "totalCash": 74199000,
    "totalDebt": 1850872064
+  }
+ },
+ "HALO": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Biotechnology",
+   "marketCap": 14768359424,
+   "sector": "Healthcare",
+   "totalCash": 231003008,
+   "totalDebt": 2178533120
   }
  },
  "HAS": {
@@ -349,6 +389,16 @@
    "totalDebt": 34292000768
   }
  },
+ "MTCH": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Internet Content & Information",
+   "marketCap": 9034435584,
+   "sector": "Communication Services",
+   "totalCash": 583808000,
+   "totalDebt": 3668239872
+  }
+ },
  "MTDR": {
   "checked": "2026-11-03",
   "info": {
@@ -357,6 +407,16 @@
    "sector": "Energy",
    "totalCash": 26318000,
    "totalDebt": 4319641088
+  }
+ },
+ "MUR": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 5649406464,
+   "sector": "Energy",
+   "totalCash": 483875008,
+   "totalDebt": 2263731968
   }
  },
  "NCLH": {
@@ -377,6 +437,26 @@
    "sector": "Energy",
    "totalCash": 47603000,
    "totalDebt": 2724814080
+  }
+ },
+ "OVV": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 18570924032,
+   "sector": "Energy",
+   "totalCash": 700000000,
+   "totalDebt": 5029000192
+  }
+ },
+ "PANW": {
+  "checked": "2026-11-03",
+  "info": {
+   "industry": "Software - Infrastructure",
+   "marketCap": 286880694272,
+   "sector": "Technology",
+   "totalCash": 3071000064,
+   "totalDebt": 2567000064
   }
  },
  "PATH": {
