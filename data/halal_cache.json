@@ -519,6 +519,16 @@
    "totalDebt": 14744000512
   }
  },
+ "KD": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Information Technology Services",
+   "marketCap": 3668059392,
+   "sector": "Technology",
+   "totalCash": 2104000000,
+   "totalDebt": 4929999872
+  }
+ },
  "KMB": {
   "checked": "2026-11-03",
   "info": {
@@ -609,6 +619,16 @@
    "totalDebt": 53910999040
   }
  },
+ "MSM": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Industrial Distribution",
+   "marketCap": null,
+   "sector": "Industrials",
+   "totalCash": 65028000,
+   "totalDebt": 528193984
+  }
+ },
  "MTCH": {
   "checked": "2026-11-03",
   "info": {
@@ -659,6 +679,16 @@
    "totalDebt": 16026825728
   }
  },
+ "NEOG": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Medical Devices",
+   "marketCap": 2720093184,
+   "sector": "Healthcare",
+   "totalCash": 172000000,
+   "totalDebt": 774300032
+  }
+ },
  "NOG": {
   "checked": "2026-11-03",
   "info": {
@@ -687,6 +717,16 @@
    "sector": "Energy",
    "totalCash": 186000000,
    "totalDebt": 28519999488
+  }
+ },
+ "OPLN": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Auto & Truck Dealerships",
+   "marketCap": 4487287808,
+   "sector": "Consumer Cyclical",
+   "totalCash": 189700000,
+   "totalDebt": 2472499968
   }
  },
  "OVV": {
@@ -757,6 +797,16 @@
    "sector": "Utilities",
    "totalCash": 902000000,
    "totalDebt": 65478000640
+  }
+ },
+ "PFGC": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Food Distribution",
+   "marketCap": 17260894208,
+   "sector": "Consumer Defensive",
+   "totalCash": 93200000,
+   "totalDebt": 7782499840
   }
  },
  "PK": {
@@ -909,6 +959,26 @@
    "totalDebt": 913016000
   }
  },
+ "STLD": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Steel",
+   "marketCap": 34149263360,
+   "sector": "Basic Materials",
+   "totalCash": 928558016,
+   "totalDebt": 4412827136
+  }
+ },
+ "SWK": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Tools & Accessories",
+   "marketCap": 17869799424,
+   "sector": "Industrials",
+   "totalCash": 592400000,
+   "totalDebt": 5211500032
+  }
+ },
  "SWKS": {
   "checked": "2026-11-04",
   "info": {
@@ -927,6 +997,16 @@
    "sector": "Energy",
    "totalCash": 577587008,
    "totalDebt": 1343800064
+  }
+ },
+ "TREX": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Building Products & Equipment",
+   "marketCap": 5821595648,
+   "sector": "Industrials",
+   "totalCash": 6475000,
+   "totalDebt": 303372000
   }
  },
  "TSLA": {
@@ -997,6 +1077,26 @@
    "sector": "Energy",
    "totalCash": 12152999936,
    "totalDebt": 34250000384
+  }
+ },
+ "YOU": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Software - Application",
+   "marketCap": 6079985152,
+   "sector": "Technology",
+   "totalCash": 959267968,
+   "totalDebt": 109766000
+  }
+ },
+ "ZBH": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Medical Devices",
+   "marketCap": 21009758208,
+   "sector": "Healthcare",
+   "totalCash": 464500000,
+   "totalDebt": 7601699840
   }
  }
 }

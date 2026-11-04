@@ -1,21 +1,21 @@
 {
   "date": "2026-11-04",
-  "generated_utc": "2026-11-04 19:01",
+  "generated_utc": "2026-11-04 22:59",
   "market": {
     "ok": true,
-    "spy": 767.44,
-    "spy_sma200": 727.13
+    "spy": 766.81,
+    "spy_sma200": 727.12
   },
   "counts": {
-    "ep": 3,
-    "rsi2": 18,
-    "pullback": 9,
-    "breakout": 1
+    "ep": 6,
+    "rsi2": 20,
+    "pullback": 8,
+    "breakout": 2
   },
   "halal_excluded": {
-    "ep": 1,
-    "rsi2": 10,
-    "pullback": 3,
+    "ep": 5,
+    "rsi2": 7,
+    "pullback": 1,
     "breakout": 0
   },
   "patterns": {
@@ -23,11 +23,11 @@
       {
         "symbol": "GKOS",
         "sector": "Health Care",
-        "close": 254.59,
-        "change_pct": 9.25,
-        "rvol": 0.82,
-        "adr_pct": 5.52,
-        "rsi2": 88.3,
+        "close": 246.7,
+        "change_pct": 5.86,
+        "rvol": 1.64,
+        "adr_pct": 5.53,
+        "rsi2": 84.0,
         "tradingview": "https://www.tradingview.com/chart/?symbol=GKOS",
         "days_since_gap": 4,
         "gap_pct": 33.6,
@@ -69,9 +69,9 @@
       {
         "symbol": "CROX",
         "sector": "Consumer Discretionary",
-        "close": 160.26,
-        "change_pct": 4.33,
-        "rvol": 0.6,
+        "close": 159.84,
+        "change_pct": 4.06,
+        "rvol": 1.44,
         "adr_pct": 3.62,
         "rsi2": 99.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=CROX",
@@ -81,7 +81,7 @@
         "gap_day_high": 151.82,
         "gap_day_low": 139.33,
         "pre_run_pct": -15.2,
-        "rs_pct": 94,
+        "rs_pct": 93,
         "halal": "✅ متوافق مبدئياً (الديون 23.4%، النقد 2.3%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 23.4,
@@ -112,41 +112,131 @@
         ]
       },
       {
-        "symbol": "NBIX",
-        "sector": "Health Care",
-        "close": 168.93,
-        "change_pct": 2.47,
-        "rvol": 1.04,
-        "adr_pct": 2.64,
-        "rsi2": 98.3,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=NBIX",
-        "days_since_gap": 1,
-        "gap_pct": 13.4,
-        "gap_vol_x": 3.2,
-        "gap_day_high": 169.53,
-        "gap_day_low": 157.91,
-        "pre_run_pct": -11.1,
-        "rs_pct": 68,
-        "halal": "✅ متوافق مبدئياً (الديون 2.8%، النقد 2.3%) — أكّد الدخل المحرّم في Zoya",
+        "symbol": "SWK",
+        "sector": "Industrials",
+        "close": 118.33,
+        "change_pct": 13.1,
+        "rvol": 3.79,
+        "adr_pct": 3.41,
+        "rsi2": 93.3,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=SWK",
+        "days_since_gap": 0,
+        "gap_pct": 13.1,
+        "gap_vol_x": 4.0,
+        "gap_day_high": 122.68,
+        "gap_day_low": 110.04,
+        "pre_run_pct": 2.8,
+        "rs_pct": 92,
+        "halal": "✅ متوافق مبدئياً (الديون 29.2%، النقد 3.3%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
-        "debt_pct": 2.8,
-        "cash_pct": 2.3,
-        "earnings_date": null,
-        "earnings_in_days": null,
+        "debt_pct": 29.2,
+        "cash_pct": 3.3,
+        "earnings_date": "2026-11-04",
+        "earnings_in_days": 0,
         "news": [
           {
-            "title": "Is Neurocrine Biosciences (NBIX) A Bargain On Raised INGREZZA Guidance?",
-            "url": "https://finance.yahoo.com/healthcare/articles/neurocrine-biosciences-nbix-bargain-raised-200954149.html",
-            "provider": "Simply Wall St.",
-            "time_utc": "2026-11-03 20:09",
-            "title_ar": "هل العلوم البيولوجية العصبية (NBIX) هي صفقة بشأن إرشادات INGREZZA المرتفعة؟"
+            "title": "Stanley Black & Decker raises EPS outlook after tariff refund boost",
+            "url": "https://finance.yahoo.com/economy/policy/articles/stanley-black-decker-raises-outlook-205350308.html",
+            "provider": "CFO Dive",
+            "time_utc": "2026-11-04 20:53",
+            "title_ar": "ترفع شركة Stanley Black & Decker توقعات أرباح السهم بعد زيادة استرداد الرسوم الجمركية"
           },
           {
-            "title": "Neurocrine Biosciences (NBIX) Starts Phase 2 Alzheimer’s Study And Expands Doctor Education",
-            "url": "https://finance.yahoo.com/healthcare/articles/neurocrine-biosciences-nbix-starts-phase-191341532.html",
-            "provider": "Simply Wall St.",
-            "time_utc": "2026-11-03 19:13",
-            "title_ar": "العلوم البيولوجية العصبية (NBIX) تبدأ المرحلة الثانية من دراسة مرض الزهايمر وتوسع تعليم الأطباء"
+            "title": "Why Stanley Black & Decker Is Having Its Best Day in Years",
+            "url": "https://www.barrons.com/articles/stanley-black-decker-earnings-stock-price-32a92ca0?siteid=yhoof2&yptr=yahoo",
+            "provider": "Barrons.com",
+            "time_utc": "2026-11-04 19:57",
+            "title_ar": "لماذا يقضي ستانلي بلاك آند ديكر أفضل يوم له منذ سنوات؟"
+          }
+        ],
+        "news_src": "yahoo",
+        "stars": 3,
+        "reasons": [
+          "fresh",
+          "neglected"
+        ]
+      },
+      {
+        "symbol": "YOU",
+        "sector": "Information Technology",
+        "close": 59.08,
+        "change_pct": 23.7,
+        "rvol": 3.73,
+        "adr_pct": 4.59,
+        "rsi2": 98.9,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=YOU",
+        "days_since_gap": 0,
+        "gap_pct": 23.7,
+        "gap_vol_x": 4.0,
+        "gap_day_high": 66.17,
+        "gap_day_low": 51.3,
+        "pre_run_pct": -6.4,
+        "rs_pct": 39,
+        "halal": "✅ متوافق مبدئياً (الديون 1.8%، النقد 15.8%) — أكّد الدخل المحرّم في Zoya",
+        "halal_status": "pass",
+        "debt_pct": 1.8,
+        "cash_pct": 15.8,
+        "earnings_date": "2026-11-04",
+        "earnings_in_days": 0,
+        "news": [
+          {
+            "title": "Clear Secure, Inc. Q3 2026 Earnings Call Summary",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/clear-secure-inc-q3-2026-182514262.html",
+            "provider": "Moby",
+            "time_utc": "2026-11-04 18:25",
+            "title_ar": "Clear Secure, Inc. ملخص المكالمات الهاتفية لأرباح الربع الثالث من عام 2026"
+          },
+          {
+            "title": "Clear Secure (YOU) Q3 2026 Earnings Call Transcript",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/clear-secure-q3-2026-earnings-180400194.html",
+            "provider": "Motley Fool",
+            "time_utc": "2026-11-04 18:04",
+            "title_ar": "مسح نص المكالمات الهاتفية لأرباح الربع الثالث من عام 2026 بشكل آمن (أنت)."
+          }
+        ],
+        "news_src": "yahoo",
+        "stars": 3,
+        "reasons": [
+          "fresh",
+          "neglected"
+        ]
+      },
+      {
+        "symbol": "TREX",
+        "sector": "Industrials",
+        "close": 57.15,
+        "change_pct": 14.3,
+        "rvol": 3.27,
+        "adr_pct": 3.57,
+        "rsi2": 94.3,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=TREX",
+        "days_since_gap": 0,
+        "gap_pct": 14.3,
+        "gap_vol_x": 3.4,
+        "gap_day_high": 58.69,
+        "gap_day_low": 53.26,
+        "pre_run_pct": 3.8,
+        "rs_pct": 89,
+        "halal": "✅ متوافق مبدئياً (الديون 5.2%، النقد 0.1%) — أكّد الدخل المحرّم في Zoya",
+        "halal_status": "pass",
+        "debt_pct": 5.2,
+        "cash_pct": 0.1,
+        "earnings_date": "2026-11-04",
+        "earnings_in_days": 0,
+        "news": [
+          {
+            "title": "Trex Company (TREX) Q3 2026 Earnings Call Transcript",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/trex-company-trex-q3-2026-184821550.html",
+            "provider": "Motley Fool",
+            "time_utc": "2026-11-04 18:48",
+            "title_ar": "شركة تريكس (TREX) نص المكالمات الهاتفية لأرباح الربع الثالث من عام 2026"
+          },
+          {
+            "title": "Trex (TREX) Tops Q3 Earnings and Revenue Estimates",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/trex-trex-tops-q3-earnings-115003011.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-04 11:50",
+            "title_ar": "تريكس (TREX) يتصدر أرباح الربع الثالث وتقديرات الإيرادات"
           }
         ],
         "news_src": "yahoo",
@@ -161,14 +251,14 @@
       {
         "symbol": "PLTR",
         "sector": "Information Technology",
-        "close": 170.74,
-        "change_pct": -2.66,
-        "rvol": 0.94,
+        "close": 171.7,
+        "change_pct": -2.11,
+        "rvol": 1.37,
         "adr_pct": 4.99,
-        "rsi2": 0.3,
+        "rsi2": 0.4,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PLTR",
         "rs_pct": 80,
-        "dist200_pct": 11.2,
+        "dist200_pct": 11.8,
         "halal": "✅ متوافق مبدئياً (الديون 0.1%، النقد 2.2%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.1,
@@ -177,18 +267,18 @@
         "earnings_in_days": 89,
         "news": [
           {
+            "title": "Cathie Wood Picks a Side Between Palantir and Google",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-picks-side-between-192037247.html",
+            "provider": "GuruFocus.com",
+            "time_utc": "2026-11-04 19:20",
+            "title_ar": "كاثي وود تختار جانبًا بين Palantir وGoogle"
+          },
+          {
             "title": "Why Palantir Technologies Stock Dropped Today",
             "url": "https://finance.yahoo.com/markets/stocks/articles/why-palantir-technologies-stock-dropped-170623943.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-04 17:06",
             "title_ar": "لماذا انخفض سهم Palantir Technologies اليوم"
-          },
-          {
-            "title": "Palantir (PLTR) Grew 93% With a 62% Operating Margin. Is the “AI Sovereignty” Demand Real?",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-pltr-grew-93-62-165943138.html",
-            "provider": "Insider Monkey",
-            "time_utc": "2026-11-04 16:59",
-            "title_ar": "نمت شركة Palantir (PLTR) بنسبة 93% بهامش تشغيل بلغ 62%. هل مطلب \"سيادة الذكاء الاصطناعي\" حقيقي؟"
           }
         ],
         "news_src": "yahoo",
@@ -203,14 +293,14 @@
       {
         "symbol": "PANW",
         "sector": "Information Technology",
-        "close": 349.98,
-        "change_pct": -0.06,
-        "rvol": 0.48,
+        "close": 348.04,
+        "change_pct": -0.62,
+        "rvol": 0.93,
         "adr_pct": 4.95,
-        "rsi2": 4.8,
+        "rsi2": 3.8,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PANW",
         "rs_pct": 98,
-        "dist200_pct": 28.5,
+        "dist200_pct": 27.8,
         "halal": "✅ متوافق مبدئياً (الديون 0.9%، النقد 1.1%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 0.9,
@@ -239,14 +329,14 @@
       {
         "symbol": "OVV",
         "sector": "Energy",
-        "close": 62.99,
-        "change_pct": -5.18,
-        "rvol": 0.91,
+        "close": 62.7,
+        "change_pct": -5.61,
+        "rvol": 1.76,
         "adr_pct": 3.07,
-        "rsi2": 3.0,
+        "rsi2": 2.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=OVV",
         "rs_pct": 53,
-        "dist200_pct": 9.3,
+        "dist200_pct": 8.8,
         "halal": "✅ متوافق مبدئياً (الديون 27.1%، النقد 3.8%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 27.1,
@@ -255,18 +345,18 @@
         "earnings_in_days": null,
         "news": [
           {
-            "title": "Ovintiv (OVV) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/ovintiv-ovv-q3-earnings-taking-010001989.html",
-            "provider": "Zacks",
-            "time_utc": "2026-11-04 01:00",
-            "title_ar": "أرباح Ovintiv (OVV) للربع الثالث: إلقاء نظرة على المقاييس الرئيسية مقابل التقديرات"
+            "title": "Ovintiv (OVV) Q3 2026 Earnings Call Transcript",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/ovintiv-ovv-q3-2026-earnings-210325482.html",
+            "provider": "Motley Fool",
+            "time_utc": "2026-11-04 21:03",
+            "title_ar": "نص مكالمة أرباح Ovintiv (OVV) للربع الثالث من عام 2026"
           },
           {
-            "title": "Ovintiv (OVV) Lags Q3 Earnings Estimates",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/ovintiv-ovv-lags-q3-earnings-235507164.html",
-            "provider": "Zacks",
-            "time_utc": "2026-11-03 23:55",
-            "title_ar": "Ovintiv (OVV) متخلفة عن تقديرات أرباح الربع الثالث"
+            "title": "Ovintiv Inc. Q3 2026 Earnings Call Summary",
+            "url": "https://finance.yahoo.com/energy/articles/ovintiv-inc-q3-2026-earnings-133000133.html",
+            "provider": "Moby",
+            "time_utc": "2026-11-04 13:30",
+            "title_ar": "ملخص مكالمة أرباح شركة Ovintiv للربع الثالث من عام 2026"
           }
         ],
         "news_src": "yahoo",
@@ -280,14 +370,14 @@
       {
         "symbol": "MPC",
         "sector": "Energy",
-        "close": 384.78,
-        "change_pct": -9.96,
-        "rvol": 0.92,
+        "close": 392.68,
+        "change_pct": -8.11,
+        "rvol": 1.56,
         "adr_pct": 4.39,
-        "rsi2": 3.5,
+        "rsi2": 4.2,
         "tradingview": "https://www.tradingview.com/chart/?symbol=MPC",
-        "rs_pct": 95,
-        "dist200_pct": 31.3,
+        "rs_pct": 96,
+        "dist200_pct": 33.9,
         "halal": "✅ متوافق مبدئياً (الديون 28.6%، النقد 6.5%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 28.6,
@@ -296,18 +386,18 @@
         "earnings_in_days": 90,
         "news": [
           {
+            "title": "Marathon Petroleum Sinks 10%, Valero Down 8% as Oil Stocks Slide After Democrats Win the Senate",
+            "url": "https://finance.yahoo.com/energy/articles/marathon-petroleum-sinks-10-valero-200304712.html",
+            "provider": "TIKR",
+            "time_utc": "2026-11-04 20:03",
+            "title_ar": "ماراثون بتروليوم يهبط 10% وفاليرو يهبط 8% مع تراجع مخزونات النفط بعد فوز الديمقراطيين بمجلس الشيوخ"
+          },
+          {
             "title": "Marathon Petroleum (MPC) Agrees $4.2 Billion Refinery Deal To Refocus Its Footprint",
             "url": "https://finance.yahoo.com/energy/articles/marathon-petroleum-mpc-agrees-4-141234245.html",
             "provider": "Simply Wall St.",
             "time_utc": "2026-11-04 14:12",
             "title_ar": "ماراثون بتروليوم (MPC) توافق على صفقة مصفاة بقيمة 4.2 مليار دولار لإعادة تركيز بصمتها"
-          },
-          {
-            "title": "Marathon Petroleum Corp (MPC) Q3 2026 Earnings Call Highlights: Record 100% Refinery ...",
-            "url": "https://finance.yahoo.com/energy/articles/marathon-petroleum-corp-mpc-q3-110501543.html",
-            "provider": "GuruFocus.com",
-            "time_utc": "2026-11-04 11:05",
-            "title_ar": "أبرز نتائج مكالمة ماراثون بتروليوم (MPC) للربع الثالث من عام 2026: مصفاة قياسية بنسبة 100٪ ..."
           }
         ],
         "news_src": "yahoo",
@@ -323,14 +413,14 @@
       {
         "symbol": "DT",
         "sector": "Information Technology",
-        "close": 46.62,
-        "change_pct": -0.86,
-        "rvol": 0.98,
+        "close": 46.78,
+        "change_pct": -0.53,
+        "rvol": 1.97,
         "adr_pct": 4.1,
         "rsi2": 0.1,
         "tradingview": "https://www.tradingview.com/chart/?symbol=DT",
         "rs_pct": 76,
-        "dist200_pct": 4.4,
+        "dist200_pct": 4.8,
         "halal": "✅ متوافق مبدئياً (الديون 1.1%، النقد 7.8%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 1.1,
@@ -365,11 +455,11 @@
       {
         "symbol": "VEEV",
         "sector": "Health Care",
-        "close": 309.12,
-        "change_pct": 1.95,
-        "rvol": 0.46,
-        "adr_pct": 3.01,
-        "rsi2": 61.7,
+        "close": 310.63,
+        "change_pct": 2.45,
+        "rvol": 0.87,
+        "adr_pct": 3.06,
+        "rsi2": 66.6,
         "tradingview": "https://www.tradingview.com/chart/?symbol=VEEV",
         "rs_pct": 98,
         "near_ma": "ema10",
@@ -407,11 +497,11 @@
       {
         "symbol": "DOCU",
         "sector": "Information Technology",
-        "close": 80.9,
-        "change_pct": 0.67,
-        "rvol": 0.41,
-        "adr_pct": 3.68,
-        "rsi2": 41.7,
+        "close": 80.5,
+        "change_pct": 0.17,
+        "rvol": 0.85,
+        "adr_pct": 3.71,
+        "rsi2": 22.8,
         "tradingview": "https://www.tradingview.com/chart/?symbol=DOCU",
         "rs_pct": 97,
         "near_ma": "ema10",
@@ -427,7 +517,7 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/docusign-vs-okta-tech-stock-132501117.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-04 13:25",
-            "title_ar": "Docusign vs. Okta: ما هو سهم التكنولوجيا الأفضل للشراء لعام 2027؟"
+            "title_ar": "Docusign vs. Okta: ما هي أسهم التكنولوجيا الأفضل للشراء لعام 2027؟"
           },
           {
             "title": "DocuSign (DOCU) Stock Declines While Market Improves: Some Information for Investors",
@@ -447,121 +537,119 @@
         ]
       },
       {
-        "symbol": "HALO",
+        "symbol": "A",
         "sector": "Health Care",
-        "close": 129.88,
-        "change_pct": 0.98,
-        "rvol": 0.41,
-        "adr_pct": 2.84,
-        "rsi2": 67.2,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=HALO",
-        "rs_pct": 99,
+        "close": 177.17,
+        "change_pct": 0.97,
+        "rvol": 0.7,
+        "adr_pct": 2.81,
+        "rsi2": 70.2,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=A",
+        "rs_pct": 93,
         "near_ma": "ema10",
-        "halal": "✅ متوافق مبدئياً (الديون 14.8%، النقد 1.6%) — أكّد الدخل المحرّم في Zoya",
+        "halal": "✅ متوافق مبدئياً (الديون 8.3%، النقد 3.5%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
-        "debt_pct": 14.8,
-        "cash_pct": 1.6,
+        "debt_pct": 8.3,
+        "cash_pct": 3.5,
+        "earnings_date": "2026-11-23",
+        "earnings_in_days": 19,
+        "news": [
+          {
+            "title": "Software for examining tissue, trusted by 16 of the top 20 drug companies, now belongs to Agilent.",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT2pYMl9BWTRLYmdPaFVjZ2hobFhSeWlSSWpoa1EzeXBpT1dwWXdtclYtekpyM0NINHNQUFVoNXFjYmVlYzhzVS1BcFAwTFdCZE5GcThPN0ptLTExMWl5am9KWVhrZlFRci1rbXV1RlMyWEhBUFFjZjhhZVlaUDNaUUdYWWw3Yk82X1h1Mw?oc=5",
+            "provider": "Stock Titan",
+            "time_utc": "2026-11-04 14:12",
+            "title_ar": "برنامج فحص الأنسجة، الذي تثق به 16 من أكبر 20 شركة أدوية، ينتمي الآن إلى شركة Agilent."
+          },
+          {
+            "title": "Form 8K Agilent Technologies For: 3 November By Investing.com",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTk5IczVNYm9IYlNuSGhHZzY1enBnSkp0Z3B5X2NyWklDMVRiMExzaEZvajQ5SG42NFh2dDFXZUowb1BJanZSWGh6SU9XLUNkTUhQXzZDYi12eXROcVB3ZHVmT2FtTmNoZTdaNXVNY0x0VHVuaV8yaFhJLWFpdEtHZklRU0d0SlFnMEJLWWpUUGt1LVM3X0JrczBFUDJhN2lHWVo2dlcxdk0?oc=5",
+            "provider": "Investing.com India",
+            "time_utc": "2026-11-03 18:16",
+            "title_ar": "نموذج 8K أجيلنت تكنولوجيز لـ: 3 نوفمبر بواسطة Investing.com"
+          }
+        ],
+        "news_src": "google",
+        "stars": 4,
+        "reasons": [
+          "quiet",
+          "short_ma",
+          "tight"
+        ]
+      },
+      {
+        "symbol": "CERT",
+        "sector": "Health Care",
+        "close": 11.09,
+        "change_pct": 2.02,
+        "rvol": 0.97,
+        "adr_pct": 5.34,
+        "rsi2": 73.4,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=CERT",
+        "rs_pct": 97,
+        "near_ma": "ema10",
+        "halal": "✅ متوافق مبدئياً (الديون 18.1%، النقد 11.1%) — أكّد الدخل المحرّم في Zoya",
+        "halal_status": "pass",
+        "debt_pct": 18.1,
+        "cash_pct": 11.1,
         "earnings_date": "2026-11-05",
         "earnings_in_days": 1,
         "news": [
           {
-            "title": "Halozyme Therapeutics (HALO) Q3 Earnings Preview: What You Should Know Beyond the Headline Estimates",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/halozyme-therapeutics-halo-q3-earnings-131505146.html",
-            "provider": "Zacks",
-            "time_utc": "2026-11-04 13:15",
-            "title_ar": "معاينة أرباح شركة Halozyme Therapeutics (HALO) للربع الثالث: ما يجب أن تعرفه بما يتجاوز التقديرات الرئيسية"
+            "title": "Certara earnings on deck: Can software growth offset headwinds? By Investing.com",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVy1ZakJOWXJxYnhPU2xacW1RVGllRzBDd0hYUno0NVdaUGppLXd0LTgyVmdSWWpUYUZIRkVEY2lrRG5kMHRKZXFXV1c3ZUk3d01yb195MUs2Y1RId05leGdIaDFMajRELWFIUW1mTmZfTmJpTnRtY0pDaGFXMG5fMWVQd0xndTdVTmpXQVNsdzBzTXdJQkMwOHAxTTh1bUpOU1UzUGNyYXBseTk2SXRnc2o5Szd5eGVadHpKd0JyOA?oc=5",
+            "provider": "Investing.com South Africa",
+            "time_utc": "2026-11-04 15:50",
+            "title_ar": "أرباح Certara على سطح السفينة: هل يمكن لنمو البرمجيات أن يعوض الرياح المعاكسة؟ بواسطة Investing.com"
           }
         ],
-        "news_src": "yahoo",
-        "stars": 4,
+        "news_src": "google",
+        "stars": 3,
         "reasons": [
           "rs95",
           "quiet",
           "short_ma",
-          "tight",
           "earnings_soon"
         ]
       },
       {
-        "symbol": "MRK",
+        "symbol": "RGEN",
         "sector": "Health Care",
-        "close": 149.15,
-        "change_pct": 3.1,
-        "rvol": 0.4,
-        "adr_pct": 2.98,
-        "rsi2": 70.3,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=MRK",
-        "rs_pct": 84,
+        "close": 178.2,
+        "change_pct": -0.04,
+        "rvol": 0.86,
+        "adr_pct": 4.95,
+        "rsi2": 55.2,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=RGEN",
+        "rs_pct": 89,
         "near_ma": "ema10",
-        "halal": "✅ متوافق مبدئياً (الديون 14.7%، النقد 1.9%) — أكّد الدخل المحرّم في Zoya",
+        "halal": "✅ متوافق مبدئياً (الديون 6.1%، النقد 7.6%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
-        "debt_pct": 14.7,
-        "cash_pct": 1.9,
+        "debt_pct": 6.1,
+        "cash_pct": 7.6,
         "earnings_date": null,
         "earnings_in_days": null,
         "news": [
           {
-            "title": "Merck & Co. Stock: Is Wall Street Bullish or Bearish?",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/merck-co-stock-wall-street-101931600.html",
-            "provider": "Barchart",
-            "time_utc": "2026-11-04 10:19",
-            "title_ar": "أسهم شركة ميرك وشركاه: هل وول ستريت صعودية أم هبوطية؟"
+            "title": "In London, Repligen's CEO will join an analyst-led discussion on Nov. 18.",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMjNFQktaaHNVODNPdG9kQnVGcU80ZjN2bk9XMW5tb3VUN0NRVEh3QUJQaFdrMUdRNnh3ZEhxblpMdGJGOE5feV8zc0NfSnQ2X3Bmc3doRkk0MnhEU2hfME43RVN1QXRuVGw3UkoyaVFQWTlLUW11Y1lhaVEyeEVWRW4tQWk2SGZqOWc2b2wwYnJraE9GVy01LVZfMTVKT21mQVJnUXlTeWd1RXNLX2hUMG1pbzJ0a0h5?oc=5",
+            "provider": "Stock Titan",
+            "time_utc": "2026-11-04 12:00",
+            "title_ar": "وفي لندن، سينضم الرئيس التنفيذي لشركة Repligen إلى مناقشة يقودها المحللون في 18 نوفمبر."
           },
           {
-            "title": "Moderna Climbs 5% Ahead of Earnings, Pfizer Eases Despite Raised Outlook, Merck Slides 2% Amid New Phase 3 Trial",
-            "url": "https://finance.yahoo.com/healthcare/articles/moderna-climbs-5-ahead-earnings-185305731.html",
-            "provider": "24/7 Wall St.",
-            "time_utc": "2026-11-03 18:53",
-            "title_ar": "موديرنا ترتفع بنسبة 5% قبل الأرباح، وشركة فايزر تتراجع على الرغم من التوقعات المرتفعة، وشركة ميرك تنخفض بنسبة 2% وسط تجربة المرحلة الثالثة الجديدة"
+            "title": "Repligen (RGEN) Stock Looks Reasonable Despite Its 35% Five Year Fall",
+            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbWt3STRiTFJHRFpPd2FFaUNsV291S1JBZjF3RHZpYjgzNm1Ha0k1RTdxNTZ5ckFmYk4xdWlaVk9RaEQyS0FkUUhLSFYyNDVoR0N1QVZqT1RNeTBHRkNoc1NSTnU1R1ozZW5FSkRLOHRoVWlwdGVNbDdBNXh4RmhmbGY1N2RYZ0dKUzI5bFZ2T1RvYWdIbmxIOGFRM2JDTG83bzJVX1kwX2J6ck9Rc0tYVnFoSm1FTG5EZTMtd2JFSUVHYnJneG9pMWtucW1ONTFFejFRRlNUaEZyZ9IB3wFBVV95cUxQajF2Sks2WmRVVjNsR0ZnUDRwazZmdlZaWWpaY1J4RmVVWGhTVGdCZ3drQzFKOUhlbEtIaGNlc0dBU0o4VnJhOU5IYWptVTBUbVhMaVhTMVhVMWdoNjBGdnNqNXc5SDA2NUNaNkJFVGhfUGE1Yzg1aGJYTndjRXZZdUw3SllSMFlkaE9nWXhwMmlhY05tbFltdUVBNS1WZUdzTEh6WFVCYkJ0Mk5FZWQ4WlpBWkt1TzdLNUdtckxXdXdXZmQ3OXBwTWdvOU1tdVRIZjRnSzVObzVGR2lmOHZJ?oc=5",
+            "provider": "Simply Wall St",
+            "time_utc": "2026-11-04 09:32",
+            "title_ar": "يبدو سهم Repligen (RGEN) معقولًا على الرغم من انخفاضه بنسبة 35٪ لمدة خمس سنوات"
           }
         ],
-        "news_src": "yahoo",
-        "stars": 4,
+        "news_src": "google",
+        "stars": 3,
         "reasons": [
           "quiet",
-          "short_ma",
-          "tight"
-        ]
-      },
-      {
-        "symbol": "ALKS",
-        "sector": "Health Care",
-        "close": 45.48,
-        "change_pct": -0.46,
-        "rvol": 0.36,
-        "adr_pct": 3.61,
-        "rsi2": 57.4,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=ALKS",
-        "rs_pct": 81,
-        "near_ma": "ema10",
-        "halal": "✅ متوافق مبدئياً (الديون 20.5%، النقد 8.6%) — أكّد الدخل المحرّم في Zoya",
-        "halal_status": "pass",
-        "debt_pct": 20.5,
-        "cash_pct": 8.6,
-        "earnings_date": null,
-        "earnings_in_days": null,
-        "news": [
-          {
-            "title": "Alkermes (ALKS) Stock Could Be Overvalued Following ALKS 7290 Trial Launch",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/alkermes-alks-stock-could-overvalued-121513888.html",
-            "provider": "Simply Wall St.",
-            "time_utc": "2026-11-04 12:15",
-            "title_ar": "قد تكون قيمة أسهم Alkermes (ALKS) مبالغ فيها بعد الإطلاق التجريبي لـ ALKS 7290"
-          },
-          {
-            "title": "Alkermes PLC (ALKS) Q3 2026 Earnings Call Highlights: Proprietary Sales Surge 31% as Orexin ...",
-            "url": "https://finance.yahoo.com/healthcare/articles/alkermes-plc-alks-q3-2026-030446463.html",
-            "provider": "GuruFocus.com",
-            "time_utc": "2026-11-04 03:04",
-            "title_ar": "Alkermes PLC (ALKS) أبرز نقاط الاتصال بأرباح الربع الثالث من عام 2026: ارتفاع مبيعات الملكية بنسبة 31% مع ..."
-          }
-        ],
-        "news_src": "yahoo",
-        "stars": 4,
-        "reasons": [
-          "quiet",
-          "short_ma",
-          "tight"
+          "short_ma"
         ]
       }
     ]
