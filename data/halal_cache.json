@@ -59,6 +59,36 @@
    "totalDebt": 1287440000
   }
  },
+ "APA": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 15510062080,
+   "sector": "Energy",
+   "totalCash": 444000000,
+   "totalDebt": 3880999936
+  }
+ },
+ "AR": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 11569812480,
+   "sector": "Energy",
+   "totalCash": null,
+   "totalDebt": 4652964864
+  }
+ },
+ "ARMK": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Specialty Business Services",
+   "marketCap": 13584598016,
+   "sector": "Industrials",
+   "totalCash": 520393984,
+   "totalDebt": 6468355072
+  }
+ },
  "ARWR": {
   "checked": "2026-11-03",
   "info": {
@@ -179,6 +209,26 @@
    "totalDebt": 2801200128
   }
  },
+ "COP": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 163562094592,
+   "sector": "Energy",
+   "totalCash": 7692000256,
+   "totalDebt": 23289999360
+  }
+ },
+ "CRGY": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 4736573440,
+   "sector": "Energy",
+   "totalCash": 6126000,
+   "totalDebt": 4722796032
+  }
+ },
  "CRM": {
   "checked": "2026-11-03",
   "info": {
@@ -259,6 +309,16 @@
    "totalDebt": 183098000
   }
  },
+ "DOW": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Chemicals",
+   "marketCap": 23521456128,
+   "sector": "Basic Materials",
+   "totalCash": 4486000128,
+   "totalDebt": 18965999616
+  }
+ },
  "DT": {
   "checked": "2026-11-03",
   "info": {
@@ -329,6 +389,16 @@
    "totalDebt": 929299968
   }
  },
+ "EOG": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 77423124480,
+   "sector": "Energy",
+   "totalCash": 4906999808,
+   "totalDebt": 8249999872
+  }
+ },
  "ETSY": {
   "checked": "2026-11-03",
   "info": {
@@ -357,6 +427,16 @@
    "sector": "Healthcare",
    "totalCash": 220600000,
    "totalDebt": 1118499968
+  }
+ },
+ "G": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Information Technology Services",
+   "marketCap": 6807811584,
+   "sector": "Technology",
+   "totalCash": 520700000,
+   "totalDebt": 1414616064
   }
  },
  "GKOS": {
@@ -459,6 +539,16 @@
    "totalDebt": 6421000192
   }
  },
+ "LMT": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Aerospace & Defense",
+   "marketCap": 137319555072,
+   "sector": "Industrials",
+   "totalCash": 5960000000,
+   "totalDebt": 20497999872
+  }
+ },
  "LSCC": {
   "checked": "2026-11-03",
   "info": {
@@ -507,6 +597,16 @@
    "sector": "Energy",
    "totalCash": 7768000000,
    "totalDebt": 34292000768
+  }
+ },
+ "MRK": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Drug Manufacturers - General",
+   "marketCap": 367657910272,
+   "sector": "Healthcare",
+   "totalCash": 7141000192,
+   "totalDebt": 53910999040
   }
  },
  "MTCH": {
@@ -569,6 +669,26 @@
    "totalDebt": 2724814080
   }
  },
+ "NTNX": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Software - Infrastructure",
+   "marketCap": 17311080448,
+   "sector": "Technology",
+   "totalCash": 2361463040,
+   "totalDebt": 1521468032
+  }
+ },
+ "OKE": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas Midstream",
+   "marketCap": 55920951296,
+   "sector": "Energy",
+   "totalCash": 186000000,
+   "totalDebt": 28519999488
+  }
+ },
  "OVV": {
   "checked": "2026-11-03",
   "info": {
@@ -577,6 +697,16 @@
    "sector": "Energy",
    "totalCash": 700000000,
    "totalDebt": 5029000192
+  }
+ },
+ "OXY": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 57180454912,
+   "sector": "Energy",
+   "totalCash": 4150000128,
+   "totalDebt": 14625999872
   }
  },
  "PANW": {
@@ -669,6 +799,26 @@
    "totalDebt": 3476400128
   }
  },
+ "PSX": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas Refining & Marketing",
+   "marketCap": 99187597312,
+   "sector": "Energy",
+   "totalCash": 5848000000,
+   "totalDebt": 18530000896
+  }
+ },
+ "PTEN": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas Drilling",
+   "marketCap": 4054089984,
+   "sector": "Energy",
+   "totalCash": 339310016,
+   "totalDebt": 1263437952
+  }
+ },
  "PZZA": {
   "checked": "2026-11-03",
   "info": {
@@ -677,6 +827,16 @@
    "sector": "Consumer Cyclical",
    "totalCash": 28762000,
    "totalDebt": 935520000
+  }
+ },
+ "RGEN": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Medical Instruments & Supplies",
+   "marketCap": 11414861824,
+   "sector": "Healthcare",
+   "totalCash": 862979008,
+   "totalDebt": 692241024
   }
  },
  "RHI": {
@@ -697,6 +857,16 @@
    "sector": "Technology",
    "totalCash": 110118000,
    "totalDebt": 1053395008
+  }
+ },
+ "RRC": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas E&P",
+   "marketCap": 12149585920,
+   "sector": "Energy",
+   "totalCash": 12000,
+   "totalDebt": 918257024
   }
  },
  "SJM": {
@@ -739,6 +909,16 @@
    "totalDebt": 913016000
   }
  },
+ "SWKS": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Semiconductors",
+   "marketCap": 19165992960,
+   "sector": "Technology",
+   "totalCash": 799200000,
+   "totalDebt": 681100032
+  }
+ },
  "TALO": {
   "checked": "2026-11-03",
   "info": {
@@ -747,6 +927,16 @@
    "sector": "Energy",
    "totalCash": 577587008,
    "totalDebt": 1343800064
+  }
+ },
+ "TSLA": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Auto Manufacturers",
+   "marketCap": 1536683147264,
+   "sector": "Consumer Cyclical",
+   "totalCash": 45447000064,
+   "totalDebt": 16444999680
   }
  },
  "VEEV": {
@@ -797,6 +987,16 @@
    "sector": "Consumer Cyclical",
    "totalCash": 1028936000,
    "totalDebt": 1527945984
+  }
+ },
+ "XOM": {
+  "checked": "2026-11-04",
+  "info": {
+   "industry": "Oil & Gas Integrated",
+   "marketCap": 688633937920,
+   "sector": "Energy",
+   "totalCash": 12152999936,
+   "totalDebt": 34250000384
   }
  }
 }
