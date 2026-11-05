@@ -69,6 +69,8 @@
   .news { border-top: 1px dashed var(--line); margin-top: 8px; padding-top: 8px; }
   .news a { display: block; color: var(--text); text-decoration: none; font-size: 12.5px; line-height: 1.45; margin-bottom: 6px; direction: ltr; text-align: left; }
   .news a small { display: block; color: var(--muted); font-size: 11px; }
+  .news a.ar { direction: rtl; text-align: right; font-size: 13.5px; }
+  .news a.ar .orig { direction: ltr; text-align: left; font-size: 11px; color: var(--muted); margin-top: 2px; }
   a.chart.web { background: transparent; border: 1px solid var(--accent); color: var(--text); }
   .toast {
     position: fixed; left: 50%; bottom: max(24px, env(safe-area-inset-bottom)); transform: translateX(-50%);
@@ -127,7 +129,7 @@ const T = {
       no_crash: "نزول طبيعي", crash: "⚠️ هبوط حاد — افحص الخبر", above200: "بعيد فوق م200",
       earnings_soon: "⚠️ أرباح قريبة", quiet: "حجم هادئ", short_ma: "عند م10/20", tight: "تذبذب منخفض" },
     emptyOk: "لا توجد أسهم في هذا النمط اليوم", emptyBad: "السوق ضعيف — الماسح متوقف عن الإشارات",
-    footer: "الحلال: فحص النشاط ونسبتي الديون والنقد حسب AAOIFI. نسبة الدخل المحرّم غير متوفرة — أكّدها في Zoya قبل الدخول.<br>التقييم ⭐ من قواعد كل نمط، والأخبار عناوين من Yahoo بالإنجليزية.<br>الماسح يعرض الأسهم فقط. الدخول والوقف والمبلغ قرارك أنت. لغرض تعليمي.",
+    footer: "الحلال: فحص النشاط ونسبتي الديون والنقد حسب AAOIFI. نسبة الدخل المحرّم غير متوفرة — أكّدها في Zoya قبل الدخول.<br>التقييم ⭐ من قواعد كل نمط، والأخبار عناوين من Yahoo مترجمة آلياً (الأصل الإنجليزي تحتها).<br>الماسح يعرض الأسهم فقط. الدخول والوقف والمبلغ قرارك أنت. لغرض تعليمي.",
   },
   en: {
     dir: "ltr", other: "عربي", title: "Swing Scanner", refresh: "↻ Refresh", loading: "Loading…",
@@ -194,8 +196,12 @@ function extras(r, t) {
 
 function newsBlock(r, t) {
   if (!r.news || !r.news.length) return "";
-  return `<div class="news"><div class="earn">${t.news}</div>${r.news.map(a =>
-    `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}<small>${esc(a.provider)}${a.time_utc ? " · " + esc(a.time_utc) + " UTC" : ""}</small></a>`).join("")}</div>`;
+  return `<div class="news"><div class="earn">${t.news}</div>${r.news.map(a => {
+    const meta = `<small>${esc(a.provider)}${a.time_utc ? " · " + esc(a.time_utc) + " UTC" : ""}</small>`;
+    return lang === "ar" && a.title_ar
+      ? `<a class="ar" href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title_ar)}<small class="orig">${esc(a.title)}</small>${meta}</a>`
+      : `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}${meta}</a>`;
+  }).join("")}</div>`;
 }
 
 function copySym(sym) {
