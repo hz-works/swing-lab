@@ -22,7 +22,9 @@
   header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
   h1 { font-size: 20px; margin: 0; }
   .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
-  .actions { display: flex; gap: 6px; }
+  .actions { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  a.btn { text-decoration: none; }
+  .btn.scan { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
   .btn {
     background: var(--card); color: var(--text); border: 1px solid var(--line);
     border-radius: 10px; padding: 8px 11px; font-size: 14px; white-space: nowrap;
@@ -88,6 +90,7 @@
   <div class="actions">
     <button class="btn" id="langBtn" onclick="toggleLang()"></button>
     <button class="btn" id="refreshBtn" onclick="load(true)"></button>
+    <a class="btn scan" id="scanBtn" href="https://github.com/hz-works/swing-lab/actions/workflows/scan.yml" target="_blank" rel="noopener" onclick="toast(T[lang].scanHint)"></a>
   </div>
 </header>
 
@@ -102,6 +105,7 @@
 const T = {
   ar: {
     dir: "rtl", other: "English", title: "ماسح السوينج", refresh: "↻ تحديث", loading: "جارٍ التحميل…",
+    scan: "🔄 امسح الآن", scanHint: "اضغط Run workflow في GitHub، وبعد ~10 دقائق اضغط «تحديث»",
     loadError: "تعذّر تحميل البيانات — حاول التحديث بعد قليل",
     session: "جلسة", lastScan: "آخر مسح",
     marketOk: "✅ السوق إيجابي", marketBad: "⛔ السوق ضعيف — لا إشارات",
@@ -127,6 +131,7 @@ const T = {
   },
   en: {
     dir: "ltr", other: "عربي", title: "Swing Scanner", refresh: "↻ Refresh", loading: "Loading…",
+    scan: "🔄 Scan now", scanHint: "Tap Run workflow on GitHub, then Refresh in ~10 minutes",
     loadError: "Could not load data — try refreshing in a moment",
     session: "Session", lastScan: "last scan",
     marketOk: "✅ Market positive", marketBad: "⛔ Market weak — no signals",
@@ -227,6 +232,7 @@ function render() {
   document.getElementById("title").textContent = t.title;
   document.getElementById("langBtn").textContent = t.other;
   document.getElementById("refreshBtn").textContent = t.refresh;
+  document.getElementById("scanBtn").textContent = t.scan;
   document.getElementById("footer").innerHTML = t.footer;
   if (!data) { document.getElementById("market").textContent = t.loading; return; }
 
