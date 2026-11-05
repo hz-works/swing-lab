@@ -1,6 +1,6 @@
 {
   "date": "2026-11-05",
-  "generated_utc": "2026-11-05 21:30",
+  "generated_utc": "2026-11-05 22:59",
   "market": {
     "ok": true,
     "spy": 733.0,
@@ -25,7 +25,7 @@
         "sector": "Health Care",
         "close": 13.21,
         "change_pct": 26.05,
-        "rvol": 4.51,
+        "rvol": 4.52,
         "adr_pct": 4.6,
         "rsi2": 87.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ADMA",
@@ -48,14 +48,14 @@
             "url": "https://finance.yahoo.com/healthcare/articles/adma-biologics-adma-q3-2026-181352789.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-05 18:13",
-            "title_ar": "ADMA Biologics (ADMA) نص مكالمة أرباح الربع الثالث من عام 2026"
+            "title_ar": null
           },
           {
             "title": "ADMA Biologics Inc (ADMA) Q3 2026 Earnings Call Highlights: Asceniv Surge Drives Margin ...",
             "url": "https://finance.yahoo.com/healthcare/articles/adma-biologics-inc-adma-q3-170838827.html",
             "provider": "GuruFocus.com",
             "time_utc": "2026-11-05 17:08",
-            "title_ar": "ADMA Biologics Inc (ADMA) أبرز نقاط الاتصال بأرباح الربع الثالث من عام 2026: Asceniv Surge يدفع الهامش ..."
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -70,7 +70,7 @@
         "sector": "Communication Services",
         "close": 356.1,
         "change_pct": 31.04,
-        "rvol": 4.28,
+        "rvol": 4.3,
         "adr_pct": 4.79,
         "rsi2": 98.2,
         "tradingview": "https://www.tradingview.com/chart/?symbol=APP",
@@ -93,14 +93,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/applovin-stocks-jump-31-cash-193159133.html",
             "provider": "GuruFocus.com",
             "time_utc": "2026-11-05 19:31",
-            "title_ar": "أسهم AppLovin تقفز بنسبة 31% مع دعم توليد النقد لعمليات إعادة شراء أكبر"
+            "title_ar": null
           },
           {
             "title": "AppLovin earnings analysis: questions answered and next catalysts",
             "url": "https://finance.yahoo.com/markets/stocks/articles/applovin-earnings-analysis-questions-answered-184704712.html",
             "provider": "Investing.com",
             "time_utc": "2026-11-05 18:47",
-            "title_ar": "تحليل أرباح AppLovin: تمت الإجابة على الأسئلة والمحفزات التالية"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -138,14 +138,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/stanley-black-decker-inc-swk-090559917.html",
             "provider": "GuruFocus.com",
             "time_utc": "2026-11-05 09:05",
-            "title_ar": "أبرز نقاط الاتصال بأرباح شركة Stanley Black & Decker Inc (SWK) للربع الثالث من عام 2026: النمو العضوي ..."
+            "title_ar": null
           },
           {
             "title": "Stanley Black & Decker raises EPS outlook after tariff refund boost",
             "url": "https://finance.yahoo.com/economy/policy/articles/stanley-black-decker-raises-outlook-205350308.html",
             "provider": "CFO Dive",
             "time_utc": "2026-11-04 20:53",
-            "title_ar": "ترفع شركة Stanley Black & Decker توقعات أرباح السهم بعد زيادة استرداد الرسوم الجمركية"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -160,7 +160,7 @@
         "sector": "Information Technology",
         "close": 56.5,
         "change_pct": -4.37,
-        "rvol": 1.18,
+        "rvol": 1.4,
         "adr_pct": 4.89,
         "rsi2": 69.1,
         "tradingview": "https://www.tradingview.com/chart/?symbol=YOU",
@@ -183,14 +183,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/clear-secure-inc-q3-2026-150448176.html",
             "provider": "GuruFocus.com",
             "time_utc": "2026-11-05 15:04",
-            "title_ar": "Clear Secure Inc (YOU) (الربع الثالث من عام 2026) أبرز نقاط الاتصال بالأرباح: الإيرادات تقفز 27. ..."
+            "title_ar": null
           },
           {
             "title": "Can Clear Secure (YOU) Trade At A Discount On Cash Flow?",
             "url": "https://finance.yahoo.com/markets/stocks/articles/clear-secure-trade-discount-cash-232536314.html",
             "provider": "Simply Wall St.",
             "time_utc": "2026-11-04 23:25",
-            "title_ar": "هل يمكنك إجراء تداول آمن (أنت) بسعر مخفض على التدفق النقدي؟"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -228,14 +228,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/trex-co-inc-trex-q3-170458682.html",
             "provider": "GuruFocus.com",
             "time_utc": "2026-11-05 17:04",
-            "title_ar": "Trex Co Inc (TREX) (الربع الثالث من عام 2026) أبرز نقاط الاتصال بالأرباح: إيرادات قياسية وتوقعات مرتفعة و..."
+            "title_ar": null
           },
           {
             "title": "Is Trex Company (TREX) Fully Valued As Record Revenue Lifts Guidance?",
             "url": "https://finance.yahoo.com/markets/stocks/articles/trex-company-trex-fully-valued-121733411.html",
             "provider": "Simply Wall St.",
             "time_utc": "2026-11-05 12:17",
-            "title_ar": "هل تم تقييم شركة Trex (TREX) بالكامل مع زيادة الإيرادات القياسية؟"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -270,14 +270,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/investors-undervaluing-marathon-petroleum-mpc-134002792.html",
             "provider": "Zacks",
             "time_utc": "2026-11-05 13:40",
-            "title_ar": "هل يقلل المستثمرون من قيمة شركة ماراثون بتروليوم (MPC) في الوقت الحالي؟"
+            "title_ar": null
           },
           {
             "title": "Marathon Petroleum Sinks 10%, Valero Down 8% as Oil Stocks Slide After Democrats Win the Senate",
             "url": "https://finance.yahoo.com/energy/articles/marathon-petroleum-sinks-10-valero-200304712.html",
             "provider": "TIKR",
             "time_utc": "2026-11-04 20:03",
-            "title_ar": "ماراثون بتروليوم يهبط 10% وفاليرو يهبط 8% مع تراجع مخزونات النفط بعد فوز الديمقراطيين بمجلس الشيوخ"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -295,7 +295,7 @@
         "sector": "Information Technology",
         "close": 74.33,
         "change_pct": -4.66,
-        "rvol": 0.98,
+        "rvol": 1.0,
         "adr_pct": 5.89,
         "rsi2": 2.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=RNG",
@@ -313,14 +313,14 @@
             "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOODQ0Z1ZvQ3NhVENfeks1cXhZVGlaeER4eE50Y0FNNU1DQ0JHUmliMUtvWHdWMndnSVhmTl9OZklyeklhYUNoR0NBclFsOUFCaTRDTkVXUDRickg5TmUwZjMtYjN2cHllNkhOT3NRMjktNHp3QW9icEkzc3hMbC1hT1lIclNyVllYbFZJb1ZTRXdKbDB3LVVDQ2dfM2dqS010eS16bGYxd3RGTm91SE1rN1dqWnEtTlZFY1ZpQVh5ZUNvUnJ2UFHSAcsBQVVfeXFMTktsZDlZSHdjd0NWM1lCcVVXTXpPeHprNy1wR3BpbnAwdzNDUTdfWmhnMW9KYVRzV19VYnBHUEFnRmZMbUVNRDJwRFplMndKc2tWSVMzYWxnYzB3N2NtQ1locE11R2JVWE9SdUlJb0N4dGtqZkJObmxnVDNLYXlNY2hRYnZYWWs3TUN1TVR2ZWVJS3NLR2xVTEVDT2F4RG9rNkxsSTZvRnl1eDBRNzNsN3JOZVZidE1FQmdNZjVYUjVHdmVLOVlqclRzckU?oc=5",
             "provider": "Simply Wall St",
             "time_utc": "2026-11-05 07:28",
-            "title_ar": "هل تم تقييم RingCentral (RNG) بأقل من قيمتها الحقيقية بسبب نتائج الربع الثالث القوية وتوجيهات الذكاء الاصطناعي الجديدة؟"
+            "title_ar": null
           },
           {
             "title": "What RingCentral Doubters Got Wrong Before A 185% Rally",
             "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNDhEUVhLVXV0bC12X3QzT215UWl3NG1fWFNiX2VJMVRZZ0ZvbDRuZkR0ME52cmtkbXhDRHdNbk1tSmVHZS15bHdra1pHalRWOGJKOUJjNkhXVmk4ZTFmamZHVk83bF9NSzdhbWVBMGdhelAyLXJmSTdpUkVyaWQ2S1BKRDc1bnp2OXFSVF9DNDRBRWRSM1pQd3ZiRDhfY2ZTVkloS01UejJsOG1QNzVpU285WEk4czBfZ0ltaE1n0gHDAUFVX3lxTE5XVDJZSnlITFAxN1BhdzFmbDEtdXpieHJXVWtWd09vUUVGMGkzRzJLOU45ZlhYc21QeDBQVGxIZzdJaG9LREhYTmkxTUhCNUJreTdzUGpYVVNzb2FSZkUwd29fVXlvQjdTaGJzbzd1U29WX2JyS2lReUlWR01UMlpIMUI0MHp6U0xTZ0lSM1cyY1cyVGZ6VVo2ZUFIdkVRV1RpZEJEMlBMeFlqSkc4d0FtYVBTNFFpeXp0ZC1KTGNZU3kySQ?oc=5",
             "provider": "Simply Wall St",
             "time_utc": "2026-11-04 06:39",
-            "title_ar": "ما الذي أخطأ فيه المتشككون في RingCentral قبل ارتفاع 185٪"
+            "title_ar": null
           }
         ],
         "news_src": "google",
@@ -352,14 +352,21 @@
         "earnings_in_days": 13,
         "news": [
           {
-            "title": "Wall Street Analysts Think Palo Alto (PANW) Is a Good Investment: Is It?",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-think-palo-133003356.html",
-            "provider": "Zacks",
-            "time_utc": "2026-11-04 13:30",
-            "title_ar": "يعتقد محللو وول ستريت أن بالو ألتو (PANW) استثمار جيد: هل هو كذلك؟"
+            "title": "Palo Alto Networks (NASDAQ:PANW) Shares Down 9.6% - Here's What Happened",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMEtpelo4aGFpZkw2bUZydUpfSktNRmRMbGdjbGlPTjRiODZKbE1DaUtMYlI2SUtzcl9oX0tpR09hRk04SHhYODFSQUpIcUdnVnVVSXpJNXg2TkFYSlhsSHdLd0VVQlhEY2lpaFRHMnZ0TlBFSGxXM2ZhcEF5SDVRYXlaTkxPWVJQVVRIbnczaWtuMTBuMjQzUEg1VFZNZi1kaXY4SHFFUGU0emVvU21Ec1J6QlVCZ0NjT2wwZ191cmhsVUU?oc=5",
+            "provider": "MarketBeat",
+            "time_utc": "2026-11-05 22:49",
+            "title_ar": null
+          },
+          {
+            "title": "Under a June trading plan, Palo Alto Networks (PANW) president sells 37,992 shares.",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOV3VucWtjX3g5N0QzdXhpdXprTURmemZmYldESHFyMUZxaWdLRFhTMElpMmY5QU8yUm1sSU9XemZid09ZQ0JpYzY4RFBhMlVLMmdqR2xLQTZFN253UHN1OGVpN2pHZXBqaFhnSXRmUm15Y3NHUHNGTk9GRjBPVF9GUUtUSk96WGJ0V3QzVHEtMzREdEFTQlNxWW9NZXFMTk1lOG9ZTmdCSS1zWkhoV0dYcTVMWWFUU2c?oc=5",
+            "provider": "Stock Titan",
+            "time_utc": "2026-11-05 21:32",
+            "title_ar": null
           }
         ],
-        "news_src": "yahoo",
+        "news_src": "google",
         "stars": 4,
         "reasons": [
           "rs80",
@@ -392,14 +399,14 @@
             "url": "https://finance.yahoo.com/energy/articles/ovintiv-inc-ovv-q3-2026-050822109.html",
             "provider": "GuruFocus.com",
             "time_utc": "2026-11-05 05:08",
-            "title_ar": "Ovintiv Inc (OVV) أبرز نقاط الاتصال بأرباح الربع الثالث من عام 2026: التدفق النقدي القوي، وصفقة Logan Energy، و..."
+            "title_ar": null
           },
           {
             "title": "Ovintiv (OVV) Q3 2026 Earnings Call Transcript",
             "url": "https://finance.yahoo.com/markets/stocks/articles/ovintiv-ovv-q3-2026-earnings-210325482.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-04 21:03",
-            "title_ar": "نص مكالمة أرباح Ovintiv (OVV) للربع الثالث من عام 2026"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -433,14 +440,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-sinks-9-palo-alto-181856889.html",
             "provider": "TIKR",
             "time_utc": "2026-11-05 18:18",
-            "title_ar": "تراجع CrowdStrike بنسبة 9%، وتراجع Palo Alto بنسبة 8%، وتراجع Cloudflare بنسبة 9% مع تراجع تجارة الذكاء الاصطناعي"
+            "title_ar": null
           },
           {
             "title": "Palantir Tumbles 10%, CrowdStrike Sinks 9% as Wall Street Dumps Software’s AI Winners; Okta Drops 10%",
             "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-tumbles-10-crowdstrike-sinks-181136741.html",
             "provider": "24/7 Wall St.",
             "time_utc": "2026-11-05 18:11",
-            "title_ar": "تراجع سهم Palantir بنسبة 10%، وتراجع سهم CrowdStrike بنسبة 9% مع تخلي وول ستريت عن الفائزين بالذكاء الاصطناعي في مجال البرمجيات؛ أوكتا دروبس 10%"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -478,14 +485,14 @@
             "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZDVOM2JFQTNLMXBtWjBWdU5rb2lpWUdYeG1LVlV3Wk9ERHhEZTA5RUNtM0VsVnBnbkE4QVpPT3RMWE0yN25ySDVvbG5ESG12VTQ4MC1sWUkza1lIVzNoSU1xN3JaN1hCekt2V293NG95MXRYZi1BRHk5U0stU1c1bkVlNmFmTlNBQW8teWdnSHViT0dWRjBISHJnTjBRWEdCVk9NWnRtbFZiS0gxUUVPU25OcXp6MXgwSTZiNHhWRV94ZFlrRUlVOGgzXzRHbnM?oc=5",
             "provider": "MarketBeat",
             "time_utc": "2026-11-05 10:15",
-            "title_ar": "شركة Sumitomo Mitsui Trust Group Inc. تبيع 19,582 سهمًا من أسهم شركة Best Buy Co., Inc. $BBY"
+            "title_ar": null
           },
           {
             "title": "Best Buy Co., Inc. (BBY) Stock Price, News, Quote & History",
             "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBmOTZ5VkNTY2Z0VXo5a214V0wzTmNiYWV6ZlkyTFFrcjU2UVhkM3JhcEJua1RpWjRSRDRjSWczRS1ObEh5aGZtUEk0OEtoT01G?oc=5",
             "provider": "Yahoo! Finance Canada",
             "time_utc": "2026-11-05 06:09",
-            "title_ar": "(BBY) سعر السهم والأخبار والاقتباس والتاريخ"
+            "title_ar": null
           }
         ],
         "news_src": "google",
@@ -502,7 +509,7 @@
         "sector": "Consumer Discretionary",
         "close": 157.59,
         "change_pct": -7.89,
-        "rvol": 0.89,
+        "rvol": 0.9,
         "adr_pct": 4.06,
         "rsi2": 31.2,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ANF",
@@ -516,11 +523,11 @@
         "earnings_in_days": 19,
         "news": [
           {
-            "title": "Abercrombie & Fitch (ANF) Stock Sinks As Market Gains: What You Should Know",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/abercrombie-fitch-anf-stock-sinks-214501980.html",
-            "provider": "Zacks",
-            "time_utc": "2026-11-03 21:45",
-            "title_ar": "انخفاض أسهم شركة Abercrombie & Fitch (ANF) مع مكاسب السوق: ما يجب أن تعرفه"
+            "title": "Is Abercrombie & Fitch (ANF) Trading At A Discount To Cash Flow?",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/abercrombie-fitch-anf-trading-discount-221105016.html",
+            "provider": "Simply Wall St.",
+            "time_utc": "2026-11-05 22:11",
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -550,18 +557,18 @@
         "earnings_in_days": 20,
         "news": [
           {
+            "title": "Veeva Systems (VEEV) Becomes Core CRM Choice For Major Biopharma AI Rollout",
+            "url": "https://finance.yahoo.com/healthcare/articles/veeva-systems-veev-becomes-core-211829755.html",
+            "provider": "Simply Wall St.",
+            "time_utc": "2026-11-05 21:18",
+            "title_ar": null
+          },
+          {
             "title": "Veeva Systems (VEEV): Turning Industry Expertise into Growth",
             "url": "https://finance.yahoo.com/markets/stocks/articles/veeva-systems-veev-turning-industry-142825862.html",
             "provider": "Insider Monkey",
             "time_utc": "2026-11-03 14:28",
-            "title_ar": "Veeva Systems (VEEV): تحويل خبرة الصناعة إلى نمو"
-          },
-          {
-            "title": "Why Veeva Systems (VEEV) Dipped More Than Broader Market Today",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/why-veeva-systems-veev-dipped-214502014.html",
-            "provider": "Zacks",
-            "time_utc": "2026-11-02 21:45",
-            "title_ar": "لماذا تراجعت Veeva Systems (VEEV) أكثر من السوق الأوسع اليوم"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -591,18 +598,18 @@
         "earnings_in_days": 28,
         "news": [
           {
+            "title": "Docusign vs. Monday.com: Which Technology Stock Is a Better Buy for 2027?",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/docusign-vs-monday-com-technology-223302828.html",
+            "provider": "Motley Fool",
+            "time_utc": "2026-11-05 22:33",
+            "title_ar": null
+          },
+          {
             "title": "Docusign vs. Okta: Which Tech Stock Is a Better Buy for 2027?",
             "url": "https://finance.yahoo.com/markets/stocks/articles/docusign-vs-okta-tech-stock-132501117.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-04 13:25",
-            "title_ar": "Docusign vs. Okta: ما هي أسهم التكنولوجيا الأفضل للشراء لعام 2027؟"
-          },
-          {
-            "title": "DocuSign (DOCU) Stock Declines While Market Improves: Some Information for Investors",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/docusign-docu-stock-declines-while-214502600.html",
-            "provider": "Zacks",
-            "time_utc": "2026-11-03 21:45",
-            "title_ar": "انخفاض سهم DocuSign (DOCU) مع تحسن السوق: بعض المعلومات للمستثمرين"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -636,14 +643,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/robert-half-rhi-could-43-111327466.html",
             "provider": "Simply Wall St.",
             "time_utc": "2026-11-04 11:13",
-            "title_ar": "يمكن أن يكون روبرت هاف (RHI) أقل بنسبة 43% من القيمة العادلة بعد توسيع القيادة"
+            "title_ar": null
           },
           {
             "title": "Robert Half (RHI) Stock Looks Reasonable As Cash Flow Value Tops An 86% Run",
             "url": "https://finance.yahoo.com/markets/stocks/articles/robert-half-rhi-stock-looks-101920885.html",
             "provider": "Simply Wall St.",
             "time_utc": "2026-11-04 10:19",
-            "title_ar": "يبدو سهم Robert Half (RHI) معقولًا حيث تجاوزت قيمة التدفق النقدي 86٪"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
