@@ -79,6 +79,15 @@
     max-width: 92vw; text-align: center; z-index: 10;
   }
   .toast.show { opacity: 1; }
+  .order { border: 1px solid var(--accent); border-radius: 10px; padding: 8px 10px; margin: 8px 0; background: rgba(79,140,255,.08); }
+  .order .otype { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .order .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size: 13px; }
+  .order .grid span { color: var(--muted); }
+  .order .grid b { color: var(--text); }
+  .order .grid .stop b { color: var(--red); }
+  .order .grid .tgt b { color: var(--green); }
+  .order .rule { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .ptag { font-size: 12px; color: var(--accent); margin-inline-start: 8px; font-weight: 600; }
   .empty { color: var(--muted); text-align: center; padding: 30px 0; }
   footer { color: var(--muted); font-size: 11.5px; margin-top: 18px; line-height: 1.6; }
 </style>
@@ -112,6 +121,24 @@ const T = {
     session: "جلسة", lastScan: "آخر مسح",
     marketOk: "✅ السوق إيجابي", marketBad: "⛔ السوق ضعيف — لا إشارات",
     above: "فوق متوسط 200 يوم", below: "تحت متوسط 200 يوم",
+    radar: ["📅 رادار الأرباح", "أسهم حلال بتعلن نتائجها الليلة أو قبل افتتاح بكرا. أقوى ربح بنمط الفجوة بيكون بيوم الفجوة نفسه."],
+    watch: ["🎯 قريبة", "أسهم قوية بترند صاعد عم تنزل بهدوء نحو متوسطها وما وصلت لسا. لما تلمسه، بتطلع بأوامر الغد."],
+    when: { after_close_today: "🌙 أعلنت اليوم بعد الإغلاق", before_open: "🌅 تعلن قبل افتتاح بكرا", unknown: "❓ تعلن الجلسة الجاية (التوقيت غير معروف)" },
+    epsLine: (r) => `توقع ربح السهم ${n(r.eps_est ?? "–")}` + (r.eps_act != null ? ` · الفعلي ${n(r.eps_act)}` : "") + (r.surprise_pct != null ? ` · المفاجأة ${n(fmtPct(r.surprise_pct))}` : ""),
+    ahLine: (x) => `حركة ما بعد الإغلاق: ${n(fmtPct(x))}`,
+    gapPlan: (r) => `<b>خطة يوم الفجوة:</b> إذا فتح فوق ${n(r.gap_trigger)} (+4%) بحجم قوي ← اشترِ فوق قمة أول 15 دقيقة، والوقف تحت قاعها. إذا نزل تحت سعر الافتتاح ← لا دخول. إذا فتح نازل ← اتركه.`,
+    watchNote: (r) => `يبعد ${n(r.dist_ma_pct + "%")} عن ${n(r.near_ma.toUpperCase())} (${n(r.ma_level)}). حط تنبيه سعري عنده.`,
+    emptyRadar: "ما في إعلانات أرباح لأسهم مناسبة بالجلسة الجاية",
+    orders: ["📋 أوامر الغد", "أوامر جاهزة تحطها الليلة في IBKR (أمر يومي DAY). إذا ما تنفّذ بكرا، الماسح يعيد الحساب بالليل."],
+    oType: { buy_stop: "Buy Stop-Limit", open: "شراء عند الافتتاح (MOO)" },
+    oEntry: "الدخول (Stop)", oLimit: "الحد (Limit)", oRef: "سعر مرجعي", oStop: "وقف الخسارة",
+    oRisk: "المخاطرة", oTgt: "هدف مرجعي 2R", oShares: "أسهم لكل $100 مخاطرة",
+    oRule: {
+      ep: "الإدارة: بعد 3 أيام بربح بيع ثلث ونقل الوقف للدخول، والباقي يخرج عند أول إغلاق تحت متوسط 10.",
+      pullback: "الإدارة: بعد 3 أيام بربح بيع ثلث ونقل الوقف للدخول، والباقي يخرج عند أول إغلاق تحت متوسط 10.",
+      rsi2: "الإدارة: اخرج عند أول إغلاق فوق متوسط 5 أيام، أو بعد 10 أيام كحد أقصى.",
+    },
+    emptyOrders: "لا أوامر للغد — لا يوجد إعداد بوقف معقول",
     patterns: {
       ep: ["فجوة الأرباح", "سهم قفز بفجوة قوية بعد خبر/نتائج ولا يزال فوق قاع يوم الفجوة. الأقوى في الاختبار."],
       rsi2: ["تشبع بيعي", "سهم في ترند صاعد نزل بحدة لأيام (RSI-2 تحت 10). حركة الارتداد قصيرة عادة (أيام)."],
@@ -127,9 +154,10 @@ const T = {
     reasons: { vol5: "حجم ×5+", vol10: "حجم ×10+", fresh: "فجوة حديثة", above_high: "فوق قمة الفجوة",
       neglected: "كان ساكناً قبلها", rs80: "قوة 80+", rs95: "قائد السوق 95+", rsi5: "RSI2 تحت 5",
       no_crash: "نزول طبيعي", crash: "⚠️ هبوط حاد — افحص الخبر", above200: "بعيد فوق م200",
-      earnings_soon: "⚠️ أرباح قريبة", quiet: "حجم هادئ", short_ma: "عند م10/20", tight: "تذبذب منخفض" },
+      earnings_soon: "⚠️ أرباح قريبة", quiet: "حجم هادئ", short_ma: "عند م10/20", tight: "تذبذب منخفض",
+      uptrend: "ترند صاعد", near_high: "قريب من القمة", strong_report: "نتائج قوية", ah_down: "⚠️ نازل بعد الإغلاق" },
     emptyOk: "لا توجد أسهم في هذا النمط اليوم", emptyBad: "السوق ضعيف — الماسح متوقف عن الإشارات",
-    footer: "الحلال: فحص النشاط ونسبتي الديون والنقد حسب AAOIFI. نسبة الدخل المحرّم غير متوفرة — أكّدها في Zoya قبل الدخول.<br>التقييم ⭐ من قواعد كل نمط، والأخبار عناوين من Yahoo مترجمة آلياً (الأصل الإنجليزي تحتها).<br>الماسح يعرض الأسهم فقط. الدخول والوقف والمبلغ قرارك أنت. لغرض تعليمي.",
+    footer: "الحلال: فحص النشاط ونسبتي الديون والنقد حسب AAOIFI. نسبة الدخل المحرّم غير متوفرة — أكّدها في Zoya قبل الدخول.<br>التقييم ⭐ من قواعد كل نمط، والأخبار عناوين من Yahoo مترجمة آلياً (الأصل الإنجليزي تحتها).<br>الأوامر محسوبة بنفس قواعد الاختبار التاريخي. المبلغ والقرار النهائي لك. لغرض تعليمي.",
   },
   en: {
     dir: "ltr", other: "عربي", title: "Swing Scanner", refresh: "↻ Refresh", loading: "Loading…",
@@ -138,6 +166,24 @@ const T = {
     session: "Session", lastScan: "last scan",
     marketOk: "✅ Market positive", marketBad: "⛔ Market weak — no signals",
     above: "above its 200-day average", below: "below its 200-day average",
+    radar: ["📅 Earnings radar", "Halal stocks reporting tonight or before tomorrow's open. The gap pattern pays most on the gap day itself."],
+    watch: ["🎯 Near", "Strong uptrending stocks drifting toward their average, not there yet. Once they touch it they move to Tomorrow's orders."],
+    when: { after_close_today: "🌙 Reported today after the close", before_open: "🌅 Reports before tomorrow's open", unknown: "❓ Reports next session (timing unknown)" },
+    epsLine: (r) => `EPS estimate ${n(r.eps_est ?? "–")}` + (r.eps_act != null ? ` · actual ${n(r.eps_act)}` : "") + (r.surprise_pct != null ? ` · surprise ${n(fmtPct(r.surprise_pct))}` : ""),
+    ahLine: (x) => `After-hours move: ${n(fmtPct(x))}`,
+    gapPlan: (r) => `<b>Gap-day plan:</b> if it opens above ${n(r.gap_trigger)} (+4%) on strong volume → buy above the first 15-minute high, stop below its low. If it drops below the open → no entry. If it opens down → skip.`,
+    watchNote: (r) => `${n(r.dist_ma_pct + "%")} above ${n(r.near_ma.toUpperCase())} (${n(r.ma_level)}). Set a price alert there.`,
+    emptyRadar: "No suitable earnings reports for the next session",
+    orders: ["📋 Tomorrow's orders", "Ready orders to place tonight in IBKR (DAY order). If not filled tomorrow, the scanner recalculates at night."],
+    oType: { buy_stop: "Buy Stop-Limit", open: "Buy at the open (MOO)" },
+    oEntry: "Entry (Stop)", oLimit: "Limit", oRef: "Reference price", oStop: "Stop loss",
+    oRisk: "Risk", oTgt: "Reference target 2R", oShares: "Shares per $100 risk",
+    oRule: {
+      ep: "Management: after 3 days in profit sell 1/3 and move stop to entry; rest exits on the first close below the 10-day average.",
+      pullback: "Management: after 3 days in profit sell 1/3 and move stop to entry; rest exits on the first close below the 10-day average.",
+      rsi2: "Management: exit on the first close above the 5-day average, or after 10 days at most.",
+    },
+    emptyOrders: "No orders for tomorrow — no setup with a sensible stop",
     patterns: {
       ep: ["Earnings gap", "Stock gapped up strongly on news/earnings and is still above the gap-day low. Strongest in the backtest."],
       rsi2: ["Oversold", "Stock in an uptrend dropped sharply for days (RSI-2 below 10). The bounce is usually short (days)."],
@@ -153,13 +199,15 @@ const T = {
     reasons: { vol5: "Volume ×5+", vol10: "Volume ×10+", fresh: "Fresh gap", above_high: "Above gap high",
       neglected: "Quiet before gap", rs80: "RS 80+", rs95: "Leader RS 95+", rsi5: "RSI2 < 5",
       no_crash: "Orderly dip", crash: "⚠️ Sharp drop — check news", above200: "Well above 200-day",
-      earnings_soon: "⚠️ Earnings soon", quiet: "Quiet volume", short_ma: "At 10/20 EMA", tight: "Low volatility" },
+      earnings_soon: "⚠️ Earnings soon", quiet: "Quiet volume", short_ma: "At 10/20 EMA", tight: "Low volatility",
+      uptrend: "Uptrend", near_high: "Near high", strong_report: "Strong report", ah_down: "⚠️ Down after hours" },
     emptyOk: "No stocks in this pattern today", emptyBad: "Market weak — scanner paused",
-    footer: "Halal: business activity plus debt and cash ratios per AAOIFI. Non-permissible income is not available — confirm in Zoya before entering.<br>⭐ rating comes from each pattern's rules; news headlines are from Yahoo.<br>The scanner only lists stocks. Entry, stop and size are your decision. For educational purposes.",
+    footer: "Halal: business activity plus debt and cash ratios per AAOIFI. Non-permissible income is not available — confirm in Zoya before entering.<br>⭐ rating comes from each pattern's rules; news headlines are from Yahoo.<br>Orders use the same rules as the backtest. Size and the final decision are yours. For educational purposes.",
   },
 };
-const KEYS = ["ep", "rsi2", "pullback"];
-let data = null, active = "ep", lang = "ar";
+const KEYS = ["radar", "orders", "watch", "ep", "rsi2", "pullback"];
+const EXTRA = ["radar", "orders", "watch"];
+let data = null, active = "radar", lang = "ar";
 try { lang = localStorage.getItem("lang") || "ar"; } catch (e) {}
 
 function n(x) { return `<span class="n">${x}</span>`; }
@@ -186,7 +234,7 @@ function extras(r, t) {
   let h = "";
   if (r.reasons && r.reasons.length) {
     h += `<div class="reasons">${r.reasons.map(k =>
-      `<span class="chip ${["crash", "earnings_soon"].includes(k) ? "warn" : ""}">${t.reasons[k] || k}</span>`).join("")}</div>`;
+      `<span class="chip ${["crash", "earnings_soon", "ah_down"].includes(k) ? "warn" : ""}">${t.reasons[k] || k}</span>`).join("")}</div>`;
   }
   if (r.earnings_in_days != null) {
     h += `<div class="earn ${r.earnings_in_days <= 5 ? "warn" : ""}">${t.earnIn(r.earnings_in_days, r.earnings_date)}</div>`;
@@ -202,6 +250,35 @@ function newsBlock(r, t) {
       ? `<a class="ar" href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title_ar)}<small class="orig">${esc(a.title)}</small>${meta}</a>`
       : `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}${meta}</a>`;
   }).join("")}</div>`;
+}
+
+function radarBlock(r, t) {
+  const ah = r.ah_pct != null ? `<div class="earn ${r.ah_pct >= 4 ? "up" : r.ah_pct <= -4 ? "down" : ""}">${t.ahLine(r.ah_pct)}</div>` : "";
+  return `<div class="order">
+    <div class="otype">${t.when[r.when]}</div>
+    <div class="earn">${t.epsLine(r)}</div>
+    ${ah}
+    <div class="rule">${t.gapPlan(r)}</div>
+  </div>`;
+}
+
+function orderBlock(r, t) {
+  const o = r.order;
+  if (!o) return "";
+  const first = o.type === "buy_stop"
+    ? `<div><span>${t.oEntry}</span> <b>${n(o.entry)}</b></div><div><span>${t.oLimit}</span> <b>${n(o.limit)}</b></div>`
+    : `<div><span>${t.oRef}</span> <b>${n(o.entry)}</b></div><div></div>`;
+  return `<div class="order">
+    <div class="otype">${t.oType[o.type]}</div>
+    <div class="grid">
+      ${first}
+      <div class="stop"><span>${t.oStop}</span> <b>${n(o.stop)}</b></div>
+      <div><span>${t.oRisk}</span> <b>${n(o.risk_pct + "%")}</b></div>
+      <div class="tgt"><span>${t.oTgt}</span> <b>${n(o.target_2r)}</b></div>
+      <div><span>${t.oShares}</span> <b>${n(o.shares_per_100)}</b></div>
+    </div>
+    <div class="rule">${t.oRule[r.pattern]}</div>
+  </div>`;
 }
 
 function copySym(sym) {
@@ -248,16 +325,20 @@ function render() {
 
   document.getElementById("date").textContent = `${t.session} ${data.date} · ${t.lastScan} ${scanTime()}`;
 
+  const label = (k) => EXTRA.includes(k) ? t[k][0] : t.patterns[k][0];
+  const items = (k) => EXTRA.includes(k) ? (data[k] || []) : (data.patterns[k] || []);
   document.getElementById("tabs").innerHTML = KEYS.map(k =>
     `<button class="tab ${k === active ? "active" : ""}" onclick="active='${k}';render()">
-       <b>${(data.patterns[k] || []).length}</b>${t.patterns[k][0]}</button>`).join("");
-  document.getElementById("hint").textContent = `${t.patterns[active][1]} ${t.countLine(data.counts[active] ?? 0)}`;
+       <b>${items(k).length}</b>${label(k)}</button>`).join("");
+  document.getElementById("hint").textContent = EXTRA.includes(active)
+    ? t[active][1]
+    : `${t.patterns[active][1]} ${t.countLine(data.counts[active] ?? 0)}`;
 
-  const rows = data.patterns[active] || [];
+  const rows = items(active);
   document.getElementById("list").innerHTML = rows.length ? rows.map(r => `
     <div class="stock">
       <div class="row1">
-        <span class="sym">${esc(r.symbol)}<span class="stars">${stars(r.stars)}</span></span>
+        <span class="sym">${esc(r.symbol)}<span class="stars">${stars(r.stars)}</span>${active === "orders" ? `<span class="ptag">${t.patterns[r.pattern][0]}</span>` : ""}</span>
         <span class="price">${r.close}<span class="chg ${r.change_pct >= 0 ? "up" : "down"}">${fmtPct(r.change_pct)}</span></span>
       </div>
       <div class="metrics">
@@ -266,7 +347,10 @@ function render() {
         <span>RSI2 <b>${n(r.rsi2)}</b></span>
         <span>${t.rs} <b>${n(r.rs_pct ?? "–")}</b></span>
       </div>
-      ${active === "ep" ? `<div class="note">${t.epNote(r)}</div>` : ""}
+      ${active === "orders" ? orderBlock(r, t) : ""}
+      ${active === "radar" ? radarBlock(r, t) : ""}
+      ${active === "watch" ? `<div class="note">${t.watchNote(r)}</div>` : ""}
+      ${active === "ep" || (active === "orders" && r.pattern === "ep") ? `<div class="note">${t.epNote(r)}</div>` : ""}
       ${extras(r, t)}
       <div class="row3">
         ${halalBadge(r, t)}
@@ -276,7 +360,7 @@ function render() {
         </div>
       </div>
       ${newsBlock(r, t)}
-    </div>`).join("") : `<div class="empty">${m.ok ? t.emptyOk : t.emptyBad}</div>`;
+    </div>`).join("") : `<div class="empty">${!m.ok ? t.emptyBad : active === "orders" ? t.emptyOrders : active === "radar" ? t.emptyRadar : t.emptyOk}</div>`;
 }
 
 async function load(manual) {

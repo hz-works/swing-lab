@@ -60,4 +60,21 @@ def score_pullback(r: dict) -> tuple:
     return _clamp(pts), why
 
 
-SCORERS = {"ep": score_ep, "rsi2": score_rsi2, "pullback": score_pullback}
+def score_radar(r: dict) -> tuple:
+    pts, why = 1, []
+    if r.get("uptrend"):
+        pts += 1; why.append("uptrend")
+    if (r.get("rs_pct") or 0) >= 80:
+        pts += 1; why.append("rs80")
+    if r.get("dist_high_pct") is not None and r["dist_high_pct"] >= -10:
+        pts += 1; why.append("near_high")
+    ah, sp = r.get("ah_pct"), r.get("surprise_pct")
+    if (ah is not None and ah >= 4) or (sp is not None and sp >= 10):
+        pts += 1; why.append("strong_report")
+    if ah is not None and ah <= -4:
+        pts -= 2; why.append("ah_down")
+    return _clamp(pts), why
+
+
+SCORERS = {"ep": score_ep, "rsi2": score_rsi2, "pullback": score_pullback,
+           "radar": score_radar, "watch": score_pullback}
