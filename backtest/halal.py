@@ -1,8 +1,11 @@
 """Sharia screen (AAOIFI standard, as used by Zoya) for scanner candidates.
 
   1. Business activity: forbidden industries fail, doubtful ones are flagged.
-  2. Interest-bearing debt / market cap  <= 30 %
-  3. Cash + interest-bearing securities / market cap <= 30 %
+  2. Interest-bearing debt / 36-month average market cap  <= 30 %
+  3. Cash + interest-bearing securities / 36-month average market cap <= 30 %
+     (AAOIFI and Zoya use the trailing 36-month average, not today's market
+     cap - a stock that doubled this year can pass on today's value and still
+     fail the standard, e.g. MPC in Nov 2026)
   4. Non-permissible income <= 5 % of revenue  -> NOT available for free,
      so every pass still says "confirm in Zoya".
 
@@ -26,10 +29,19 @@ DOUBTFUL = (
 MAX_AGE_DAYS = 30
 
 
+def avg_mcap(info: dict) -> float:
+    """36-month average market cap = average close of 36 months x shares;
+    falls back to today's market cap when the history is missing."""
+    shares, avg_close = info.get("sharesOutstanding"), info.get("avgClose36m")
+    if shares and avg_close:
+        return float(shares) * float(avg_close)
+    return float(info.get("marketCap") or 0)
+
+
 def classify(info: dict) -> dict:
     industry = (info.get("industry") or "").lower()
     sector = (info.get("sector") or "").lower()
-    mcap = info.get("marketCap") or 0
+    mcap = avg_mcap(info)
     debt = info.get("totalDebt") or 0
     cash = info.get("totalCash") or 0
     out = {"industry": info.get("industry") or "", "debt_pct": None, "cash_pct": None}
@@ -54,8 +66,17 @@ def classify(info: dict) -> dict:
 def _fetch(symbol: str) -> dict:
     import yfinance as yf
 
-    info = yf.Ticker(symbol).info or {}
-    return {k: info.get(k) for k in ("industry", "sector", "marketCap", "totalDebt", "totalCash")}
+    t = yf.Ticker(symbol)
+    info = t.info or {}
+    out = {k: info.get(k) for k in ("industry", "sector", "marketCap", "totalDebt", "totalCash",
+                                    "sharesOutstanding")}
+    try:
+        hist = t.history(period="3y", auto_adjust=False)["Close"].dropna()
+        out["avgClose36m"] = round(float(hist.mean()), 4) if len(hist) > 200 else None
+    except Exception as exc:
+        print(f"history failed for {symbol}: {exc}")
+        out["avgClose36m"] = None
+    return out
 
 
 def screen(symbols, cache_path: str, fetch=_fetch) -> dict:
@@ -67,7 +88,8 @@ def screen(symbols, cache_path: str, fetch=_fetch) -> dict:
     verdicts = {}
     for s in symbols:
         entry = cache.get(s)
-        fresh = entry and (today - date.fromisoformat(entry["checked"])).days <= MAX_AGE_DAYS
+        fresh = (entry and "avgClose36m" in entry.get("info", {})  # old entries lack the 36m average
+                 and (today - date.fromisoformat(entry["checked"])).days <= MAX_AGE_DAYS)
         if not fresh:
             try:
                 info = fetch(s)

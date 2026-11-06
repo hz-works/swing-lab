@@ -239,10 +239,12 @@ def strip(rows):
 
 
 def build_orders(ok):
-    """Best few halal stocks per pattern that have a valid order for tomorrow."""
+    """Best few clean-pass halal stocks per pattern with a valid order for tomorrow."""
     out = []
     for p in ("ep", "pullback", "rsi2"):
-        rows = [r for r in ok[p] if r.get("order")][:ORDERS_PER_PATTERN]
+        # orders only for a clean pass - "doubtful" (e.g. restaurants: alcohol sales)
+        # stays visible in the pattern lists with its warning, but gets no order
+        rows = [r for r in ok[p] if r.get("order") and r["halal_status"] == "pass"][:ORDERS_PER_PATTERN]
         out += [dict({k: v for k, v in r.items() if k != "_score"}, pattern=p) for r in rows]
     return out
 
