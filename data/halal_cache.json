@@ -179,6 +179,16 @@
    "totalDebt": 1855200000
   }
  },
+ "CAH": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Medical Distribution",
+   "marketCap": 63000350720,
+   "sector": "Healthcare",
+   "totalCash": 4856000000,
+   "totalDebt": 9998000128
+  }
+ },
  "CAKE": {
   "checked": "2026-11-03",
   "info": {
@@ -209,6 +219,16 @@
    "totalDebt": 6429499904
   }
  },
+ "CEG": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Utilities - Independent Power Producers",
+   "marketCap": 89097682944,
+   "sector": "Utilities",
+   "totalCash": 697000000,
+   "totalDebt": 24700000256
+  }
+ },
  "CERT": {
   "checked": "2026-11-03",
   "info": {
@@ -227,6 +247,16 @@
    "sector": "Healthcare",
    "totalCash": 23586000896,
    "totalDebt": 15541999616
+  }
+ },
+ "CNH": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Farm & Heavy Construction Machinery",
+   "marketCap": 18585167872,
+   "sector": "Industrials",
+   "totalCash": 1412999936,
+   "totalDebt": 26311000064
   }
  },
  "CNK": {
@@ -529,6 +559,16 @@
    "totalDebt": 575835008
   }
  },
+ "FERG": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Industrial Distribution",
+   "marketCap": 45423665152,
+   "sector": "Industrials",
+   "totalCash": 437000000,
+   "totalDebt": 6887000064
+  }
+ },
  "FLEX": {
   "checked": "2026-11-03",
   "info": {
@@ -567,6 +607,16 @@
    "sector": "Industrials",
    "totalCash": 4387999744,
    "totalDebt": 9029999616
+  }
+ },
+ "GEN": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Software - Infrastructure",
+   "marketCap": 17721157632,
+   "sector": "Technology",
+   "totalCash": 583000000,
+   "totalDebt": 8115999744
   }
  },
  "GEO": {
@@ -657,6 +707,16 @@
    "sector": "Technology",
    "totalCash": 4168999936,
    "totalDebt": 10339000320
+  }
+ },
+ "HRB": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Personal Services",
+   "marketCap": 6463959040,
+   "sector": "Consumer Cyclical",
+   "totalCash": 958705984,
+   "totalDebt": 2102353024
   }
  },
  "HRMY": {
@@ -759,6 +819,16 @@
    "totalDebt": 4929999872
   }
  },
+ "KGS": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Oil & Gas Equipment & Services",
+   "marketCap": 4193289472,
+   "sector": "Energy",
+   "totalCash": 137552992,
+   "totalDebt": 2819315968
+  }
+ },
  "KMB": {
   "checked": "2026-11-03",
   "info": {
@@ -837,6 +907,16 @@
    "sector": "Consumer Cyclical",
    "totalCash": 1294000000,
    "totalDebt": 5088999936
+  }
+ },
+ "MHK": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Furnishings, Fixtures & Appliances",
+   "marketCap": 8779606016,
+   "sector": "Consumer Cyclical",
+   "totalCash": 816800000,
+   "totalDebt": 2209799936
   }
  },
  "MPC": {
@@ -939,6 +1019,16 @@
    "totalDebt": 2724814080
   }
  },
+ "NRG": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Utilities - Independent Power Producers",
+   "marketCap": 18547920896,
+   "sector": "Utilities",
+   "totalCash": 162000000,
+   "totalDebt": 23466999808
+  }
+ },
  "NTAP": {
   "checked": "2026-11-05",
   "info": {
@@ -987,6 +1077,16 @@
    "sector": "Consumer Cyclical",
    "totalCash": 189700000,
    "totalDebt": 2472499968
+  }
+ },
+ "OUT": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "REIT - Specialty",
+   "marketCap": 5275250688,
+   "sector": "Real Estate",
+   "totalCash": 74100000,
+   "totalDebt": 4148699904
   }
  },
  "OVV": {
@@ -1159,6 +1259,16 @@
    "totalDebt": 935520000
   }
  },
+ "RBA": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Specialty Business Services",
+   "marketCap": 17250453504,
+   "sector": "Industrials",
+   "totalCash": 524900000,
+   "totalDebt": 4695499776
+  }
+ },
  "RGEN": {
   "checked": "2026-11-04",
   "info": {
@@ -1239,6 +1349,16 @@
    "totalDebt": 1515408000
   }
  },
+ "SGI": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Furnishings, Fixtures & Appliances",
+   "marketCap": 15139377152,
+   "sector": "Consumer Cyclical",
+   "totalCash": 112000000,
+   "totalDebt": 6412100096
+  }
+ },
  "SJM": {
   "checked": "2026-11-03",
   "info": {
@@ -1317,6 +1437,16 @@
    "sector": "Energy",
    "totalCash": 577587008,
    "totalDebt": 1343800064
+  }
+ },
+ "TECH": {
+  "checked": "2026-11-06",
+  "info": {
+   "industry": "Biotechnology",
+   "marketCap": 11425793024,
+   "sector": "Healthcare",
+   "totalCash": 265479008,
+   "totalDebt": 289087008
   }
  },
  "TGT": {
