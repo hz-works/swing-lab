@@ -21,7 +21,9 @@ Orders whose stop is wider than 1 ADR are dropped (the backtest skips them).
 
 Earnings radar (radar.py): liquid halal stocks that report after today's close
 or before tomorrow's open - the gap-day itself is where EP pays most. Each gets
-a gap-day plan (opening-range breakout) with the reference prices.
+a watch-only note: buying the gap day itself (opening-range breakout) showed no
+edge in results/orb_summary.md (4,613 trades, profit factor 0.86); the entry
+comes later from tomorrow's orders (break of the gap-day high).
 
 Watch list: strong stocks in a clean uptrend drifting toward their 10/20-day
 average but not there yet - the next pullback signals.
@@ -284,8 +286,8 @@ def write_outputs(asof, market_ok, found, spy):
             sp = f"{r['surprise_pct']}%" if r.get("surprise_pct") is not None else "–"
             L.append(f"| [{r['symbol']}]({r['tradingview']}) | {WHEN[r['when']]} | {ah} | {sp} | "
                      f"{r['gap_trigger']} | {'✅' if r['uptrend'] else '–'} | {r['rs_pct']} | {r['halal']} |")
-        L += ["", "خطة يوم الفجوة: إذا فتح ≥ +4% بحجم قوي → شراء فوق قمة أول 15 دقيقة، الوقف تحت قاعها. "
-                  "إذا نزل تحت سعر الافتتاح → لا دخول.", ""]
+        L += ["", "👀 للمراقبة فقط — لا شراء يوم الفجوة (اختبار 4,613 صفقة: معامل ربح 0.86). "
+                  "إذا عمل فجوة وسكّر قوي، بيطلع بأوامر الغد بأمر Buy Stop فوق قمة يوم الفجوة.", ""]
     else:
         L += ["لا يوجد", ""]
     L += [f"## 🎯 قريبة من الإشارة ({len(out['watch'])})", ""]
