@@ -1,0 +1,43 @@
+name: ORB Backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Start date"
+        default: "2016-06-01"
+      max_days:
+        description: "Limit gap days (0 = all; e.g. 50 for a quick test)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-write
+
+jobs:
+  orb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -r requirements.txt
+      - name: Run ORB backtest
+        working-directory: backtest
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python orb.py --start "${{ inputs.start }}" --max-days "${{ inputs.max_days }}" --out ../results
+      - name: Save results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results
+          git commit -m "ORB backtest $(date -u +%F)" || echo "no changes"
+          git pull --rebase
+          git push
