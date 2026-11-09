@@ -9,6 +9,16 @@
    "totalDebt": 4148000000
   }
  },
+ "AAON": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Building Products & Equipment",
+   "marketCap": 5183860224,
+   "sector": "Industrials",
+   "totalCash": 13000,
+   "totalDebt": 452084000
+  }
+ },
  "ACAD": {
   "checked": "2026-11-03",
   "info": {
@@ -37,6 +47,16 @@
    "sector": "Healthcare",
    "totalCash": 656577024,
    "totalDebt": 1572563968
+  }
+ },
+ "ALLE": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Security & Protection Services",
+   "marketCap": 16201208832,
+   "sector": "Industrials",
+   "totalCash": 388100000,
+   "totalDebt": 2224399872
   }
  },
  "AMGN": {
@@ -349,6 +369,16 @@
    "totalDebt": 37075001344
   }
  },
+ "CWEN": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Utilities - Renewable",
+   "marketCap": 7123037184,
+   "sector": "Utilities",
+   "totalCash": 284000000,
+   "totalDebt": 9900999680
+  }
+ },
  "CXW": {
   "checked": "2026-11-05",
   "info": {
@@ -559,6 +589,16 @@
    "totalDebt": 575835008
   }
  },
+ "FA": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Specialty Business Services",
+   "marketCap": 4044740864,
+   "sector": "Industrials",
+   "totalCash": 246854000,
+   "totalDebt": 1999619968
+  }
+ },
  "FERG": {
   "checked": "2026-11-06",
   "info": {
@@ -667,6 +707,16 @@
    "sector": "Consumer Cyclical",
    "totalCash": 1426899968,
    "totalDebt": 3849900032
+  }
+ },
+ "HIMS": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "marketCap": 5352209920,
+   "sector": "Healthcare",
+   "totalCash": 841048000,
+   "totalDebt": 1546238976
   }
  },
  "HIW": {
@@ -869,6 +919,16 @@
    "totalDebt": 20497999872
   }
  },
+ "LQDA": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "marketCap": 4284790272,
+   "sector": "Healthcare",
+   "totalCash": 284180992,
+   "totalDebt": 182896000
+  }
+ },
  "LSCC": {
   "checked": "2026-11-03",
   "info": {
@@ -1067,6 +1127,16 @@
    "sector": "Energy",
    "totalCash": 186000000,
    "totalDebt": 28519999488
+  }
+ },
+ "ONTO": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Semiconductor Equipment & Materials",
+   "marketCap": 9522366464,
+   "sector": "Technology",
+   "totalCash": 1882150016,
+   "totalDebt": 1471730944
   }
  },
  "OPLN": {
@@ -1509,6 +1579,16 @@
    "totalDebt": 16444999680
   }
  },
+ "TTWO": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Electronic Gaming & Multimedia",
+   "marketCap": 38779744256,
+   "sector": "Communication Services",
+   "totalCash": 1826599936,
+   "totalDebt": 2944699904
+  }
+ },
  "TXN": {
   "checked": "2026-11-05",
   "info": {
@@ -1567,6 +1647,16 @@
    "sector": "Healthcare",
    "totalCash": 593000000,
    "totalDebt": 5133000192
+  }
+ },
+ "WDAY": {
+  "checked": "2026-11-09",
+  "info": {
+   "industry": "Software - Application",
+   "marketCap": 45840613376,
+   "sector": "Technology",
+   "totalCash": 3403000064,
+   "totalDebt": 3772000000
   }
  },
  "WING": {

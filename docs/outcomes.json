@@ -1,0 +1,164 @@
+{
+  "generated_utc": "2026-11-09 22:58",
+  "first_signal": "2026-11-03",
+  "last_price_date": "2026-11-09",
+  "method": "next open -> close after 5/10/20 sessions, minus SPY; first appearance only",
+  "patterns": {
+    "breakout": {
+      "all": {
+        "signals": 9,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      },
+      "shown": {
+        "signals": 0,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      }
+    },
+    "ep": {
+      "all": {
+        "signals": 12,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      },
+      "shown": {
+        "signals": 11,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      }
+    },
+    "pullback": {
+      "all": {
+        "signals": 41,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      },
+      "shown": {
+        "signals": 8,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      }
+    },
+    "radar": {
+      "all": {
+        "signals": 12,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      },
+      "shown": {
+        "signals": 0,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      }
+    },
+    "rsi2": {
+      "all": {
+        "signals": 44,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      },
+      "shown": {
+        "signals": 11,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      }
+    },
+    "watch": {
+      "all": {
+        "signals": 6,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      },
+      "shown": {
+        "signals": 0,
+        "5d": {
+          "done": 0
+        },
+        "10d": {
+          "done": 0
+        },
+        "20d": {
+          "done": 0
+        }
+      }
+    }
+  }
+}
