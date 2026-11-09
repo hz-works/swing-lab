@@ -25,6 +25,10 @@ jobs:
       - name: Scan
         working-directory: backtest
         run: python scan.py
+      - name: Outcomes
+        working-directory: backtest
+        continue-on-error: true
+        run: python outcomes.py
       - name: Save
         run: |
           git config user.name "github-actions[bot]"
