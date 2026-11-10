@@ -10,13 +10,15 @@
   }
  },
  "AAON": {
-  "checked": "2026-11-09",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 92.3074,
    "industry": "Building Products & Equipment",
-   "marketCap": 5183860224,
+   "marketCap": 6184847872,
    "sector": "Industrials",
+   "sharesOutstanding": 82453639,
    "totalCash": 13000,
-   "totalDebt": 452084000
+   "totalDebt": 394244000
   }
  },
  "ABBV": {
@@ -806,13 +808,15 @@
   }
  },
  "HALO": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 62.5935,
    "industry": "Biotechnology",
-   "marketCap": 14768359424,
+   "marketCap": 11740749824,
    "sector": "Healthcare",
-   "totalCash": 231003008,
-   "totalDebt": 2178533120
+   "sharesOutstanding": 114010000,
+   "totalCash": 1074386944,
+   "totalDebt": 3279124992
   }
  },
  "HAS": {
@@ -917,6 +921,18 @@
    "totalDebt": 14744000512
   }
  },
+ "HXL": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 71.6476,
+   "industry": "Aerospace & Defense",
+   "marketCap": 6186360832,
+   "sector": "Industrials",
+   "sharesOutstanding": 75701918,
+   "totalCash": 77800000,
+   "totalDebt": 934899968
+  }
+ },
  "IFF": {
   "checked": "2026-11-05",
   "info": {
@@ -957,6 +973,18 @@
    "sharesOutstanding": 63081351,
    "totalCash": 1633137024,
    "totalDebt": 3313460992
+  }
+ },
+ "J": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 130.0014,
+   "industry": "Engineering & Construction",
+   "marketCap": 18551687168,
+   "sector": "Industrials",
+   "sharesOutstanding": 118080879,
+   "totalCash": 1179111936,
+   "totalDebt": 4054662912
   }
  },
  "JNJ": {
@@ -1859,6 +1887,18 @@
    "totalDebt": 1678000000
   }
  },
+ "VSXY": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 39.0364,
+   "industry": "Apparel Retail",
+   "marketCap": 8833867776,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 79764039,
+   "totalCash": 522000000,
+   "totalDebt": 2899000064
+  }
+ },
  "VTRS": {
   "checked": "2026-11-03",
   "info": {
@@ -1902,11 +1942,13 @@
   }
  },
  "WSM": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 174.4223,
    "industry": "Specialty Retail",
-   "marketCap": 29892943872,
+   "marketCap": 30802219008,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 117768000,
    "totalCash": 1028936000,
    "totalDebt": 1527945984
   }

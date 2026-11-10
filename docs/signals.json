@@ -1,37 +1,37 @@
 {
   "date": "2026-11-10",
-  "generated_utc": "2026-11-10 19:28",
+  "generated_utc": "2026-11-10 22:56",
   "market": {
     "ok": true,
-    "spy": 748.42,
+    "spy": 749.92,
     "spy_sma200": 728.3
   },
   "counts": {
-    "ep": 5,
-    "rsi2": 6,
-    "pullback": 15,
+    "ep": 6,
+    "rsi2": 4,
+    "pullback": 13,
     "breakout": 3,
     "radar": 1,
-    "watch": 8
+    "watch": 7
   },
   "halal_excluded": {
     "ep": 5,
-    "rsi2": 4,
-    "pullback": 10,
-    "breakout": 1,
+    "rsi2": 3,
+    "pullback": 6,
+    "breakout": 0,
     "radar": 2,
-    "watch": 3
+    "watch": 4
   },
   "patterns": {
     "ep": [
       {
         "symbol": "APP",
         "sector": "Communication Services",
-        "close": 384.25,
-        "change_pct": -6.28,
-        "rvol": 0.66,
+        "close": 395.51,
+        "change_pct": -3.53,
+        "rvol": 1.02,
         "adr_pct": 5.61,
-        "rsi2": 54.3,
+        "rsi2": 67.7,
         "tradingview": "https://www.tradingview.com/chart/?symbol=APP",
         "days_since_gap": 3,
         "gap_pct": 31.0,
@@ -39,7 +39,7 @@
         "gap_day_high": 365.33,
         "gap_day_low": 338.88,
         "pre_run_pct": -14.7,
-        "rs_pct": 15,
+        "rs_pct": 17,
         "order": null,
         "halal": "✅ متوافق مبدئياً (الديون 3.8%، النقد 3.4%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
@@ -49,18 +49,18 @@
         "earnings_in_days": null,
         "news": [
           {
+            "title": "AppLovin's AI Stumble Just Triggered a Costly Legal Fight",
+            "url": "https://finance.yahoo.com/technology/ai/articles/applovins-ai-stumble-just-triggered-190938988.html",
+            "provider": "GuruFocus.com",
+            "time_utc": "2026-11-10 19:09",
+            "title_ar": null
+          },
+          {
             "title": "AppLovin: 3 Key Takeaways for Long-Term Investors",
             "url": "https://finance.yahoo.com/markets/stocks/articles/applovin-3-key-takeaways-long-144320253.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-10 14:43",
-            "title_ar": "AppLovin: 3 نصائح أساسية للمستثمرين على المدى الطويل"
-          },
-          {
-            "title": "Digital Turbine Plunges 23% Despite Revenue Beat as Margins Shrink and Profit Outlook Stays Put; Unity Slides 2%, AppLovin Dips",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/digital-turbine-plunges-23-despite-135202311.html",
-            "provider": "24/7 Wall St.",
-            "time_utc": "2026-11-10 13:52",
-            "title_ar": "التوربينات الرقمية تنخفض بنسبة 23% على الرغم من زيادة الإيرادات مع تقلص الهوامش وبقاء توقعات الأرباح على ما هي عليه؛ شرائح الوحدة 2%، وتراجعات AppLovin"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -71,13 +71,59 @@
         ]
       },
       {
+        "symbol": "AAON",
+        "sector": "Industrials",
+        "close": 75.01,
+        "change_pct": 19.31,
+        "rvol": 3.92,
+        "adr_pct": 7.65,
+        "rsi2": 92.8,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=AAON",
+        "days_since_gap": 0,
+        "gap_pct": 19.3,
+        "gap_vol_x": 4.2,
+        "gap_day_high": 80.1,
+        "gap_day_low": 67.87,
+        "pre_run_pct": -28.3,
+        "rs_pct": 3,
+        "order": null,
+        "halal": "✅ متوافق مبدئياً (الديون 5.2%، النقد 0.0%) — أكّد الدخل المحرّم في Zoya",
+        "halal_status": "pass",
+        "debt_pct": 5.2,
+        "cash_pct": 0.0,
+        "earnings_date": null,
+        "earnings_in_days": null,
+        "news": [
+          {
+            "title": "AAON (AAON) Raised Its Full Year Outlook After Record Q3",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/aaon-aaon-raised-full-outlook-172017311.html",
+            "provider": "Simply Wall St.",
+            "time_utc": "2026-11-10 17:20",
+            "title_ar": null
+          },
+          {
+            "title": "AAON (AAON) Q3 2026 Earnings Call Transcript",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/aaon-aaon-q3-2026-earnings-154627833.html",
+            "provider": "Motley Fool",
+            "time_utc": "2026-11-10 15:46",
+            "title_ar": null
+          }
+        ],
+        "news_src": "yahoo",
+        "stars": 3,
+        "reasons": [
+          "fresh",
+          "neglected"
+        ]
+      },
+      {
         "symbol": "ADMA",
         "sector": "Health Care",
-        "close": 12.62,
-        "change_pct": -1.29,
-        "rvol": 0.38,
-        "adr_pct": 4.83,
-        "rsi2": 53.0,
+        "close": 12.67,
+        "change_pct": -0.94,
+        "rvol": 0.96,
+        "adr_pct": 4.85,
+        "rsi2": 56.6,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ADMA",
         "days_since_gap": 3,
         "gap_pct": 26.0,
@@ -99,14 +145,14 @@
             "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSTgxdi1VMXZ6aEUwR1cyek9yVEhFc1JkdFJOT3dHa3hTdXdST20tcU10MXBaT0RNTFJkQmNDWGxraEpEWjhDaFRaWE9iSldtS3Vhbk1qNzJRS0V4cHRjb1I3azJSMU1SSkhaMmhzU1ktZ3F3aDFqNjNuc3hhVHRaLXZYc1N0aEJqbklZZ2RDWDVXekRjYjVnRXJrTDBpcDJDclFCWUhCRkV4MGc3SEd5VGxvUDVKb2MzMjhMaVJ3VVRfOXc?oc=5",
             "provider": "Stock Titan",
             "time_utc": "2026-11-10 11:25",
-            "title_ar": "استحوذت شركة State Street على أكثر من 5% من شركة ADMA Biologics (ADMA) اعتبارًا من 30 سبتمبر."
+            "title_ar": null
           },
           {
             "title": "ADMA Biologics (ADMA) Could Be 2% Below Fair Value After Q3 Growth",
             "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOMjZJYUktZXRGbmVYMktWZzlhRUpHRGw0T1NPTmdYQW91Z0xwQ2RoMFRSY3NiYUduUVk5ZDVfdlhnYS1mRDVmelJhS01xS3JJQzRCM1p4b3VEM1dmUkRfQy1tVlV3dGV1UTZ5UlQxV1BUZ25vcmxSYWFPVkZQbGdSZlJNX1JmOFQ2ZXdNU2VwRGdoMmFfejc1VUtHamhETUZKYVhabi1DaXZzYk9uNzl6TWU5endjajU1QjNSTXVjRllUNzUtemhGM1kzS2pUSFJBbnNCTktBYzVZYjdLcnlJQmNR0gHnAUFVX3lxTE1vU0VXQnVSYXdMRzhId1dxVGFSamYxQXV3MEFsSEtHOVZyZ0xSd2dSa0tmcnRXdkJYM0M3dEc2M0VnQnB2cFRCb19SdExJUzlQTkx1ZElMUkRkV2htWllxVC1Pa3ctR0RFX1ZnaDVFUTFHUzdMYkdBWUlTeDMxblBVT3pVUDVOV0I3bkdWRDJ3VWRiSjFTQkJscGFZVG5PUkZKOWRCblFORmtub1VMUkZjY0VZREdkY09fV05GXzc2bFo4dnozdFFmdHVpMDJyRUN3eUwteHB2YkhJWUxFb0VCdFd2cy14NA?oc=5",
             "provider": "Simply Wall St",
             "time_utc": "2026-11-09 16:27",
-            "title_ar": "قد تكون شركة ADMA Biologics (ADMA) أقل بنسبة 2% من القيمة العادلة بعد نمو الربع الثالث"
+            "title_ar": null
           }
         ],
         "news_src": "google",
@@ -118,11 +164,11 @@
       {
         "symbol": "YOU",
         "sector": "Information Technology",
-        "close": 55.72,
-        "change_pct": 1.14,
-        "rvol": 0.29,
-        "adr_pct": 5.0,
-        "rsi2": 61.4,
+        "close": 55.74,
+        "change_pct": 1.18,
+        "rvol": 0.79,
+        "adr_pct": 5.02,
+        "rsi2": 61.7,
         "tradingview": "https://www.tradingview.com/chart/?symbol=YOU",
         "days_since_gap": 4,
         "gap_pct": 23.7,
@@ -144,14 +190,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/know-beyond-why-clear-secure-130004625.html",
             "provider": "Zacks",
             "time_utc": "2026-11-09 13:00",
-            "title_ar": "إليك ما يجب معرفته أبعد من سبب كون شركة CLEAR Secure, Inc. (YOU) سهمًا رائجًا"
+            "title_ar": null
           },
           {
             "title": "CLEAR Secure Q3 Earnings Call Highlights",
             "url": "https://finance.yahoo.com/markets/stocks/articles/clear-secure-q3-earnings-call-221409806.html",
             "provider": "MarketBeat",
             "time_utc": "2026-11-08 22:14",
-            "title_ar": "CLEAR أبرز نقاط أرباح الربع الثالث الآمنة"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -163,11 +209,11 @@
       {
         "symbol": "TREX",
         "sector": "Industrials",
-        "close": 54.6,
-        "change_pct": -7.05,
-        "rvol": 1.1,
+        "close": 54.45,
+        "change_pct": -7.3,
+        "rvol": 2.04,
         "adr_pct": 4.3,
-        "rsi2": 34.7,
+        "rsi2": 33.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=TREX",
         "days_since_gap": 4,
         "gap_pct": 14.3,
@@ -175,7 +221,7 @@
         "gap_day_high": 58.7,
         "gap_day_low": 53.26,
         "pre_run_pct": 3.8,
-        "rs_pct": 88,
+        "rs_pct": 87,
         "order": null,
         "halal": "✅ متوافق مبدئياً (الديون 3.6%، النقد 0.1%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
@@ -189,7 +235,7 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/trex-trex-said-q3-earnings-151425621.html",
             "provider": "MarketBeat",
             "time_utc": "2026-11-08 15:14",
-            "title_ar": "ما قالته شركة تريكس (TREX) في مكالمة أرباح الربع الثالث"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -197,71 +243,28 @@
         "reasons": [
           "neglected"
         ]
-      },
-      {
-        "symbol": "EPAM",
-        "sector": "Information Technology",
-        "close": 163.81,
-        "change_pct": 4.46,
-        "rvol": 0.59,
-        "adr_pct": 4.89,
-        "rsi2": 77.5,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=EPAM",
-        "days_since_gap": 3,
-        "gap_pct": 20.6,
-        "gap_vol_x": 3.3,
-        "gap_day_high": 168.56,
-        "gap_day_low": 154.1,
-        "pre_run_pct": 37.5,
-        "rs_pct": 97,
-        "order": null,
-        "halal": "✅ متوافق مبدئياً (الديون 1.5%، النقد 10.1%) — أكّد الدخل المحرّم في Zoya",
-        "halal_status": "pass",
-        "debt_pct": 1.5,
-        "cash_pct": 10.1,
-        "earnings_date": null,
-        "earnings_in_days": null,
-        "news": [
-          {
-            "title": "EPAM Systems, Inc. $EPAM Stock Holdings Raised by Fulcrum Asset Management LLP",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQR1ptMWxoNkVBX3YzN3Uta0xYWHVqMlNyc1h1NXVTVVotZldWTlBHTmxBbERMbWlQdzlPZnVfR2pNdFpmZmdKRUExejlRQl9UOE1sNE5HTWxJaUZRN2oyMGhKaWd5d1ZhbEhkMlAxaEpzem43UDV2T3Z6M2RNdmljQS1wVUpVTUdaNmFwLXBLVngwTEJDS1BHVzNaWHo2Yy1FVGdxbVVORlIwZktxYm5yMnJfQy13R1B2SzdzWG5pQmRLZUhaZVlhbDRtN2d5a1NvR0E?oc=5",
-            "provider": "MarketBeat",
-            "time_utc": "2026-11-10 09:14",
-            "title_ar": "EPAM Systems, Inc. تم جمع أسهم EPAM المقتنية بواسطة شركة Fulcrum Asset Management LLP"
-          },
-          {
-            "title": "Analysts Are Bullish on These Technology Stocks: Epam Systems (EPAM), Applied Materials (AMAT)",
-            "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPbGxGSm1wMjdpdFE0S0FIbnVMeHpoU3ZZc3o3VWFfdVp0c2Fab0dGeVNXWjJJN3Q4LWhsajEwRXkyMmZCQk9wblJQTzB2bnlPNjNBMndrSFh4Z2VNYkhyOFhLRWxZS29uZHJwWmtNajExWVU3czEyNGxMYlRTZUtuaUMwX0ZrTllBMzQ5V2dKaGVKMWZsNW9YRG9sVmhIVFE3QjJ1dEFlb2VYZTkxZmJYRjNvMjQ3eldnTEstbFdkMlYzNUFjTDNiREpwT0NOWnpwYTRtU29icXVDbTcwZ2VzaUc0azI3cFlzelVPLUlXMzRsMzBDRVhSMHBsQUh4cUJaRmp5X1VR?oc=5",
-            "provider": "The Globe and Mail",
-            "time_utc": "2026-11-09 12:39",
-            "title_ar": "المحللون متفائلون بشأن أسهم التكنولوجيا هذه: أنظمة إبام (EPAM)، المواد التطبيقية (AMAT)"
-          }
-        ],
-        "news_src": "google",
-        "stars": 1,
-        "reasons": []
       }
     ],
     "rsi2": [
       {
         "symbol": "WDAY",
         "sector": "Information Technology",
-        "close": 188.26,
-        "change_pct": -1.03,
-        "rvol": 0.28,
+        "close": 188.89,
+        "change_pct": -0.69,
+        "rvol": 0.58,
         "adr_pct": 3.63,
-        "rsi2": 4.8,
+        "rsi2": 5.4,
         "tradingview": "https://www.tradingview.com/chart/?symbol=WDAY",
         "order": {
           "type": "open",
-          "entry": 188.26,
+          "entry": 188.89,
           "stop": 185.81,
-          "risk_pct": 1.3,
-          "target_2r": 193.16,
-          "shares_per_100": 40
+          "risk_pct": 1.63,
+          "target_2r": 195.05,
+          "shares_per_100": 32
         },
         "rs_pct": 95,
-        "dist200_pct": 20.8,
+        "dist200_pct": 21.2,
         "halal": "✅ متوافق مبدئياً (الديون 8.7%، النقد 7.8%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 8.7,
@@ -270,72 +273,21 @@
         "earnings_in_days": 14,
         "news": [
           {
+            "title": "Why Has Workday Stock Trailed Cadence?",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/why-workday-stock-trailed-cadence-210149245.html",
+            "provider": "Trefis",
+            "time_utc": "2026-11-10 21:01",
+            "title_ar": null
+          },
+          {
             "title": "Bank of America calls Workday a ‘show me’ stock before earnings",
             "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-calls-workday-show-190300267.html",
             "provider": "TheStreet",
             "time_utc": "2026-11-10 19:03",
-            "title_ar": "يطلق بنك أوف أمريكا على Workday اسم سهم \"أرني\" قبل الأرباح"
-          },
-          {
-            "title": "Workday’s AI ambitions face enterprise budget constraints, Bank of America warns",
-            "url": "https://finance.yahoo.com/technology/ai/articles/workday-ai-ambitions-face-enterprise-184500422.html",
-            "provider": "Proactive",
-            "time_utc": "2026-11-09 18:45",
-            "title_ar": "يحذر بنك أوف أمريكا من أن طموحات الذكاء الاصطناعي في Workday تواجه قيودًا على ميزانية المؤسسة"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
-        "stars": 5,
-        "reasons": [
-          "rs80",
-          "rs95",
-          "rsi5",
-          "no_crash",
-          "above200"
-        ]
-      },
-      {
-        "symbol": "DOCU",
-        "sector": "Information Technology",
-        "close": 77.07,
-        "change_pct": -0.87,
-        "rvol": 0.19,
-        "adr_pct": 3.67,
-        "rsi2": 6.5,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=DOCU",
-        "order": {
-          "type": "open",
-          "entry": 77.07,
-          "stop": 75.61,
-          "risk_pct": 1.9,
-          "target_2r": 80.0,
-          "shares_per_100": 68
-        },
-        "rs_pct": 97,
-        "dist200_pct": 39.3,
-        "halal": "✅ متوافق مبدئياً (الديون 1.5%، النقد 6.4%) — أكّد الدخل المحرّم في Zoya",
-        "halal_status": "pass",
-        "debt_pct": 1.5,
-        "cash_pct": 6.4,
-        "earnings_date": "2026-12-03",
-        "earnings_in_days": 23,
-        "news": [
-          {
-            "title": "DocuSign, Inc. (DOCU) Stock Price, News, Quote & History",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE85aWZHU00yemNSaDNWRnRVSFZBcnNzd0pGTG9SZmtVNEg3ZmZsVk56OEFpQ0RpUmE0d0M0OHhmSmxadFVYbzNYT3RPaDVtSVBtenc?oc=5",
-            "provider": "Yahoo! Finance Canada",
-            "time_utc": "2026-11-10 04:20",
-            "title_ar": "(DOCU) سعر السهم والأخبار والاقتباس والتاريخ"
-          },
-          {
-            "title": "DocuSign, Inc. (DOCU) Options Chain - Yahoo Finance",
-            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOWEyYWJwWlhfZnRlVW1ELWtWTVE0T253cDBvSmVwV0lEcUVZOFVzS2ozMmxPMVdyaVI0VlpwVUN1MFk5NVJQNjhmYjR5cHpobEhzTy15MVUxUU9KQWJEU0NuaHpPYV9GVk90U3NibzNxeWpZMFhvb3NKS3A0dUhMYjR4end5Rm5jQmlsYVVNUDZKZw?oc=5",
-            "provider": "Yahoo! Finance Canada",
-            "time_utc": "2026-11-09 08:47",
-            "title_ar": "سلسلة خيارات DocuSign, Inc. (DOCU) - Yahoo Finance"
-          }
-        ],
-        "news_src": "google",
         "stars": 5,
         "reasons": [
           "rs80",
@@ -347,11 +299,11 @@
       {
         "symbol": "XOM",
         "sector": "Energy",
-        "close": 164.6,
-        "change_pct": -0.08,
-        "rvol": 0.41,
-        "adr_pct": 2.49,
-        "rsi2": 8.9,
+        "close": 164.47,
+        "change_pct": -0.16,
+        "rvol": 0.85,
+        "adr_pct": 2.5,
+        "rsi2": 8.3,
         "tradingview": "https://www.tradingview.com/chart/?symbol=XOM",
         "order": null,
         "rs_pct": 61,
@@ -368,62 +320,14 @@
             "url": "https://finance.yahoo.com/energy/articles/enbridge-vs-exxonmobil-energy-stock-171502543.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-10 17:15",
-            "title_ar": "إنبريدج أم إكسون موبيل: ما هو مخزون الطاقة الأفضل للشراء لعام 2027؟"
+            "title_ar": null
           },
           {
             "title": "Chevron Is Doubling Venezuela Production. ExxonMobil Says It's Not in a Rush. Who's Right?",
             "url": "https://finance.yahoo.com/energy/articles/chevron-doubling-venezuela-production-exxonmobil-135000202.html",
             "provider": "Motley Fool",
             "time_utc": "2026-11-10 13:50",
-            "title_ar": "شيفرون تضاعف إنتاجها في فنزويلا تقول شركة إكسون موبيل إنها ليست في عجلة من أمرها. من هو على حق؟"
-          }
-        ],
-        "news_src": "yahoo",
-        "stars": 3,
-        "reasons": [
-          "no_crash",
-          "above200"
-        ]
-      },
-      {
-        "symbol": "IT",
-        "sector": "Information Technology",
-        "close": 187.4,
-        "change_pct": -1.9,
-        "rvol": 0.25,
-        "adr_pct": 4.33,
-        "rsi2": 9.4,
-        "tradingview": "https://www.tradingview.com/chart/?symbol=IT",
-        "order": {
-          "type": "open",
-          "entry": 187.4,
-          "stop": 185.65,
-          "risk_pct": 0.94,
-          "target_2r": 190.91,
-          "shares_per_100": 56
-        },
-        "rs_pct": 75,
-        "dist200_pct": 11.4,
-        "halal": "✅ متوافق مبدئياً (الديون 15.1%، النقد 7.4%) — أكّد الدخل المحرّم في Zoya",
-        "halal_status": "pass",
-        "debt_pct": 15.1,
-        "cash_pct": 7.4,
-        "earnings_date": "2027-02-02",
-        "earnings_in_days": 84,
-        "news": [
-          {
-            "title": "Tencent (SEHK:700) Lands Gartner Leader Spot In First Edge Distribution Ranking",
-            "url": "https://finance.yahoo.com/technology/ai/articles/tencent-sehk-700-lands-gartner-161217261.html",
-            "provider": "Simply Wall St.",
-            "time_utc": "2026-11-10 16:12",
-            "title_ar": "Tencent (SEHK:700) تحصل على مكانة رائدة في Gartner في تصنيف First Edge Distribution"
-          },
-          {
-            "title": "IonQ Named Market Shaper in Gartner’s 2026 Emerging Market Quadrant for Quantum Computing",
-            "url": "https://finance.yahoo.com/technology/ai/articles/ionq-named-market-shaper-gartner-153656156.html",
-            "provider": "InvestorsHub",
-            "time_utc": "2026-11-10 15:36",
-            "title_ar": "حصلت شركة IonQ على لقب صانع السوق في تقرير جارتنر للأسواق الناشئة لعام 2026 للحوسبة الكمومية"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -436,22 +340,22 @@
       {
         "symbol": "PATH",
         "sector": "Information Technology",
-        "close": 12.62,
-        "change_pct": -2.77,
-        "rvol": 0.54,
+        "close": 12.83,
+        "change_pct": -1.16,
+        "rvol": 0.75,
         "adr_pct": 3.94,
-        "rsi2": 5.1,
+        "rsi2": 9.2,
         "tradingview": "https://www.tradingview.com/chart/?symbol=PATH",
         "order": {
           "type": "open",
-          "entry": 12.62,
+          "entry": 12.83,
           "stop": 12.42,
-          "risk_pct": 1.58,
-          "target_2r": 13.02,
-          "shares_per_100": 500
+          "risk_pct": 3.2,
+          "target_2r": 13.65,
+          "shares_per_100": 243
         },
-        "rs_pct": 79,
-        "dist200_pct": 2.4,
+        "rs_pct": 80,
+        "dist200_pct": 4.1,
         "halal": "✅ متوافق مبدئياً (الديون 1.2%، النقد 19.4%) — أكّد الدخل المحرّم في Zoya",
         "halal_status": "pass",
         "debt_pct": 1.2,
@@ -460,14 +364,69 @@
         "earnings_in_days": 23,
         "news": [
           {
+            "title": "UiPath (PATH) Declines More Than Market: Some Information for Investors",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/uipath-path-declines-more-market-214503562.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-10 21:45",
+            "title_ar": null
+          },
+          {
             "title": "UiPath Joins Google Cloud's Gemini For Healthcare As Launch Partner — Enables AI-Powered Workflow Automation",
             "url": "https://finance.yahoo.com/healthcare/articles/uipath-joins-google-clouds-gemini-164350716.html",
             "provider": "Stocktwits",
             "time_utc": "2026-11-10 16:43",
-            "title_ar": "تنضم UiPath إلى Gemini For Healthcare التابعة لـ Google Cloud كشريك الإطلاق — لتمكين أتمتة سير العمل المدعومة بالذكاء الاصطناعي"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
+        "stars": 3,
+        "reasons": [
+          "rs80",
+          "no_crash"
+        ]
+      },
+      {
+        "symbol": "GWRE",
+        "sector": "Information Technology",
+        "close": 155.48,
+        "change_pct": -3.33,
+        "rvol": 0.64,
+        "adr_pct": 4.45,
+        "rsi2": 7.5,
+        "tradingview": "https://www.tradingview.com/chart/?symbol=GWRE",
+        "order": {
+          "type": "open",
+          "entry": 155.48,
+          "stop": 152.62,
+          "risk_pct": 1.84,
+          "target_2r": 161.21,
+          "shares_per_100": 34
+        },
+        "rs_pct": 71,
+        "dist200_pct": 4.3,
+        "halal": "✅ متوافق مبدئياً (الديون 5.2%، النقد 5.6%) — أكّد الدخل المحرّم في Zoya",
+        "halal_status": "pass",
+        "debt_pct": 5.2,
+        "cash_pct": 5.6,
+        "earnings_date": "2026-12-03",
+        "earnings_in_days": 23,
+        "news": [
+          {
+            "title": "A Look at Guidewire Software Inc (GWRE) After 3.3% Decline -- GF Value $221.29 vs Price $155.48",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOUxHemZaS3hlT3VIMk4zTUlBV0twTWpoZTA1MnRGZlRxSloyM2NUNDBsSTNmdVh2ZjBmRTFFc0FqRGQ2VXZibUpCb1VnU05LZUlLQkJnWlVmU0JocFBrai12UWhmRmJ1QnF2bVp2SVk0YWtDV0NsR252U1BMb2ktdVhZSDAwTlVNbWtUcHJEck1oYW5STGNpb09JazZJZUlKdkxkYkxXQzZvRHotZWlPTm1mczctczRlb1pXbGlsdU0?oc=5",
+            "provider": "GuruFocus",
+            "time_utc": "2026-11-10 22:49",
+            "title_ar": null
+          },
+          {
+            "title": "ZoomInfo, HubSpot, Amplitude, Asana, and Guidewire Software shares plummet, what you need to know",
+            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOd0hfRDRtWlplRFN5RVpmdmdSWjRxNlRlMGszMHJPcV9tTXlUSjFiREdTOHBvc1ZaRXo1ejJyUEc4NEZic3hNNmhfbi15VFpCYW5TYkhLdDdlbHFENEFOeUtpaTVIYnpkVU1FZzlNRXlWb0Q1Zm5lWVdaU3JISXAzeFVGV0JiWHpsc1R5Z2hfYTY0RVZEOVF0RzZqdVRvaXd3V01OLXFYRlZ0Z0tpOFE5Tjl2OU9IWGZkSjBERU1hOW9tNldOWERDcV9Oc3pNd2RlX183b3phTlNnQnJBdXltV0NTYjBteENN?oc=5",
+            "provider": "TradingView",
+            "time_utc": "2026-11-10 16:20",
+            "title_ar": null
+          }
+        ],
+        "news_src": "google",
         "stars": 2,
         "reasons": [
           "no_crash"
@@ -478,11 +437,11 @@
       {
         "symbol": "VEEV",
         "sector": "Health Care",
-        "close": 303.64,
-        "change_pct": -0.9,
-        "rvol": 0.37,
-        "adr_pct": 2.98,
-        "rsi2": 28.1,
+        "close": 305.55,
+        "change_pct": -0.28,
+        "rvol": 0.7,
+        "adr_pct": 2.99,
+        "rsi2": 39.9,
         "tradingview": "https://www.tradingview.com/chart/?symbol=VEEV",
         "rs_pct": 99,
         "near_ma": "ema10",
@@ -495,11 +454,18 @@
         "earnings_in_days": 15,
         "news": [
           {
+            "title": "Reasons to Hold Veeva Systems Stock in Your Portfolio for Now",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/reasons-hold-veeva-systems-stock-190600468.html",
+            "provider": "Zacks",
+            "time_utc": "2026-11-10 19:06",
+            "title_ar": null
+          },
+          {
             "title": "IBD Stock Of The Day, Veeva, Retests Its Buy Point On $6 Billion View",
             "url": "https://www.investors.com/research/ibd-stock-of-the-day/veeva-stock-veeva-systems-investor-day/?src=A00220&yptr=yahoo",
             "provider": "Investor's Business Daily",
             "time_utc": "2026-11-09 21:41",
-            "title_ar": "سهم IBD لليوم، Veeva، يعيد اختبار نقطة الشراء الخاصة به عند عرض بقيمة 6 مليارات دولار"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -514,11 +480,11 @@
       {
         "symbol": "BOX",
         "sector": "Information Technology",
-        "close": 42.27,
-        "change_pct": 1.49,
-        "rvol": 0.31,
-        "adr_pct": 2.88,
-        "rsi2": 52.5,
+        "close": 42.55,
+        "change_pct": 2.16,
+        "rvol": 0.89,
+        "adr_pct": 2.9,
+        "rsi2": 60.8,
         "tradingview": "https://www.tradingview.com/chart/?symbol=BOX",
         "rs_pct": 98,
         "near_ma": "ema10",
@@ -535,14 +501,14 @@
             "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcXBIUjUxSnd2Tkc3eTdsUURBNHZlekVrYnluejFOM2NUR2dhNzhicmIwak1wQjAxSnlVSjNQMGpYY081d3p1Y0hvanRESWx4eUI4NjVsYTJhYjd1Mm9ZYl95UnR4R3J5bEtVbW1jTmdITXdaN29PZ1dfbm9XNHVKbWQyX0lQWHhhajNF?oc=5",
             "provider": "Stock Titan",
             "time_utc": "2026-11-10 17:34",
-            "title_ar": "يقترح الضابط ديلان سي. سميث بيع 17000 سهم من جوائز أسهم الموظفين في الصندوق (الصندوق)."
+            "title_ar": null
           },
           {
             "title": "How Box Inc. Class A (BOX) Affects Rotational Strategy Timing",
             "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNeDlsQWRvTHJkMGZ3WDZwRTZzRE4yejVGSHdTWXJQX21BU25OSnNpOVBXRm1laWhxRDRtVGRqbzZIVlJMckNKbUtmZ1UwZXRhd3Nwd0xsUzhzV2RHOWxMQXdJNWszeUE3Q2tkRmhOSTAtM0VhTXRYeUNnMVRBMkQySGhfbHF4Qm1iZVdEd0lQN014b1ppUWJ1ejZjbThxM0NwLTZScHpKak5HdW5iNW4zcVExVlI2Z2lUclR5Q2RkbW1uYXVMNlMzY3Uxb2FHQ0VXUVJLeXNCWQ?oc=5",
             "provider": "Stock Traders Daily",
             "time_utc": "2026-11-10 05:58",
-            "title_ar": "كيف تؤثر شركة Box Inc. Class A (BOX) على توقيت استراتيجية التناوب"
+            "title_ar": null
           }
         ],
         "news_src": "google",
@@ -557,11 +523,11 @@
       {
         "symbol": "DOCU",
         "sector": "Information Technology",
-        "close": 77.07,
-        "change_pct": -0.87,
-        "rvol": 0.19,
+        "close": 77.66,
+        "change_pct": -0.12,
+        "rvol": 0.54,
         "adr_pct": 3.67,
-        "rsi2": 6.5,
+        "rsi2": 11.5,
         "tradingview": "https://www.tradingview.com/chart/?symbol=DOCU",
         "rs_pct": 97,
         "near_ma": "ema20",
@@ -582,18 +548,18 @@
         "earnings_in_days": 23,
         "news": [
           {
+            "title": "DocuSign, Inc. (DOCU) stock price, news, quote and history",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8tYmxCS1oxaHA1eWJaTlBsVGhlenp6ZDNCX0ZsQVZJdkhBeEtMQW5Ua1lrU2ZGQXlrbWtGaS1qWjlBZGNjN0lxLWkxRU5BUjRPa0E?oc=5",
+            "provider": "Yahoo Finance Singapore",
+            "time_utc": "2026-11-10 14:00",
+            "title_ar": null
+          },
+          {
             "title": "DocuSign, Inc. (DOCU) Stock Price, News, Quote & History",
             "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE85aWZHU00yemNSaDNWRnRVSFZBcnNzd0pGTG9SZmtVNEg3ZmZsVk56OEFpQ0RpUmE0d0M0OHhmSmxadFVYbzNYT3RPaDVtSVBtenc?oc=5",
             "provider": "Yahoo! Finance Canada",
             "time_utc": "2026-11-10 04:20",
-            "title_ar": "(DOCU) سعر السهم والأخبار والاقتباس والتاريخ"
-          },
-          {
-            "title": "DocuSign, Inc. (DOCU) Options Chain - Yahoo Finance",
-            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOWEyYWJwWlhfZnRlVW1ELWtWTVE0T253cDBvSmVwV0lEcUVZOFVzS2ozMmxPMVdyaVI0VlpwVUN1MFk5NVJQNjhmYjR5cHpobEhzTy15MVUxUU9KQWJEU0NuaHpPYV9GVk90U3NibzNxeWpZMFhvb3NKS3A0dUhMYjR4end5Rm5jQmlsYVVNUDZKZw?oc=5",
-            "provider": "Yahoo! Finance Canada",
-            "time_utc": "2026-11-09 08:47",
-            "title_ar": "سلسلة خيارات DocuSign, Inc. (DOCU) - Yahoo Finance"
+            "title_ar": null
           }
         ],
         "news_src": "google",
@@ -608,11 +574,11 @@
       {
         "symbol": "ANF",
         "sector": "Consumer Discretionary",
-        "close": 153.78,
-        "change_pct": 0.63,
-        "rvol": 0.32,
+        "close": 154.0,
+        "change_pct": 0.78,
+        "rvol": 0.66,
         "adr_pct": 4.25,
-        "rsi2": 46.9,
+        "rsi2": 48.5,
         "tradingview": "https://www.tradingview.com/chart/?symbol=ANF",
         "rs_pct": 99,
         "near_ma": "ema20",
@@ -629,14 +595,14 @@
             "url": "https://finance.yahoo.com/markets/stocks/articles/abercrombie-anf-considered-good-investment-133002256.html",
             "provider": "Zacks",
             "time_utc": "2026-11-10 13:30",
-            "title_ar": "يعتبر Abercrombie (ANF) استثمارًا جيدًا من قبل الوسطاء: هل هذا صحيح؟"
+            "title_ar": null
           },
           {
             "title": "Abercrombie & Fitch (ANF) Rises Yet Lags Behind Market: Some Facts Worth Knowing",
             "url": "https://finance.yahoo.com/markets/stocks/articles/abercrombie-fitch-anf-rises-yet-214502386.html",
             "provider": "Zacks",
             "time_utc": "2026-11-09 21:45",
-            "title_ar": "أبركرومبي آند فيتش (ANF) ترتفع لكنها تتخلف عن السوق: بعض الحقائق التي تستحق المعرفة"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -650,11 +616,11 @@
       {
         "symbol": "CRL",
         "sector": "Health Care",
-        "close": 348.06,
-        "change_pct": -1.49,
-        "rvol": 0.36,
+        "close": 345.8,
+        "change_pct": -2.13,
+        "rvol": 0.75,
         "adr_pct": 5.31,
-        "rsi2": 61.7,
+        "rsi2": 56.3,
         "tradingview": "https://www.tradingview.com/chart/?symbol=CRL",
         "rs_pct": 99,
         "near_ma": "ema10",
@@ -671,14 +637,14 @@
             "url": "https://finance.yahoo.com/healthcare/articles/charles-river-laboratories-recent-470-145706761.html",
             "provider": "Benzinga",
             "time_utc": "2026-11-10 14:57",
-            "title_ar": "يقول محلل إن صفقة تشارلز ريفر لابوراتوريز الأخيرة بقيمة 470 مليون دولار تمثل \"إضافة استراتيجية جذابة\""
+            "title_ar": null
           },
           {
             "title": "Charles River agrees $470m deal for Frontage assets",
             "url": "https://finance.yahoo.com/healthcare/articles/charles-river-agrees-470m-deal-104103480.html",
             "provider": "Hospital Management",
             "time_utc": "2026-11-10 10:41",
-            "title_ar": "توافق شركة Charles River على صفقة بقيمة 470 مليون دولار لشراء أصول Frontage"
+            "title_ar": null
           }
         ],
         "news_src": "yahoo",
@@ -695,11 +661,11 @@
     {
       "symbol": "DOCU",
       "sector": "Information Technology",
-      "close": 77.07,
-      "change_pct": -0.87,
-      "rvol": 0.19,
+      "close": 77.66,
+      "change_pct": -0.12,
+      "rvol": 0.54,
       "adr_pct": 3.67,
-      "rsi2": 6.5,
+      "rsi2": 11.5,
       "tradingview": "https://www.tradingview.com/chart/?symbol=DOCU",
       "rs_pct": 97,
       "near_ma": "ema20",
@@ -720,18 +686,18 @@
       "earnings_in_days": 23,
       "news": [
         {
+          "title": "DocuSign, Inc. (DOCU) stock price, news, quote and history",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8tYmxCS1oxaHA1eWJaTlBsVGhlenp6ZDNCX0ZsQVZJdkhBeEtMQW5Ua1lrU2ZGQXlrbWtGaS1qWjlBZGNjN0lxLWkxRU5BUjRPa0E?oc=5",
+          "provider": "Yahoo Finance Singapore",
+          "time_utc": "2026-11-10 14:00",
+          "title_ar": null
+        },
+        {
           "title": "DocuSign, Inc. (DOCU) Stock Price, News, Quote & History",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE85aWZHU00yemNSaDNWRnRVSFZBcnNzd0pGTG9SZmtVNEg3ZmZsVk56OEFpQ0RpUmE0d0M0OHhmSmxadFVYbzNYT3RPaDVtSVBtenc?oc=5",
           "provider": "Yahoo! Finance Canada",
           "time_utc": "2026-11-10 04:20",
-          "title_ar": "(DOCU) سعر السهم والأخبار والاقتباس والتاريخ"
-        },
-        {
-          "title": "DocuSign, Inc. (DOCU) Options Chain - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOWEyYWJwWlhfZnRlVW1ELWtWTVE0T253cDBvSmVwV0lEcUVZOFVzS2ozMmxPMVdyaVI0VlpwVUN1MFk5NVJQNjhmYjR5cHpobEhzTy15MVUxUU9KQWJEU0NuaHpPYV9GVk90U3NibzNxeWpZMFhvb3NKS3A0dUhMYjR4end5Rm5jQmlsYVVNUDZKZw?oc=5",
-          "provider": "Yahoo! Finance Canada",
-          "time_utc": "2026-11-09 08:47",
-          "title_ar": "سلسلة خيارات DocuSign, Inc. (DOCU) - Yahoo Finance"
+          "title_ar": null
         }
       ],
       "news_src": "google",
@@ -747,22 +713,22 @@
     {
       "symbol": "RHI",
       "sector": "Industrials",
-      "close": 42.79,
-      "change_pct": 1.09,
-      "rvol": 0.14,
+      "close": 43.02,
+      "change_pct": 1.63,
+      "rvol": 0.48,
       "adr_pct": 5.13,
-      "rsi2": 58.8,
+      "rsi2": 64.7,
       "tradingview": "https://www.tradingview.com/chart/?symbol=RHI",
       "rs_pct": 97,
       "near_ma": "ema10",
       "order": {
         "type": "buy_stop",
-        "entry": 43.15,
+        "entry": 43.12,
         "stop": 41.08,
-        "risk_pct": 4.8,
-        "target_2r": 47.29,
-        "shares_per_100": 48,
-        "limit": 43.8
+        "risk_pct": 4.73,
+        "target_2r": 47.2,
+        "shares_per_100": 49,
+        "limit": 43.77
       },
       "halal": "✅ متوافق مبدئياً (الديون 4.7%، النقد 6.1%) — أكّد الدخل المحرّم في Zoya",
       "halal_status": "pass",
@@ -776,7 +742,7 @@
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbFc5VEVsMXloNkhRV3FPSmtWWnZnN0VqVEJHYm9KQ3d2ZDB0VWt1LVVjZ0MySUtTRDJDQ3h6eVJ3YVVKb3pOOXdabXFPMjRnSVkxZHFiRE5NbnJFV1NhT29TYm9tZ25vbG9RMFVJUUJNWWdGNlJvUHJpeXo1c2pmWnNyVUtlSnNSVS0taWZfaXc0WFBtbk0tajRMZXhEZEM4dzVUMTVMbThfWUlJbjU4QU50WnV0NlcwRTZnRE1sSFo0a2duMEE?oc=5",
           "provider": "Stock Traders Daily",
           "time_utc": "2026-11-09 11:18",
-          "title_ar": "كيف تقوم حركات (RHI) بإبلاغ نماذج تخصيص المخاطر"
+          "title_ar": null
         }
       ],
       "news_src": "google",
@@ -791,22 +757,22 @@
     {
       "symbol": "ROP",
       "sector": "Information Technology",
-      "close": 473.43,
-      "change_pct": 0.38,
-      "rvol": 0.31,
-      "adr_pct": 2.91,
-      "rsi2": 34.3,
+      "close": 474.47,
+      "change_pct": 0.6,
+      "rvol": 0.63,
+      "adr_pct": 2.92,
+      "rsi2": 40.6,
       "tradingview": "https://www.tradingview.com/chart/?symbol=ROP",
       "rs_pct": 91,
       "near_ma": "ema10",
       "order": {
         "type": "buy_stop",
-        "entry": 473.55,
+        "entry": 475.15,
         "stop": 462.54,
-        "risk_pct": 2.32,
-        "target_2r": 495.57,
-        "shares_per_100": 9,
-        "limit": 480.65
+        "risk_pct": 2.65,
+        "target_2r": 500.38,
+        "shares_per_100": 7,
+        "limit": 482.28
       },
       "halal": "✅ متوافق مبدئياً (الديون 20.0%، النقد 0.6%) — أكّد الدخل المحرّم في Zoya",
       "halal_status": "pass",
@@ -820,7 +786,7 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/roche-swx-rop-stock-may-031749050.html",
           "provider": "Simply Wall St.",
           "time_utc": "2026-11-08 03:17",
-          "title_ar": "قد يكون سهم Roche (SWX:ROP) أقل من القيمة العادلة بعد موافقة إدارة الغذاء والدواء الأمريكية (FDA)."
+          "title_ar": null
         }
       ],
       "news_src": "yahoo",
@@ -835,22 +801,22 @@
     {
       "symbol": "WDAY",
       "sector": "Information Technology",
-      "close": 188.26,
-      "change_pct": -1.03,
-      "rvol": 0.28,
+      "close": 188.89,
+      "change_pct": -0.69,
+      "rvol": 0.58,
       "adr_pct": 3.63,
-      "rsi2": 4.8,
+      "rsi2": 5.4,
       "tradingview": "https://www.tradingview.com/chart/?symbol=WDAY",
       "order": {
         "type": "open",
-        "entry": 188.26,
+        "entry": 188.89,
         "stop": 185.81,
-        "risk_pct": 1.3,
-        "target_2r": 193.16,
-        "shares_per_100": 40
+        "risk_pct": 1.63,
+        "target_2r": 195.05,
+        "shares_per_100": 32
       },
       "rs_pct": 95,
-      "dist200_pct": 20.8,
+      "dist200_pct": 21.2,
       "halal": "✅ متوافق مبدئياً (الديون 8.7%، النقد 7.8%) — أكّد الدخل المحرّم في Zoya",
       "halal_status": "pass",
       "debt_pct": 8.7,
@@ -859,18 +825,18 @@
       "earnings_in_days": 14,
       "news": [
         {
+          "title": "Why Has Workday Stock Trailed Cadence?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-workday-stock-trailed-cadence-210149245.html",
+          "provider": "Trefis",
+          "time_utc": "2026-11-10 21:01",
+          "title_ar": null
+        },
+        {
           "title": "Bank of America calls Workday a ‘show me’ stock before earnings",
           "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-calls-workday-show-190300267.html",
           "provider": "TheStreet",
           "time_utc": "2026-11-10 19:03",
-          "title_ar": "يطلق بنك أوف أمريكا على Workday اسم سهم \"أرني\" قبل الأرباح"
-        },
-        {
-          "title": "Workday’s AI ambitions face enterprise budget constraints, Bank of America warns",
-          "url": "https://finance.yahoo.com/technology/ai/articles/workday-ai-ambitions-face-enterprise-184500422.html",
-          "provider": "Proactive",
-          "time_utc": "2026-11-09 18:45",
-          "title_ar": "يحذر بنك أوف أمريكا من أن طموحات الذكاء الاصطناعي في Workday تواجه قيودًا على ميزانية المؤسسة"
+          "title_ar": null
         }
       ],
       "news_src": "yahoo",
@@ -878,109 +844,105 @@
       "reasons": [
         "rs80",
         "rs95",
-        "rsi5",
         "no_crash",
         "above200"
       ],
       "pattern": "rsi2"
     },
     {
-      "symbol": "DOCU",
+      "symbol": "PATH",
       "sector": "Information Technology",
-      "close": 77.07,
-      "change_pct": -0.87,
-      "rvol": 0.19,
-      "adr_pct": 3.67,
-      "rsi2": 6.5,
-      "tradingview": "https://www.tradingview.com/chart/?symbol=DOCU",
+      "close": 12.83,
+      "change_pct": -1.16,
+      "rvol": 0.75,
+      "adr_pct": 3.94,
+      "rsi2": 9.2,
+      "tradingview": "https://www.tradingview.com/chart/?symbol=PATH",
       "order": {
         "type": "open",
-        "entry": 77.07,
-        "stop": 75.61,
-        "risk_pct": 1.9,
-        "target_2r": 80.0,
-        "shares_per_100": 68
+        "entry": 12.83,
+        "stop": 12.42,
+        "risk_pct": 3.2,
+        "target_2r": 13.65,
+        "shares_per_100": 243
       },
-      "rs_pct": 97,
-      "dist200_pct": 39.3,
-      "halal": "✅ متوافق مبدئياً (الديون 1.5%، النقد 6.4%) — أكّد الدخل المحرّم في Zoya",
+      "rs_pct": 80,
+      "dist200_pct": 4.1,
+      "halal": "✅ متوافق مبدئياً (الديون 1.2%، النقد 19.4%) — أكّد الدخل المحرّم في Zoya",
       "halal_status": "pass",
-      "debt_pct": 1.5,
-      "cash_pct": 6.4,
+      "debt_pct": 1.2,
+      "cash_pct": 19.4,
       "earnings_date": "2026-12-03",
       "earnings_in_days": 23,
       "news": [
         {
-          "title": "DocuSign, Inc. (DOCU) Stock Price, News, Quote & History",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE85aWZHU00yemNSaDNWRnRVSFZBcnNzd0pGTG9SZmtVNEg3ZmZsVk56OEFpQ0RpUmE0d0M0OHhmSmxadFVYbzNYT3RPaDVtSVBtenc?oc=5",
-          "provider": "Yahoo! Finance Canada",
-          "time_utc": "2026-11-10 04:20",
-          "title_ar": "(DOCU) سعر السهم والأخبار والاقتباس والتاريخ"
+          "title": "UiPath (PATH) Declines More Than Market: Some Information for Investors",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/uipath-path-declines-more-market-214503562.html",
+          "provider": "Zacks",
+          "time_utc": "2026-11-10 21:45",
+          "title_ar": null
         },
         {
-          "title": "DocuSign, Inc. (DOCU) Options Chain - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOWEyYWJwWlhfZnRlVW1ELWtWTVE0T253cDBvSmVwV0lEcUVZOFVzS2ozMmxPMVdyaVI0VlpwVUN1MFk5NVJQNjhmYjR5cHpobEhzTy15MVUxUU9KQWJEU0NuaHpPYV9GVk90U3NibzNxeWpZMFhvb3NKS3A0dUhMYjR4end5Rm5jQmlsYVVNUDZKZw?oc=5",
-          "provider": "Yahoo! Finance Canada",
-          "time_utc": "2026-11-09 08:47",
-          "title_ar": "سلسلة خيارات DocuSign, Inc. (DOCU) - Yahoo Finance"
-        }
-      ],
-      "news_src": "google",
-      "stars": 5,
-      "reasons": [
-        "rs80",
-        "rs95",
-        "no_crash",
-        "above200"
-      ],
-      "pattern": "rsi2"
-    },
-    {
-      "symbol": "IT",
-      "sector": "Information Technology",
-      "close": 187.4,
-      "change_pct": -1.9,
-      "rvol": 0.25,
-      "adr_pct": 4.33,
-      "rsi2": 9.4,
-      "tradingview": "https://www.tradingview.com/chart/?symbol=IT",
-      "order": {
-        "type": "open",
-        "entry": 187.4,
-        "stop": 185.65,
-        "risk_pct": 0.94,
-        "target_2r": 190.91,
-        "shares_per_100": 56
-      },
-      "rs_pct": 75,
-      "dist200_pct": 11.4,
-      "halal": "✅ متوافق مبدئياً (الديون 15.1%، النقد 7.4%) — أكّد الدخل المحرّم في Zoya",
-      "halal_status": "pass",
-      "debt_pct": 15.1,
-      "cash_pct": 7.4,
-      "earnings_date": "2027-02-02",
-      "earnings_in_days": 84,
-      "news": [
-        {
-          "title": "Tencent (SEHK:700) Lands Gartner Leader Spot In First Edge Distribution Ranking",
-          "url": "https://finance.yahoo.com/technology/ai/articles/tencent-sehk-700-lands-gartner-161217261.html",
-          "provider": "Simply Wall St.",
-          "time_utc": "2026-11-10 16:12",
-          "title_ar": "Tencent (SEHK:700) تحصل على مكانة رائدة في Gartner في تصنيف First Edge Distribution"
-        },
-        {
-          "title": "IonQ Named Market Shaper in Gartner’s 2026 Emerging Market Quadrant for Quantum Computing",
-          "url": "https://finance.yahoo.com/technology/ai/articles/ionq-named-market-shaper-gartner-153656156.html",
-          "provider": "InvestorsHub",
-          "time_utc": "2026-11-10 15:36",
-          "title_ar": "حصلت شركة IonQ على لقب صانع السوق في تقرير جارتنر للأسواق الناشئة لعام 2026 للحوسبة الكمومية"
+          "title": "UiPath Joins Google Cloud's Gemini For Healthcare As Launch Partner — Enables AI-Powered Workflow Automation",
+          "url": "https://finance.yahoo.com/healthcare/articles/uipath-joins-google-clouds-gemini-164350716.html",
+          "provider": "Stocktwits",
+          "time_utc": "2026-11-10 16:43",
+          "title_ar": null
         }
       ],
       "news_src": "yahoo",
       "stars": 3,
       "reasons": [
-        "no_crash",
-        "above200"
+        "rs80",
+        "no_crash"
+      ],
+      "pattern": "rsi2"
+    },
+    {
+      "symbol": "GWRE",
+      "sector": "Information Technology",
+      "close": 155.48,
+      "change_pct": -3.33,
+      "rvol": 0.64,
+      "adr_pct": 4.45,
+      "rsi2": 7.5,
+      "tradingview": "https://www.tradingview.com/chart/?symbol=GWRE",
+      "order": {
+        "type": "open",
+        "entry": 155.48,
+        "stop": 152.62,
+        "risk_pct": 1.84,
+        "target_2r": 161.21,
+        "shares_per_100": 34
+      },
+      "rs_pct": 71,
+      "dist200_pct": 4.3,
+      "halal": "✅ متوافق مبدئياً (الديون 5.2%، النقد 5.6%) — أكّد الدخل المحرّم في Zoya",
+      "halal_status": "pass",
+      "debt_pct": 5.2,
+      "cash_pct": 5.6,
+      "earnings_date": "2026-12-03",
+      "earnings_in_days": 23,
+      "news": [
+        {
+          "title": "A Look at Guidewire Software Inc (GWRE) After 3.3% Decline -- GF Value $221.29 vs Price $155.48",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOUxHemZaS3hlT3VIMk4zTUlBV0twTWpoZTA1MnRGZlRxSloyM2NUNDBsSTNmdVh2ZjBmRTFFc0FqRGQ2VXZibUpCb1VnU05LZUlLQkJnWlVmU0JocFBrai12UWhmRmJ1QnF2bVp2SVk0YWtDV0NsR252U1BMb2ktdVhZSDAwTlVNbWtUcHJEck1oYW5STGNpb09JazZJZUlKdkxkYkxXQzZvRHotZWlPTm1mczctczRlb1pXbGlsdU0?oc=5",
+          "provider": "GuruFocus",
+          "time_utc": "2026-11-10 22:49",
+          "title_ar": null
+        },
+        {
+          "title": "ZoomInfo, HubSpot, Amplitude, Asana, and Guidewire Software shares plummet, what you need to know",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOd0hfRDRtWlplRFN5RVpmdmdSWjRxNlRlMGszMHJPcV9tTXlUSjFiREdTOHBvc1ZaRXo1ejJyUEc4NEZic3hNNmhfbi15VFpCYW5TYkhLdDdlbHFENEFOeUtpaTVIYnpkVU1FZzlNRXlWb0Q1Zm5lWVdaU3JISXAzeFVGV0JiWHpsc1R5Z2hfYTY0RVZEOVF0RzZqdVRvaXd3V01OLXFYRlZ0Z0tpOFE5Tjl2OU9IWGZkSjBERU1hOW9tNldOWERDcV9Oc3pNd2RlX183b3phTlNnQnJBdXltV0NTYjBteENN?oc=5",
+          "provider": "TradingView",
+          "time_utc": "2026-11-10 16:20",
+          "title_ar": null
+        }
+      ],
+      "news_src": "google",
+      "stars": 2,
+      "reasons": [
+        "no_crash"
       ],
       "pattern": "rsi2"
     }
@@ -989,46 +951,46 @@
     {
       "symbol": "SONO",
       "sector": "Consumer Discretionary",
-      "close": 16.85,
-      "change_pct": -0.91,
-      "rvol": 0.54,
-      "adr_pct": 3.88,
-      "rsi2": 62.4,
+      "close": 16.89,
+      "change_pct": -0.71,
+      "rvol": 1.2,
+      "adr_pct": 3.9,
+      "rsi2": 66.2,
       "tradingview": "https://www.tradingview.com/chart/?symbol=SONO",
       "company": "Sonos, Inc.",
       "when": "after_close_today",
       "report_date": "2026-11-10",
       "eps_est": 0.05,
-      "eps_act": null,
-      "surprise_pct": null,
-      "gap_trigger": 17.53,
+      "eps_act": 0.04,
+      "surprise_pct": -20.0,
+      "gap_trigger": 17.57,
       "uptrend": true,
-      "dist_high_pct": -15.0,
+      "dist_high_pct": -14.8,
       "rs_pct": 67,
       "halal": "✅ متوافق مبدئياً (الديون 3.3%، النقد 15.1%) — أكّد الدخل المحرّم في Zoya",
       "halal_status": "pass",
       "debt_pct": 3.3,
       "cash_pct": 15.1,
-      "ah_pct": null,
+      "ah_pct": 1.2,
       "earnings_date": "2026-11-10",
       "earnings_in_days": 0,
       "news": [
         {
-          "title": "Sonos Q4 2026 Earnings Date and Estimates",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1zZDZJUDdSa3FFSlhMVnBCSWFyclFrSk15RVFVRjFUT0VNOW5lUWpMczhLMWpjU3FpUjIyWmEwSlB0VHNZZ2d1bEpLck1SWjFlcmJhMEN3RVlxV1VCaTdCT2IxU1hnNkF6M3VXTElJZnExQjMwRldmMzRlYw?oc=5",
-          "provider": "MarketBeat",
-          "time_utc": "2026-11-10 16:45",
-          "title_ar": "تاريخ أرباح Sonos Q4 2026 وتقديراتها"
+          "title": "Sonos (SONO) Q4 Earnings and Revenues Surpass Estimates",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sonos-sono-q4-earnings-revenues-212002319.html",
+          "provider": "Zacks",
+          "time_utc": "2026-11-10 21:20",
+          "title_ar": null
         },
         {
-          "title": "Sonos faces earnings test as loss looms after strong Q3 By Investing.com",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaVR0S3MwdGZTOW1GbjN4M1p1Sk9KRVpPNUZFVU1EMkpfb3RWcnM4UjBBc2dhSDlPUFp0c0pFTVhCRXk1V0x0MUlLOC02NV9wdk85cVhFdFhmT1RXMzdwOE0tMXd5N0Q0aU9HcHNlRzZQZnR0WmZCWXd2TmFkSTQxOFQzRjkzOVZfNmxCeG5uYTlKbUp5bV9naC1KSFpDdEFDdE5nSWVJdGVjOERLM1l0Y1hDMThjTzg?oc=5",
-          "provider": "Investing.com South Africa",
-          "time_utc": "2026-11-10 14:47",
-          "title_ar": "تواجه شركة Sonos اختبارًا للأرباح مع اقتراب الخسارة بعد الربع الثالث القوي بواسطة Investing.com"
+          "title": "Sonos (NASDAQ:SONO) posts better-than-expected sales in Q3 CY2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sonos-nasdaq-sono-posts-better-211927081.html",
+          "provider": "StockStory",
+          "time_utc": "2026-11-10 21:19",
+          "title_ar": null
         }
       ],
-      "news_src": "google",
+      "news_src": "yahoo",
       "stars": 2,
       "reasons": [
         "uptrend"
@@ -1037,82 +999,17 @@
   ],
   "watch": [
     {
-      "symbol": "SN",
-      "sector": "Consumer Discretionary",
-      "close": 225.39,
-      "change_pct": -1.8,
-      "rvol": 0.38,
-      "adr_pct": 3.92,
-      "rsi2": 54.7,
-      "tradingview": "https://www.tradingview.com/chart/?symbol=SN",
-      "near_ma": "ema10",
-      "ma_level": 216.41,
-      "dist_ma_pct": 3.2,
-      "rs_pct": 99,
-      "halal": "✅ متوافق مبدئياً (الديون 6.3%، النقد 3.4%) — أكّد الدخل المحرّم في Zoya",
-      "halal_status": "pass",
-      "debt_pct": 6.3,
-      "cash_pct": 3.4,
-      "earnings_date": null,
-      "earnings_in_days": null,
-      "news": [
-        {
-          "title": "SharkNinja Q3 Earnings Call Highlights",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sharkninja-q3-earnings-call-highlights-201417852.html",
-          "provider": "MarketBeat",
-          "time_utc": "2026-11-08 20:14",
-          "title_ar": "أبرز أرباح SharkNinja Q3"
-        }
-      ],
-      "news_src": "yahoo",
-      "stars": 5,
-      "reasons": [
-        "rs95",
-        "quiet",
-        "short_ma",
-        "tight"
-      ]
-    },
-    {
-      "symbol": "CERT",
-      "sector": "Health Care",
-      "close": 12.1,
-      "change_pct": -0.98,
-      "rvol": 0.5,
-      "adr_pct": 5.66,
-      "rsi2": 60.2,
-      "tradingview": "https://www.tradingview.com/chart/?symbol=CERT",
-      "near_ma": "ema10",
-      "ma_level": 11.51,
-      "dist_ma_pct": 2.9,
-      "rs_pct": 100,
-      "halal": "✅ متوافق مبدئياً (الديون 17.3%، النقد 12.4%) — أكّد الدخل المحرّم في Zoya",
-      "halal_status": "pass",
-      "debt_pct": 17.3,
-      "cash_pct": 12.4,
-      "earnings_date": null,
-      "earnings_in_days": null,
-      "news": [],
-      "news_src": null,
-      "stars": 4,
-      "reasons": [
-        "rs95",
-        "quiet",
-        "short_ma"
-      ]
-    },
-    {
       "symbol": "ELF",
       "sector": "Consumer Staples",
-      "close": 119.4,
-      "change_pct": 0.04,
-      "rvol": 0.34,
-      "adr_pct": 4.71,
-      "rsi2": 87.0,
+      "close": 118.51,
+      "change_pct": -0.7,
+      "rvol": 0.78,
+      "adr_pct": 4.72,
+      "rsi2": 71.2,
       "tradingview": "https://www.tradingview.com/chart/?symbol=ELF",
       "near_ma": "ema10",
-      "ma_level": 114.96,
-      "dist_ma_pct": 2.2,
+      "ma_level": 114.8,
+      "dist_ma_pct": 2.4,
       "rs_pct": 99,
       "halal": "✅ متوافق مبدئياً (الديون 13.5%، النقد 5.2%) — أكّد الدخل المحرّم في Zoya",
       "halal_status": "pass",
@@ -1126,14 +1023,14 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/e-l-f-beauty-elf-130002975.html",
           "provider": "Zacks",
           "time_utc": "2026-11-10 13:00",
-          "title_ar": "قزم. الجمال (ELF) يجذب انتباه المستثمرين: إليك ما يجب أن تعرفه"
+          "title_ar": null
         },
         {
           "title": "Why is e.l.f. Beauty (ELF) stock soaring today",
           "url": "https://finance.yahoo.com/markets/stocks/articles/why-e-l-f-beauty-063736114.html",
           "provider": "StockStory",
           "time_utc": "2026-11-10 06:37",
-          "title_ar": "لماذا ق. ارتفع سهم التجميل (ELF) اليوم"
+          "title_ar": null
         }
       ],
       "news_src": "yahoo",
@@ -1147,16 +1044,16 @@
     {
       "symbol": "GKOS",
       "sector": "Health Care",
-      "close": 236.82,
-      "change_pct": -0.8,
-      "rvol": 0.23,
+      "close": 236.19,
+      "change_pct": -1.07,
+      "rvol": 0.6,
       "adr_pct": 5.41,
-      "rsi2": 63.2,
+      "rsi2": 60.6,
       "tradingview": "https://www.tradingview.com/chart/?symbol=GKOS",
       "near_ma": "ema10",
-      "ma_level": 224.78,
+      "ma_level": 224.66,
       "dist_ma_pct": 4.7,
-      "rs_pct": 98,
+      "rs_pct": 97,
       "halal": "✅ متوافق مبدئياً (الديون 1.5%، النقد 4.9%) — أكّد الدخل المحرّم في Zoya",
       "halal_status": "pass",
       "debt_pct": 1.5,
@@ -1169,14 +1066,14 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/ishares-russell-2000-index-fund-110441849.html",
           "provider": "GuruFocus.com",
           "time_utc": "2026-11-10 11:04",
-          "title_ar": "ما تم بيعه من صندوق مؤشر iShares Russell 2000 (IWM): Glaukos يتقدم في 6 نوفمبر"
+          "title_ar": null
         },
         {
           "title": "Did Raised Sales Guidance Just Shift Glaukos (GKOS) Investment Narrative?",
           "url": "https://finance.yahoo.com/healthcare/articles/did-raised-sales-guidance-just-002540613.html",
           "provider": "Simply Wall St.",
           "time_utc": "2026-11-08 00:25",
-          "title_ar": "هل أدت إرشادات المبيعات المرتفعة إلى تغيير السرد الاستثماري لـ Glaukos (GKOS)؟"
+          "title_ar": null
         }
       ],
       "news_src": "yahoo",
@@ -1190,14 +1087,14 @@
     {
       "symbol": "CAH",
       "sector": "Health Care",
-      "close": 276.85,
-      "change_pct": 0.93,
-      "rvol": 0.36,
-      "adr_pct": 2.47,
+      "close": 276.79,
+      "change_pct": 0.91,
+      "rvol": 0.9,
+      "adr_pct": 2.49,
       "rsi2": 99.1,
       "tradingview": "https://www.tradingview.com/chart/?symbol=CAH",
       "near_ma": "ema10",
-      "ma_level": 264.15,
+      "ma_level": 264.14,
       "dist_ma_pct": 3.3,
       "rs_pct": 93,
       "halal": "✅ متوافق مبدئياً (الديون 24.4%، النقد 14.6%) — أكّد الدخل المحرّم في Zoya",
@@ -1208,18 +1105,18 @@
       "earnings_in_days": 86,
       "news": [
         {
+          "title": "Cardinal (CAH) is an Incredible Growth Stock: 3 Reasons Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cardinal-cah-incredible-growth-stock-194224706.html",
+          "provider": "Zacks",
+          "time_utc": "2026-11-10 19:42",
+          "title_ar": null
+        },
+        {
           "title": "Can Cardinal Health Stock Repeat Its Last Five Years?",
           "url": "https://finance.yahoo.com/markets/stocks/articles/cardinal-health-stock-repeat-last-131129617.html",
           "provider": "Trefis",
           "time_utc": "2026-11-10 13:11",
-          "title_ar": "هل يمكن لمخزون الكاردينال الصحي أن يكرر سنواته الخمس الأخيرة؟"
-        },
-        {
-          "title": "Should Value Investors Buy Cardinal Health (CAH) Stock?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/value-investors-buy-cardinal-health-134003093.html",
-          "provider": "Zacks",
-          "time_utc": "2026-11-09 13:40",
-          "title_ar": "هل يجب على المستثمرين ذوي القيمة شراء أسهم Cardinal Health (CAH)؟"
+          "title_ar": null
         }
       ],
       "news_src": "yahoo",
@@ -1228,6 +1125,76 @@
         "quiet",
         "short_ma",
         "tight"
+      ]
+    },
+    {
+      "symbol": "ABNB",
+      "sector": "Consumer Discretionary",
+      "close": 186.9,
+      "change_pct": -1.78,
+      "rvol": 0.98,
+      "adr_pct": 3.01,
+      "rsi2": 57.3,
+      "tradingview": "https://www.tradingview.com/chart/?symbol=ABNB",
+      "near_ma": "ema10",
+      "ma_level": 178.57,
+      "dist_ma_pct": 3.1,
+      "rs_pct": 86,
+      "halal": "⚠️ نشاط مشكوك (Travel Services) — الديون 4.3%، النقد 21.4% — تحقق في Zoya",
+      "halal_status": "doubtful",
+      "debt_pct": 4.3,
+      "cash_pct": 21.4,
+      "earnings_date": null,
+      "earnings_in_days": null,
+      "news": [
+        {
+          "title": "Redburn Says Its Cautious Airbnb (ABNB) Stance Was “Wrong Over The Past Year.” Here’s What Changed",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/redburn-says-cautious-airbnb-abnb-222237944.html",
+          "provider": "Insider Monkey",
+          "time_utc": "2026-11-10 22:22",
+          "title_ar": null
+        },
+        {
+          "title": "Airbnb reduces customer support cost per booking 17%",
+          "url": "https://finance.yahoo.com/technology/ai/articles/airbnb-reduces-customer-support-cost-215500108.html",
+          "provider": "CX Dive",
+          "time_utc": "2026-11-10 21:55",
+          "title_ar": null
+        }
+      ],
+      "news_src": "yahoo",
+      "stars": 4,
+      "reasons": [
+        "quiet",
+        "short_ma",
+        "tight"
+      ]
+    },
+    {
+      "symbol": "CERT",
+      "sector": "Health Care",
+      "close": 12.12,
+      "change_pct": -0.78,
+      "rvol": 1.06,
+      "adr_pct": 5.72,
+      "rsi2": 64.2,
+      "tradingview": "https://www.tradingview.com/chart/?symbol=CERT",
+      "near_ma": "ema10",
+      "ma_level": 11.52,
+      "dist_ma_pct": 2.9,
+      "rs_pct": 100,
+      "halal": "✅ متوافق مبدئياً (الديون 17.3%، النقد 12.4%) — أكّد الدخل المحرّم في Zoya",
+      "halal_status": "pass",
+      "debt_pct": 17.3,
+      "cash_pct": 12.4,
+      "earnings_date": null,
+      "earnings_in_days": null,
+      "news": [],
+      "news_src": null,
+      "stars": 3,
+      "reasons": [
+        "rs95",
+        "short_ma"
       ]
     }
   ]
