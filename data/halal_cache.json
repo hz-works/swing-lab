@@ -19,6 +19,30 @@
    "totalDebt": 452084000
   }
  },
+ "ABBV": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 201.9927,
+   "industry": "Drug Manufacturers - General",
+   "marketCap": 518618775552,
+   "sector": "Healthcare",
+   "sharesOutstanding": 1767616306,
+   "totalCash": 10773999616,
+   "totalDebt": 81317003264
+  }
+ },
+ "ABNB": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 138.7311,
+   "industry": "Travel Services",
+   "marketCap": 111689252864,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 424579862,
+   "totalCash": 12590000128,
+   "totalDebt": 2515000064
+  }
+ },
  "ACAD": {
   "checked": "2026-11-03",
   "info": {
@@ -30,43 +54,51 @@
   }
  },
  "ADMA": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 13.4476,
    "industry": "Biotechnology",
-   "marketCap": 2958837504,
+   "marketCap": 2803130112,
    "sector": "Healthcare",
-   "totalCash": 136020000,
-   "totalDebt": 203839008
+   "sharesOutstanding": 221854389,
+   "totalCash": 124555000,
+   "totalDebt": 202804000
   }
  },
  "ALKS": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 31.7822,
    "industry": "Drug Manufacturers - Specialty & Generic",
-   "marketCap": 7665103360,
+   "marketCap": 7798900736,
    "sector": "Healthcare",
-   "totalCash": 656577024,
-   "totalDebt": 1572563968
+   "sharesOutstanding": 168043540,
+   "totalCash": 755464000,
+   "totalDebt": 1571080960
   }
  },
  "ALLE": {
-  "checked": "2026-11-09",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 142.6239,
    "industry": "Security & Protection Services",
-   "marketCap": 16201208832,
+   "marketCap": 16149336064,
    "sector": "Industrials",
+   "sharesOutstanding": 85036786,
    "totalCash": 388100000,
    "totalDebt": 2224399872
   }
  },
  "AMGN": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 320.3093,
    "industry": "Drug Manufacturers - General",
-   "marketCap": 249466519552,
+   "marketCap": 250858520576,
    "sector": "Healthcare",
-   "totalCash": 13989000192,
-   "totalDebt": 57303998464
+   "sharesOutstanding": 540911490,
+   "totalCash": 13189999616,
+   "totalDebt": 54007001088
   }
  },
  "AMRX": {
@@ -80,11 +112,13 @@
   }
  },
  "ANF": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 111.3389,
    "industry": "Apparel Retail",
-   "marketCap": 6724363264,
+   "marketCap": 6525448192,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 42434377,
    "totalCash": 637998976,
    "totalDebt": 1287440000
   }
@@ -100,13 +134,15 @@
   }
  },
  "APP": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 310.1992,
    "industry": "Advertising Agencies",
-   "marketCap": 119169056768,
+   "marketCap": 127307153408,
    "sector": "Communication Services",
-   "totalCash": 3053306112,
-   "totalDebt": 3515072000
+   "sharesOutstanding": 301258000,
+   "totalCash": 3173731072,
+   "totalDebt": 3516135936
   }
  },
  "AR": {
@@ -159,6 +195,18 @@
    "totalDebt": 2995000064
   }
  },
+ "BA": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 198.4527,
+   "industry": "Aerospace & Defense",
+   "marketCap": 137941843968,
+   "sector": "Industrials",
+   "sharesOutstanding": 792449940,
+   "totalCash": 20671000576,
+   "totalDebt": 48462000128
+  }
+ },
  "BBY": {
   "checked": "2026-11-03",
   "info": {
@@ -180,11 +228,13 @@
   }
  },
  "BOX": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 29.9436,
    "industry": "Software - Infrastructure",
-   "marketCap": 5922271232,
+   "marketCap": 5800162816,
    "sector": "Technology",
+   "sharesOutstanding": 137200773,
    "totalCash": 444136000,
    "totalDebt": 555142976
   }
@@ -200,31 +250,37 @@
   }
  },
  "CAH": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 156.4266,
    "industry": "Medical Distribution",
-   "marketCap": 63000350720,
+   "marketCap": 64013299712,
    "sector": "Healthcare",
-   "totalCash": 4856000000,
-   "totalDebt": 9998000128
+   "sharesOutstanding": 231136655,
+   "totalCash": 5264000000,
+   "totalDebt": 8814999552
   }
  },
  "CAKE": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 55.4435,
    "industry": "Restaurants",
-   "marketCap": 5585630720,
+   "marketCap": 5442216960,
    "sector": "Consumer Cyclical",
-   "totalCash": 195170000,
-   "totalDebt": 2081016064
+   "sharesOutstanding": 49855413,
+   "totalCash": 249268992,
+   "totalDebt": 2145148032
   }
  },
  "CART": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 40.1555,
    "industry": "Internet Retail",
-   "marketCap": 13750013952,
+   "marketCap": 13774237696,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 236630090,
    "totalCash": 927000000,
    "totalDebt": 34000000
   }
@@ -250,13 +306,15 @@
   }
  },
  "CERT": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 11.4401,
    "industry": "Health Information Services",
-   "marketCap": 1666486272,
+   "marketCap": 1848063360,
    "sector": "Healthcare",
-   "totalCash": 184867008,
-   "totalDebt": 301944992
+   "sharesOutstanding": 152543402,
+   "totalCash": 216762000,
+   "totalDebt": 301193984
   }
  },
  "CNC": {
@@ -289,6 +347,18 @@
    "totalDebt": 2967600128
   }
  },
+ "CON": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 24.0368,
+   "industry": "Medical Care Facilities",
+   "marketCap": 5364352000,
+   "sector": "Healthcare",
+   "sharesOutstanding": 126517736,
+   "totalCash": 85820000,
+   "totalDebt": 2128450048
+  }
+ },
  "COO": {
   "checked": "2026-11-03",
   "info": {
@@ -317,6 +387,18 @@
    "sector": "Energy",
    "totalCash": 6126000,
    "totalDebt": 4722796032
+  }
+ },
+ "CRL": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 199.8672,
+   "industry": "Diagnostics & Research",
+   "marketCap": 16684143616,
+   "sector": "Healthcare",
+   "sharesOutstanding": 47917467,
+   "totalCash": 200380992,
+   "totalDebt": 2851930112
   }
  },
  "CRM": {
@@ -350,11 +432,13 @@
   }
  },
  "CTAS": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 190.2722,
    "industry": "Specialty Business Services",
-   "marketCap": 88946810880,
+   "marketCap": 89314099200,
    "sector": "Industrials",
+   "sharesOutstanding": 397075093,
    "totalCash": 364579008,
    "totalDebt": 2711374080
   }
@@ -390,13 +474,15 @@
   }
  },
  "DBX": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 27.7549,
    "industry": "Software - Infrastructure",
-   "marketCap": 7687684096,
+   "marketCap": 6886061056,
    "sector": "Technology",
-   "totalCash": 1113799936,
-   "totalDebt": 3975399936
+   "sharesOutstanding": 141006845,
+   "totalCash": 1142200064,
+   "totalDebt": 3955800064
   }
  },
  "DDOG": {
@@ -430,11 +516,13 @@
   }
  },
  "DOCU": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 65.2917,
    "industry": "Software - Application",
-   "marketCap": 15402631168,
+   "marketCap": 14404571136,
    "sector": "Technology",
+   "sharesOutstanding": 186902452,
    "totalCash": 777676992,
    "totalDebt": 183098000
   }
@@ -490,11 +578,13 @@
   }
  },
  "EAT": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 125.6531,
    "industry": "Restaurants",
-   "marketCap": 8666846208,
+   "marketCap": 8204268032,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 41542701,
    "totalCash": 30700000,
    "totalDebt": 1799100032
   }
@@ -530,23 +620,27 @@
   }
  },
  "ELF": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 115.1359,
    "industry": "Household & Personal Products",
-   "marketCap": 6663182848,
+   "marketCap": 7062227968,
    "sector": "Consumer Defensive",
-   "totalCash": 344240992,
-   "totalDebt": 929299968
+   "sharesOutstanding": 59147637,
+   "totalCash": 350799008,
+   "totalDebt": 920328000
   }
  },
  "ENOV": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 36.9829,
    "industry": "Medical Devices",
-   "marketCap": 1650500992,
+   "marketCap": 1613435264,
    "sector": "Healthcare",
-   "totalCash": 12563000,
-   "totalDebt": 1369048064
+   "sharesOutstanding": 57694806,
+   "totalCash": 13038000,
+   "totalDebt": 1342530048
   }
  },
  "EOG": {
@@ -560,21 +654,25 @@
   }
  },
  "EPAM": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 186.8855,
    "industry": "Information Technology Services",
-   "marketCap": 8547962368,
+   "marketCap": 8366296576,
    "sector": "Technology",
-   "totalCash": 789396992,
-   "totalDebt": 152243008
+   "sharesOutstanding": 51023335,
+   "totalCash": 965172992,
+   "totalDebt": 146328000
   }
  },
  "ETSY": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 62.2558,
    "industry": "Internet Retail",
-   "marketCap": 7938699776,
+   "marketCap": 7339138560,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 86205886,
    "totalCash": 2310701056,
    "totalDebt": 3079271936
   }
@@ -650,11 +748,13 @@
   }
  },
  "GEN": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 25.6759,
    "industry": "Software - Infrastructure",
-   "marketCap": 17721157632,
+   "marketCap": 17694459904,
    "sector": "Technology",
+   "sharesOutstanding": 593276080,
    "totalCash": 583000000,
    "totalDebt": 8115999744
   }
@@ -670,23 +770,39 @@
   }
  },
  "GKOS": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 117.0184,
    "industry": "Medical Devices",
-   "marketCap": 14076424192,
+   "marketCap": 14017819648,
    "sector": "Healthcare",
+   "sharesOutstanding": 59196870,
    "totalCash": 336699008,
    "totalDebt": 105147000
   }
  },
  "GO": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 16.0607,
    "industry": "Grocery Stores",
-   "marketCap": 1274226560,
+   "marketCap": 1415917440,
    "sector": "Consumer Defensive",
+   "sharesOutstanding": 99084492,
    "totalCash": 74199000,
    "totalDebt": 1850872064
+  }
+ },
+ "GWRE": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 167.4474,
+   "industry": "Software - Application",
+   "marketCap": 12825188352,
+   "sector": "Technology",
+   "sharesOutstanding": 82631195,
+   "totalCash": 777160000,
+   "totalDebt": 714987008
   }
  },
  "HALO": {
@@ -760,13 +876,15 @@
   }
  },
  "HRB": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 49.1267,
    "industry": "Personal Services",
-   "marketCap": 6463959040,
+   "marketCap": 6192636928,
    "sector": "Consumer Cyclical",
-   "totalCash": 958705984,
-   "totalDebt": 2102353024
+   "sharesOutstanding": 122493064,
+   "totalCash": 390497984,
+   "totalDebt": 2094338048
   }
  },
  "HRMY": {
@@ -830,11 +948,13 @@
   }
  },
  "IT": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 348.1388,
    "industry": "Information Technology Services",
-   "marketCap": 11933099008,
+   "marketCap": 11849200640,
    "sector": "Technology",
+   "sharesOutstanding": 63081351,
    "totalCash": 1633137024,
    "totalDebt": 3313460992
   }
@@ -860,13 +980,15 @@
   }
  },
  "KD": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 24.4009,
    "industry": "Information Technology Services",
-   "marketCap": 3668059392,
+   "marketCap": 3749912064,
    "sector": "Technology",
-   "totalCash": 2104000000,
-   "totalDebt": 4929999872
+   "sharesOutstanding": 217828178,
+   "totalCash": 1659000064,
+   "totalDebt": 4888999936
   }
  },
  "KGS": {
@@ -900,13 +1022,27 @@
   }
  },
  "KSS": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 17.8263,
    "industry": "Department Stores",
-   "marketCap": 2664664064,
+   "marketCap": 2814570496,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 113376445,
    "totalCash": 821000000,
    "totalDebt": 6421000192
+  }
+ },
+ "LFST": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 7.2125,
+   "industry": "Medical Care Facilities",
+   "marketCap": 5531774976,
+   "sector": "Healthcare",
+   "sharesOutstanding": 380190724,
+   "totalCash": 218818000,
+   "totalDebt": 475520992
   }
  },
  "LMT": {
@@ -940,11 +1076,13 @@
   }
  },
  "LTH": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 26.6338,
    "industry": "Leisure",
-   "marketCap": 10073466880,
+   "marketCap": 10484491264,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 224603501,
    "totalCash": 295664000,
    "totalDebt": 4313245184
   }
@@ -960,23 +1098,39 @@
   }
  },
  "M": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 17.9916,
    "industry": "Department Stores",
-   "marketCap": 6276075008,
+   "marketCap": 6582957056,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 261176646,
    "totalCash": 1294000000,
    "totalDebt": 5088999936
   }
  },
  "MHK": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 119.3458,
    "industry": "Furnishings, Fixtures & Appliances",
-   "marketCap": 8779606016,
+   "marketCap": 8829891584,
    "sector": "Consumer Cyclical",
+   "sharesOutstanding": 58133466,
    "totalCash": 816800000,
    "totalDebt": 2209799936
+  }
+ },
+ "MMM": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 137.4001,
+   "industry": "Conglomerates",
+   "marketCap": 97863409664,
+   "sector": "Industrials",
+   "sharesOutstanding": 516729574,
+   "totalCash": 7399000064,
+   "totalDebt": 15600000000
   }
  },
  "MPC": {
@@ -990,13 +1144,27 @@
   }
  },
  "MRK": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 109.768,
    "industry": "Drug Manufacturers - General",
-   "marketCap": 367657910272,
+   "marketCap": 362465067008,
    "sector": "Healthcare",
-   "totalCash": 7141000192,
-   "totalDebt": 53910999040
+   "sharesOutstanding": 2465245688,
+   "totalCash": 9649999872,
+   "totalDebt": 53902999552
+  }
+ },
+ "MSFT": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 439.2462,
+   "industry": "Software - Infrastructure",
+   "marketCap": 3972756930560,
+   "sector": "Technology",
+   "sharesOutstanding": 7426194552,
+   "totalCash": 64509001728,
+   "totalDebt": 133930999808
   }
  },
  "MSM": {
@@ -1190,21 +1358,25 @@
   }
  },
  "PATH": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 14.4828,
    "industry": "Software - Infrastructure",
-   "marketCap": 6928761344,
+   "marketCap": 6576199680,
    "sector": "Technology",
+   "sharesOutstanding": 456464703,
    "totalCash": 1283990016,
    "totalDebt": 79760000
   }
  },
  "PAYX": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 124.3075,
    "industry": "Software - Application",
-   "marketCap": 41710231552,
+   "marketCap": 41238769664,
    "sector": "Technology",
+   "sharesOutstanding": 355980473,
    "totalCash": 934200000,
    "totalDebt": 4620899840
   }
@@ -1250,23 +1422,27 @@
   }
  },
  "PFGC": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 86.1394,
    "industry": "Food Distribution",
-   "marketCap": 17260894208,
+   "marketCap": 17654511616,
    "sector": "Consumer Defensive",
-   "totalCash": 93200000,
-   "totalDebt": 7782499840
+   "sharesOutstanding": 157784532,
+   "totalCash": 35900000,
+   "totalDebt": 7912900096
   }
  },
  "PK": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 13.3524,
    "industry": "REIT - Hotel & Motel",
-   "marketCap": 3342216448,
+   "marketCap": 3302021888,
    "sector": "Real Estate",
-   "totalCash": 264000000,
-   "totalDebt": 4102000128
+   "sharesOutstanding": 202082128,
+   "totalCash": 295000000,
+   "totalDebt": 4107000064
   }
  },
  "PLTR": {
@@ -1339,6 +1515,18 @@
    "totalDebt": 4695499776
   }
  },
+ "REZI": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 18.2375,
+   "industry": "Industrial Distribution",
+   "marketCap": 2956468224,
+   "sector": "Industrials",
+   "sharesOutstanding": 151847378,
+   "totalCash": 551000000,
+   "totalDebt": 3904999936
+  }
+ },
  "RGEN": {
   "checked": "2026-11-04",
   "info": {
@@ -1350,11 +1538,13 @@
   }
  },
  "RHI": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 51.0626,
    "industry": "Staffing & Employment Services",
-   "marketCap": 4471685632,
+   "marketCap": 4381617664,
    "sector": "Industrials",
+   "sharesOutstanding": 102350326,
    "totalCash": 321291008,
    "totalDebt": 243972000
   }
@@ -1379,6 +1569,18 @@
    "totalDebt": 107152000
   }
  },
+ "ROP": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 489.9418,
+   "industry": "Software - Application",
+   "marketCap": 46911578112,
+   "sector": "Technology",
+   "sharesOutstanding": 99036429,
+   "totalCash": 311000000,
+   "totalDebt": 9719700480
+  }
+ },
  "RRC": {
   "checked": "2026-11-04",
   "info": {
@@ -1390,21 +1592,25 @@
   }
  },
  "RVTY": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 107.161,
    "industry": "Diagnostics & Research",
-   "marketCap": 17371770880,
+   "marketCap": 17788545024,
    "sector": "Healthcare",
+   "sharesOutstanding": 111586401,
    "totalCash": 592798976,
    "totalDebt": 2765031936
   }
  },
  "RXO": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 20.883,
    "industry": "Trucking",
-   "marketCap": 4568319488,
+   "marketCap": 4590587904,
    "sector": "Industrials",
+   "sharesOutstanding": 164951056,
    "totalCash": 25000000,
    "totalDebt": 727000000
   }
@@ -1460,13 +1666,27 @@
   }
  },
  "SN": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 103.1977,
    "industry": "Furnishings, Fixtures & Appliances",
-   "marketCap": 29448269824,
+   "marketCap": 31791749120,
    "sector": "Consumer Cyclical",
-   "totalCash": 779832000,
-   "totalDebt": 913016000
+   "sharesOutstanding": 140911501,
+   "totalCash": 487815008,
+   "totalDebt": 912659008
+  }
+ },
+ "SONO": {
+  "checked": "2026-11-10",
+  "info": {
+   "avgClose36m": 14.5909,
+   "industry": "Consumer Electronics",
+   "marketCap": 1993253504,
+   "sector": "Technology",
+   "sharesOutstanding": 118293979,
+   "totalCash": 261026000,
+   "totalDebt": 56823000
   }
  },
  "STLD": {
@@ -1480,13 +1700,15 @@
   }
  },
  "SWK": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 84.1879,
    "industry": "Tools & Accessories",
-   "marketCap": 17869799424,
+   "marketCap": 17310470144,
    "sector": "Industrials",
-   "totalCash": 592400000,
-   "totalDebt": 5211500032
+   "sharesOutstanding": 148696226,
+   "totalCash": 741200000,
+   "totalDebt": 5150099968
   }
  },
  "SWKS": {
@@ -1520,21 +1742,25 @@
   }
  },
  "TGT": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 128.915,
    "industry": "Discount Stores",
-   "marketCap": 72041537536,
+   "marketCap": 73303048192,
    "sector": "Consumer Defensive",
+   "sharesOutstanding": 454296736,
    "totalCash": 5410999808,
    "totalDebt": 19196000256
   }
  },
  "TGTX": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 31.4997,
    "industry": "Biotechnology",
-   "marketCap": 8851983360,
+   "marketCap": 9743004672,
    "sector": "Healthcare",
+   "sharesOutstanding": 153083580,
    "totalCash": 552248000,
    "totalDebt": 754441024
   }
@@ -1550,13 +1776,15 @@
   }
  },
  "TREX": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 60.7667,
    "industry": "Building Products & Equipment",
-   "marketCap": 5821595648,
+   "marketCap": 5453056512,
    "sector": "Industrials",
-   "totalCash": 6475000,
-   "totalDebt": 303372000
+   "sharesOutstanding": 99936893,
+   "totalCash": 3271000,
+   "totalDebt": 217684992
   }
  },
  "TRGP": {
@@ -1600,11 +1828,13 @@
   }
  },
  "VEEV": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 224.2354,
    "industry": "Health Information Services",
-   "marketCap": 49450201088,
+   "marketCap": 49196814336,
    "sector": "Healthcare",
+   "sharesOutstanding": 161908850,
    "totalCash": 7242947072,
    "totalDebt": 151695008
   }
@@ -1650,11 +1880,13 @@
   }
  },
  "WDAY": {
-  "checked": "2026-11-09",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 221.9356,
    "industry": "Software - Application",
-   "marketCap": 45840613376,
+   "marketCap": 45353791488,
    "sector": "Technology",
+   "sharesOutstanding": 196000000,
    "totalCash": 3403000064,
    "totalDebt": 3772000000
   }
@@ -1680,33 +1912,39 @@
   }
  },
  "XOM": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 123.789,
    "industry": "Oil & Gas Integrated",
-   "marketCap": 688633937920,
+   "marketCap": 671215648768,
    "sector": "Energy",
+   "sharesOutstanding": 4079222444,
    "totalCash": 12152999936,
    "totalDebt": 34250000384
   }
  },
  "YOU": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 32.2666,
    "industry": "Software - Application",
-   "marketCap": 6079985152,
+   "marketCap": 8425636352,
    "sector": "Technology",
-   "totalCash": 959267968,
-   "totalDebt": 109766000
+   "sharesOutstanding": 99618115,
+   "totalCash": 632969024,
+   "totalDebt": 108661000
   }
  },
  "ZBH": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-10",
   "info": {
+   "avgClose36m": 103.1222,
    "industry": "Medical Devices",
-   "marketCap": 21009758208,
+   "marketCap": 20499980288,
    "sector": "Healthcare",
-   "totalCash": 464500000,
-   "totalDebt": 7601699840
+   "sharesOutstanding": 189253888,
+   "totalCash": 426900000,
+   "totalDebt": 7657299968
   }
  }
 }

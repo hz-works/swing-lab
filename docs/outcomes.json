@@ -1,14 +1,19 @@
 {
-  "generated_utc": "2026-11-09 22:58",
+  "generated_utc": "2026-11-10 19:28",
   "first_signal": "2026-11-03",
-  "last_price_date": "2026-11-09",
+  "last_price_date": "2026-11-10",
   "method": "next open -> close after 5/10/20 sessions, minus SPY; first appearance only",
   "patterns": {
     "breakout": {
       "all": {
-        "signals": 9,
+        "signals": 10,
         "5d": {
-          "done": 0
+          "done": 6,
+          "avg_ret_pct": -9.49,
+          "avg_excess_pct": -7.59,
+          "median_excess_pct": -7.0,
+          "beat_market_pct": 33.3,
+          "win_pct": 33.3
         },
         "10d": {
           "done": 0
@@ -34,7 +39,12 @@
       "all": {
         "signals": 12,
         "5d": {
-          "done": 0
+          "done": 6,
+          "avg_ret_pct": -0.63,
+          "avg_excess_pct": 1.27,
+          "median_excess_pct": 2.71,
+          "beat_market_pct": 83.3,
+          "win_pct": 66.7
         },
         "10d": {
           "done": 0
@@ -46,7 +56,12 @@
       "shown": {
         "signals": 11,
         "5d": {
-          "done": 0
+          "done": 6,
+          "avg_ret_pct": -0.63,
+          "avg_excess_pct": 1.27,
+          "median_excess_pct": 2.71,
+          "beat_market_pct": 83.3,
+          "win_pct": 66.7
         },
         "10d": {
           "done": 0
@@ -58,9 +73,14 @@
     },
     "pullback": {
       "all": {
-        "signals": 41,
+        "signals": 46,
         "5d": {
-          "done": 0
+          "done": 23,
+          "avg_ret_pct": -3.29,
+          "avg_excess_pct": -1.39,
+          "median_excess_pct": -1.89,
+          "beat_market_pct": 43.5,
+          "win_pct": 30.4
         },
         "10d": {
           "done": 0
@@ -70,9 +90,14 @@
         }
       },
       "shown": {
-        "signals": 8,
+        "signals": 9,
         "5d": {
-          "done": 0
+          "done": 5,
+          "avg_ret_pct": -4.79,
+          "avg_excess_pct": -2.89,
+          "median_excess_pct": -2.59,
+          "beat_market_pct": 40.0,
+          "win_pct": 20.0
         },
         "10d": {
           "done": 0
@@ -84,7 +109,7 @@
     },
     "radar": {
       "all": {
-        "signals": 12,
+        "signals": 13,
         "5d": {
           "done": 0
         },
@@ -110,9 +135,14 @@
     },
     "rsi2": {
       "all": {
-        "signals": 44,
+        "signals": 45,
         "5d": {
-          "done": 0
+          "done": 14,
+          "avg_ret_pct": -4.66,
+          "avg_excess_pct": -2.76,
+          "median_excess_pct": -4.49,
+          "beat_market_pct": 21.4,
+          "win_pct": 21.4
         },
         "10d": {
           "done": 0
@@ -124,7 +154,12 @@
       "shown": {
         "signals": 11,
         "5d": {
-          "done": 0
+          "done": 5,
+          "avg_ret_pct": -4.56,
+          "avg_excess_pct": -2.66,
+          "median_excess_pct": -2.59,
+          "beat_market_pct": 20.0,
+          "win_pct": 20.0
         },
         "10d": {
           "done": 0
@@ -136,7 +171,7 @@
     },
     "watch": {
       "all": {
-        "signals": 6,
+        "signals": 12,
         "5d": {
           "done": 0
         },
