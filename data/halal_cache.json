@@ -1,10 +1,12 @@
 {
  "A": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-11",
   "info": {
+   "avgClose36m": 133.9791,
    "industry": "Diagnostics & Research",
-   "marketCap": 49917820928,
+   "marketCap": 49887309824,
    "sector": "Healthcare",
+   "sharesOutstanding": 281928854,
    "totalCash": 1758000000,
    "totalDebt": 4148000000
   }
@@ -178,11 +180,13 @@
   }
  },
  "AVTR": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-11",
   "info": {
+   "avgClose36m": 16.9528,
    "industry": "Medical Instruments & Supplies",
-   "marketCap": 10716492800,
+   "marketCap": 10658894848,
    "sector": "Healthcare",
+   "sharesOutstanding": 677615769,
    "totalCash": 464300000,
    "totalDebt": 3683800064
   }
@@ -445,6 +449,18 @@
    "totalDebt": 2711374080
   }
  },
+ "CTVA": {
+  "checked": "2026-11-11",
+  "info": {
+   "avgClose36m": 9.8597,
+   "industry": "Agricultural Inputs",
+   "marketCap": 8099760128,
+   "sector": "Basic Materials",
+   "sharesOutstanding": 667196000,
+   "totalCash": 1904999936,
+   "totalDebt": 4774000128
+  }
+ },
  "CVX": {
   "checked": "2026-11-05",
   "info": {
@@ -515,6 +531,18 @@
    "sector": "Energy",
    "totalCash": 3332999936,
    "totalDebt": 3360999936
+  }
+ },
+ "DLTR": {
+  "checked": "2026-11-11",
+  "info": {
+   "avgClose36m": 105.3497,
+   "industry": "Discount Stores",
+   "marketCap": 26812368896,
+   "sector": "Consumer Defensive",
+   "sharesOutstanding": 187630299,
+   "totalCash": 1058099968,
+   "totalDebt": 7670799872
   }
  },
  "DOCU": {
@@ -687,6 +715,18 @@
    "sector": "Industrials",
    "totalCash": 1092464000,
    "totalDebt": 575835008
+  }
+ },
+ "EYE": {
+  "checked": "2026-11-11",
+  "info": {
+   "avgClose36m": 18.7807,
+   "industry": "Specialty Retail",
+   "marketCap": 1430363904,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 79069313,
+   "totalCash": 36429000,
+   "totalDebt": 697009984
   }
  },
  "FA": {
@@ -1345,6 +1385,18 @@
    "totalDebt": 2472499968
   }
  },
+ "OTIS": {
+  "checked": "2026-11-11",
+  "info": {
+   "avgClose36m": 89.3187,
+   "industry": "Specialty Industrial Machinery",
+   "marketCap": 29505064960,
+   "sector": "Industrials",
+   "sharesOutstanding": 380710513,
+   "totalCash": 866000000,
+   "totalDebt": 8693999616
+  }
+ },
  "OUT": {
   "checked": "2026-11-06",
   "info": {
@@ -1740,13 +1792,15 @@
   }
  },
  "SWKS": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-11",
   "info": {
+   "avgClose36m": 81.511,
    "industry": "Semiconductors",
-   "marketCap": 19165992960,
+   "marketCap": 20609908736,
    "sector": "Technology",
-   "totalCash": 799200000,
-   "totalDebt": 681100032
+   "sharesOutstanding": 235165549,
+   "totalCash": 2606099968,
+   "totalDebt": 2472800000
   }
  },
  "TALO": {
@@ -1833,6 +1887,18 @@
    "sector": "Consumer Cyclical",
    "totalCash": 45447000064,
    "totalDebt": 16444999680
+  }
+ },
+ "TTEK": {
+  "checked": "2026-11-11",
+  "info": {
+   "avgClose36m": 36.3119,
+   "industry": "Engineering & Construction",
+   "marketCap": 9629831168,
+   "sector": "Industrials",
+   "sharesOutstanding": 256044428,
+   "totalCash": 230835008,
+   "totalDebt": 1023497024
   }
  },
  "TTWO": {
@@ -1963,6 +2029,18 @@
    "sharesOutstanding": 4079222444,
    "totalCash": 12152999936,
    "totalDebt": 34250000384
+  }
+ },
+ "YETI": {
+  "checked": "2026-11-11",
+  "info": {
+   "avgClose36m": 39.828,
+   "industry": "Leisure",
+   "marketCap": 3123190784,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 72988796,
+   "totalCash": 59823000,
+   "totalDebt": 253034000
   }
  },
  "YOU": {
