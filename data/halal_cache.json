@@ -353,6 +353,18 @@
    "totalDebt": 48462000128
   }
  },
+ "BAH": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 113.4822,
+   "industry": "Consulting Services",
+   "marketCap": 9968551936,
+   "sector": "Industrials",
+   "sharesOutstanding": 118602638,
+   "totalCash": 334000000,
+   "totalDebt": 4707999744
+  }
+ },
  "BAX": {
   "checked": "2026-11-12",
   "info": {
@@ -363,6 +375,18 @@
    "sharesOutstanding": 517348188,
    "totalCash": 1975000064,
    "totalDebt": 8807000064
+  }
+ },
+ "BBWI": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 30.0882,
+   "industry": "Specialty Retail",
+   "marketCap": 3762701568,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 201645313,
+   "totalCash": 794000000,
+   "totalDebt": 4744000000
   }
  },
  "BBY": {
@@ -401,6 +425,18 @@
    "totalDebt": 4466800128
   }
  },
+ "BMY": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 52.9585,
+   "industry": "Drug Manufacturers - General",
+   "marketCap": 121745760256,
+   "sector": "Healthcare",
+   "sharesOutstanding": 2044085831,
+   "totalCash": 12581000192,
+   "totalDebt": 44809998336
+  }
+ },
  "BOX": {
   "checked": "2026-11-10",
   "info": {
@@ -425,6 +461,18 @@
    "totalDebt": 1737200000
   }
  },
+ "BTSG": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 30.1765,
+   "industry": "Health Information Services",
+   "marketCap": 13598607360,
+   "sector": "Healthcare",
+   "sharesOutstanding": 198984612,
+   "totalCash": 717840000,
+   "totalDebt": 2378981120
+  }
+ },
  "CAH": {
   "checked": "2026-11-10",
   "info": {
@@ -447,6 +495,18 @@
    "sharesOutstanding": 49855413,
    "totalCash": 249268992,
    "totalDebt": 2145148032
+  }
+ },
+ "CALY": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 12.198,
+   "industry": "Leisure",
+   "marketCap": 3081091840,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 178510521,
+   "totalCash": 433500000,
+   "totalDebt": 268700000
   }
  },
  "CART": {
@@ -519,6 +579,18 @@
    "totalDebt": 301193984
   }
  },
+ "CI": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 305.6528,
+   "industry": "Healthcare Plans",
+   "marketCap": 75195727872,
+   "sector": "Healthcare",
+   "sharesOutstanding": 263502561,
+   "totalCash": 7295000064,
+   "totalDebt": 31142000640
+  }
+ },
  "CMCSA": {
   "checked": "2026-11-17",
   "info": {
@@ -566,13 +638,15 @@
   }
  },
  "CNK": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 26.7348,
    "industry": "Entertainment",
-   "marketCap": 4546063360,
+   "marketCap": 4604306432,
    "sector": "Communication Services",
-   "totalCash": 507600000,
-   "totalDebt": 2967600128
+   "sharesOutstanding": 115889924,
+   "totalCash": 570800000,
+   "totalDebt": 2965900032
   }
  },
  "CON": {
@@ -598,13 +672,15 @@
   }
  },
  "COP": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 109.0301,
    "industry": "Oil & Gas E&P",
-   "marketCap": 163562094592,
+   "marketCap": 158905827328,
    "sector": "Energy",
-   "totalCash": 7692000256,
-   "totalDebt": 23289999360
+   "sharesOutstanding": 1182335057,
+   "totalCash": 9928999936,
+   "totalDebt": 23261999104
   }
  },
  "CPB": {
@@ -736,13 +812,15 @@
   }
  },
  "CVX": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 164.0818,
    "industry": "Oil & Gas Integrated",
-   "marketCap": 415426445312,
+   "marketCap": 401724112896,
    "sector": "Energy",
-   "totalCash": 8529999872,
-   "totalDebt": 37075001344
+   "sharesOutstanding": 1951253686,
+   "totalCash": 12803999744,
+   "totalDebt": 33533999104
   }
  },
  "CWEN": {
@@ -768,13 +846,15 @@
   }
  },
  "CXW": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 19.9494,
    "industry": "Security & Protection Services",
-   "marketCap": 2791763200,
+   "marketCap": 2768803328,
    "sector": "Industrials",
-   "totalCash": 108934000,
-   "totalDebt": 1373565056
+   "sharesOutstanding": 86498076,
+   "totalCash": 547228992,
+   "totalDebt": 668963968
   }
  },
  "DAL": {
@@ -858,11 +938,13 @@
   }
  },
  "DINO": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 56.1486,
    "industry": "Oil & Gas Refining & Marketing",
-   "marketCap": 19917613056,
+   "marketCap": 15342738432,
    "sector": "Energy",
+   "sharesOutstanding": 169271164,
    "totalCash": 3332999936,
    "totalDebt": 3360999936
   }
@@ -1017,6 +1099,18 @@
    "totalDebt": 7208999936
   }
  },
+ "EFX": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 230.0051,
+   "industry": "Consulting Services",
+   "marketCap": 21023305728,
+   "sector": "Industrials",
+   "sharesOutstanding": 117017174,
+   "totalCash": 192900000,
+   "totalDebt": 5206700032
+  }
+ },
  "EHC": {
   "checked": "2026-11-17",
   "info": {
@@ -1063,6 +1157,18 @@
    "totalDebt": 920328000
   }
  },
+ "ELV": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 414.5784,
+   "industry": "Healthcare Plans",
+   "marketCap": 86603841536,
+   "sector": "Healthcare",
+   "sharesOutstanding": 216055891,
+   "totalCash": 37845999616,
+   "totalDebt": 30756999168
+  }
+ },
  "EMR": {
   "checked": "2026-11-16",
   "info": {
@@ -1100,13 +1206,15 @@
   }
  },
  "EOG": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 125.6519,
    "industry": "Oil & Gas E&P",
-   "marketCap": 77423124480,
+   "marketCap": 77611900928,
    "sector": "Energy",
-   "totalCash": 4906999808,
-   "totalDebt": 8249999872
+   "sharesOutstanding": 518484224,
+   "totalCash": 5746999808,
+   "totalDebt": 8262000128
   }
  },
  "EPAM": {
@@ -1342,13 +1450,15 @@
   }
  },
  "GEO": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 20.69,
    "industry": "Security & Protection Services",
-   "marketCap": 3312865024,
+   "marketCap": 4193400064,
    "sector": "Industrials",
-   "totalCash": 54992000,
-   "totalDebt": 1607155968
+   "sharesOutstanding": 131619584,
+   "totalCash": 215955008,
+   "totalDebt": 1655581056
   }
  },
  "GKOS": {
@@ -1435,6 +1545,18 @@
    "totalDebt": 1014462016
   }
  },
+ "HCA": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 382.9353,
+   "industry": "Medical Care Facilities",
+   "marketCap": 99505938432,
+   "sector": "Healthcare",
+   "sharesOutstanding": 208892500,
+   "totalCash": 1019000000,
+   "totalDebt": 52425998336
+  }
+ },
  "HD": {
   "checked": "2026-11-16",
   "info": {
@@ -1494,11 +1616,13 @@
   }
  },
  "HPE": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 25.7064,
    "industry": "Communication Equipment",
-   "marketCap": 58620846080,
+   "marketCap": 60771340288,
    "sector": "Technology",
+   "sharesOutstanding": 1327464779,
    "totalCash": 6216000000,
    "totalDebt": 20320999424
   }
@@ -1558,13 +1682,15 @@
   }
  },
  "HUM": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 309.5713,
    "industry": "Healthcare Plans",
-   "marketCap": 50035060736,
+   "marketCap": 46333431808,
    "sector": "Healthcare",
-   "totalCash": 23871000576,
-   "totalDebt": 14744000512
+   "sharesOutstanding": 120103250,
+   "totalCash": 25109000192,
+   "totalDebt": 13374999552
   }
  },
  "HXL": {
@@ -1700,11 +1826,13 @@
   }
  },
  "JNJ": {
-  "checked": "2026-11-06",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 187.4326,
    "industry": "Drug Manufacturers - General",
-   "marketCap": 654475460608,
+   "marketCap": 656473587712,
    "sector": "Healthcare",
+   "sharesOutstanding": 2407310266,
    "totalCash": 17227999232,
    "totalDebt": 44650999808
   }
@@ -1960,13 +2088,15 @@
   }
  },
  "MPC": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 203.6426,
    "industry": "Oil & Gas Refining & Marketing",
-   "marketCap": 119739670528,
+   "marketCap": 101795446784,
    "sector": "Energy",
-   "totalCash": 7768000000,
-   "totalDebt": 34292000768
+   "sharesOutstanding": 272282280,
+   "totalCash": 13608999936,
+   "totalDebt": 34453999616
   }
  },
  "MRK": {
@@ -2004,13 +2134,15 @@
   }
  },
  "MTCH": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 34.4296,
    "industry": "Internet Content & Information",
-   "marketCap": 9034435584,
+   "marketCap": 9010166784,
    "sector": "Communication Services",
-   "totalCash": 583808000,
-   "totalDebt": 3668239872
+   "sharesOutstanding": 227529464,
+   "totalCash": 729142016,
+   "totalDebt": 3669479936
   }
  },
  "MTDR": {
@@ -2110,11 +2242,13 @@
   }
  },
  "NTAP": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 121.3304,
    "industry": "Software - Infrastructure",
-   "marketCap": 33269452800,
+   "marketCap": 33821388800,
    "sector": "Technology",
+   "sharesOutstanding": 196419005,
    "totalCash": 3576000000,
    "totalDebt": 2534000128
   }
@@ -2242,13 +2376,15 @@
   }
  },
  "OVV": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 46.8514,
    "industry": "Oil & Gas E&P",
-   "marketCap": 18570924032,
+   "marketCap": 16592722944,
    "sector": "Energy",
-   "totalCash": 700000000,
-   "totalDebt": 5029000192
+   "sharesOutstanding": 268708063,
+   "totalCash": 176000000,
+   "totalDebt": 5069000192
   }
  },
  "OXY": {
@@ -2437,14 +2573,28 @@
    "totalDebt": 7473999872
   }
  },
- "PR": {
-  "checked": "2026-11-03",
+ "PPLI": {
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 39.461,
+   "industry": "Internet Content & Information",
+   "marketCap": 3190877952,
+   "sector": "Communication Services",
+   "sharesOutstanding": 69254666,
+   "totalCash": 1319426944,
+   "totalDebt": 1409164032
+  }
+ },
+ "PR": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 16.048,
    "industry": "Oil & Gas E&P",
-   "marketCap": 20155811840,
+   "marketCap": 17915183104,
    "sector": "Energy",
-   "totalCash": 131722000,
-   "totalDebt": 3150868992
+   "sharesOutstanding": 838725798,
+   "totalCash": 95033000,
+   "totalDebt": 3240198912
   }
  },
  "PRGO": {
@@ -2472,11 +2622,13 @@
   }
  },
  "PSX": {
-  "checked": "2026-11-04",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 151.5955,
    "industry": "Oil & Gas Refining & Marketing",
-   "marketCap": 99187597312,
+   "marketCap": 95501418496,
    "sector": "Energy",
+   "sharesOutstanding": 390072362,
    "totalCash": 5848000000,
    "totalDebt": 18530000896
   }
@@ -2499,6 +2651,18 @@
    "sector": "Consumer Cyclical",
    "totalCash": 28762000,
    "totalDebt": 935520000
+  }
+ },
+ "RAL": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 53.992,
+   "industry": "Electronic Components",
+   "marketCap": 7381299712,
+   "sector": "Technology",
+   "sharesOutstanding": 110880272,
+   "totalCash": 365800000,
+   "totalDebt": 1222899968
   }
  },
  "RBA": {
@@ -3053,6 +3217,18 @@
    "totalDebt": 34293999616
   }
  },
+ "UGI": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 31.2972,
+   "industry": "Utilities - Regulated Gas",
+   "marketCap": 8161532928,
+   "sector": "Utilities",
+   "sharesOutstanding": 214494967,
+   "totalCash": 476000000,
+   "totalDebt": 7048999936
+  }
+ },
  "USFD": {
   "checked": "2026-11-12",
   "info": {
@@ -3078,11 +3254,13 @@
   }
  },
  "VLO": {
-  "checked": "2026-11-05",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 186.0431,
    "industry": "Oil & Gas Refining & Marketing",
-   "marketCap": 97952579584,
+   "marketCap": 95852576768,
    "sector": "Energy",
+   "sharesOutstanding": 278884400,
    "totalCash": 9840000000,
    "totalDebt": 11000999936
   }
@@ -3158,13 +3336,27 @@
   }
  },
  "VTRS": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-18",
   "info": {
+   "avgClose36m": 12.3085,
    "industry": "Drug Manufacturers - Specialty & Generic",
-   "marketCap": 21731338240,
+   "marketCap": 23250104320,
    "sector": "Healthcare",
-   "totalCash": 1510499968,
-   "totalDebt": 13623700480
+   "sharesOutstanding": 1146454729,
+   "totalCash": 2006300032,
+   "totalDebt": 13579299840
+  }
+ },
+ "VVV": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 36.9926,
+   "industry": "Auto & Truck Dealerships",
+   "marketCap": 4255878912,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 127536079,
+   "totalCash": 84200000,
+   "totalDebt": 1979299968
   }
  },
  "WAB": {
@@ -3189,6 +3381,18 @@
    "totalDebt": 5133000192
   }
  },
+ "WAY": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 30.4437,
+   "industry": "Health Information Services",
+   "marketCap": 5298466816,
+   "sector": "Healthcare",
+   "sharesOutstanding": 192391658,
+   "totalCash": 278908992,
+   "totalDebt": 1480594944
+  }
+ },
  "WDAY": {
   "checked": "2026-11-10",
   "info": {
@@ -3209,6 +3413,42 @@
    "sector": "Consumer Cyclical",
    "totalCash": 104787000,
    "totalDebt": 1275670016
+  }
+ },
+ "WKC": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 27.6126,
+   "industry": "Oil & Gas Refining & Marketing",
+   "marketCap": 1875218432,
+   "sector": "Energy",
+   "sharesOutstanding": 51151620,
+   "totalCash": 217900000,
+   "totalDebt": 693800000
+  }
+ },
+ "WMG": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 30.7604,
+   "industry": "Entertainment",
+   "marketCap": 17241696256,
+   "sector": "Communication Services",
+   "sharesOutstanding": 147729456,
+   "totalCash": 618000000,
+   "totalDebt": 4919000064
+  }
+ },
+ "WMT": {
+  "checked": "2026-11-18",
+  "info": {
+   "avgClose36m": 93.5181,
+   "industry": "Discount Stores",
+   "marketCap": 1013540913152,
+   "sector": "Consumer Defensive",
+   "sharesOutstanding": 7958079155,
+   "totalCash": 11528999936,
+   "totalDebt": 75092000768
   }
  },
  "WSM": {
