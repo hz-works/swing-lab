@@ -2663,6 +2663,18 @@
    "totalDebt": 7093000192
   }
  },
+ "NVDA": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 149.1069,
+   "industry": "Semiconductors",
+   "marketCap": 3985462263808,
+   "sector": "Technology",
+   "sharesOutstanding": 24147000000,
+   "totalCash": 97731002368,
+   "totalDebt": 38148001792
+  }
+ },
  "NXPI": {
   "checked": "2026-11-17",
   "info": {
@@ -3477,6 +3489,18 @@
    "sharesOutstanding": 235165549,
    "totalCash": 2606099968,
    "totalDebt": 2472800000
+  }
+ },
+ "SYK": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 348.6607,
+   "industry": "Medical Devices",
+   "marketCap": 120355463168,
+   "sector": "Healthcare",
+   "sharesOutstanding": 380691004,
+   "totalCash": 3271000064,
+   "totalDebt": 15432999936
   }
  },
  "TALO": {
