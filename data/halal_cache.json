@@ -249,6 +249,18 @@
    "totalDebt": 45294198784
   }
  },
+ "AMTM": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 23.9837,
+   "industry": "Engineering & Construction",
+   "marketCap": 5129744384,
+   "sector": "Industrials",
+   "sharesOutstanding": 244506413,
+   "totalCash": 459000000,
+   "totalDebt": 3824999936
+  }
+ },
  "AMZN": {
   "checked": "2026-11-16",
   "info": {
@@ -591,6 +603,18 @@
    "sharesOutstanding": 198984612,
    "totalCash": 717840000,
    "totalDebt": 2378981120
+  }
+ },
+ "BURL": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 262.0317,
+   "industry": "Apparel Retail",
+   "marketCap": 15010319360,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 62815195,
+   "totalCash": 703686016,
+   "totalDebt": 5906117120
   }
  },
  "CAH": {
@@ -2167,6 +2191,18 @@
    "totalDebt": 4888999936
   }
  },
+ "KDP": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 31.688,
+   "industry": "Beverages - Non-Alcoholic",
+   "marketCap": 50244907008,
+   "sector": "Consumer Defensive",
+   "sharesOutstanding": 1427615017,
+   "totalCash": 1290000000,
+   "totalDebt": 32335998976
+  }
+ },
  "KGS": {
   "checked": "2026-11-06",
   "info": {
@@ -2800,11 +2836,13 @@
   }
  },
  "PBF": {
-  "checked": "2026-11-03",
+  "checked": "2026-11-23",
   "info": {
+   "avgClose36m": 39.9856,
    "industry": "Oil & Gas Refining & Marketing",
-   "marketCap": 9400564736,
+   "marketCap": 7307412992,
    "sector": "Energy",
+   "sharesOutstanding": 121325133,
    "totalCash": 2544300032,
    "totalDebt": 2711000064
   }
@@ -2997,6 +3035,18 @@
    "sharesOutstanding": 186843449,
    "totalCash": 560379008,
    "totalDebt": 12192032768
+  }
+ },
+ "PSN": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 71.5978,
+   "industry": "Information Technology Services",
+   "marketCap": 5451610624,
+   "sector": "Technology",
+   "sharesOutstanding": 105538883,
+   "totalCash": 296953984,
+   "totalDebt": 1540588032
   }
  },
  "PSX": {
@@ -3321,6 +3371,18 @@
    "sharesOutstanding": 58220274,
    "totalCash": 7400000,
    "totalDebt": 2027500032
+  }
+ },
+ "SMTC": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 66.9588,
+   "industry": "Semiconductors",
+   "marketCap": 9641469952,
+   "sector": "Technology",
+   "sharesOutstanding": 93325626,
+   "totalCash": 204051008,
+   "totalDebt": 524992992
   }
  },
  "SN": {
@@ -3941,6 +4003,18 @@
    "sharesOutstanding": 82086831,
    "totalCash": 148100000,
    "totalDebt": 684700032
+  }
+ },
+ "XNCR": {
+  "checked": "2026-11-23",
+  "info": {
+   "avgClose36m": 17.2705,
+   "industry": "Biotechnology",
+   "marketCap": 2678166272,
+   "sector": "Healthcare",
+   "sharesOutstanding": 75039689,
+   "totalCash": 405079008,
+   "totalDebt": 160227008
   }
  },
  "XOM": {

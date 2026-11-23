@@ -1,26 +1,26 @@
 {
-  "date": "2026-11-20",
-  "generated_utc": "2026-11-23 13:27",
+  "date": "2026-11-23",
+  "generated_utc": "2026-11-23 17:28",
   "market": {
     "ok": false,
-    "spy": 689.81,
-    "spy_sma200": 730.29
+    "spy": 722.58,
+    "spy_sma200": 730.47
   },
   "counts": {
     "ep": 0,
-    "rsi2": 59,
-    "pullback": 14,
+    "rsi2": 10,
+    "pullback": 21,
     "breakout": 1,
-    "radar": 0,
+    "radar": 5,
     "watch": 0
   },
   "halal_excluded": {
     "ep": 1,
-    "rsi2": 48,
-    "pullback": 18,
-    "breakout": 1,
-    "radar": 0,
-    "watch": 2
+    "rsi2": 8,
+    "pullback": 23,
+    "breakout": 2,
+    "radar": 7,
+    "watch": 1
   },
   "patterns": {
     "ep": [],
