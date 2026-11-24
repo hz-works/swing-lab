@@ -1119,6 +1119,18 @@
    "totalDebt": 64577998848
   }
  },
+ "DELL": {
+  "checked": "2026-11-24",
+  "info": {
+   "avgClose36m": 178.8395,
+   "industry": "Computer Hardware",
+   "marketCap": 187742781440,
+   "sector": "Technology",
+   "sharesOutstanding": 315433188,
+   "totalCash": 11569999872,
+   "totalDebt": 35284000768
+  }
+ },
  "DG": {
   "checked": "2026-11-20",
   "info": {
