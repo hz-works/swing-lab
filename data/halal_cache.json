@@ -23,6 +23,18 @@
    "totalDebt": 394244000
   }
  },
+ "AAP": {
+  "checked": "2026-11-25",
+  "info": {
+   "avgClose36m": 52.7376,
+   "industry": "Auto Parts",
+   "marketCap": 2793499904,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 60400000,
+   "totalCash": 3084999936,
+   "totalDebt": 5599000064
+  }
+ },
  "AAPL": {
   "checked": "2026-11-20",
   "info": {
@@ -3769,6 +3781,18 @@
    "sharesOutstanding": 751657335,
    "totalCash": 6837000192,
    "totalDebt": 30520000512
+  }
+ },
+ "URBN": {
+  "checked": "2026-11-25",
+  "info": {
+   "avgClose36m": 58.951,
+   "industry": "Apparel Retail",
+   "marketCap": 6573562368,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 85660181,
+   "totalCash": 716126976,
+   "totalDebt": 1213373952
   }
  },
  "USFD": {
