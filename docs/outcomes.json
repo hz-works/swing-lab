@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-25 23:09",
+  "generated_utc": "2026-11-26 23:12",
   "first_signal": "2026-11-03",
   "last_price_date": "2026-11-25",
   "method": "next open -> close after 5/10/20 sessions, minus SPY; first appearance only",
@@ -173,8 +173,8 @@
         "signals": 123,
         "5d": {
           "done": 123,
-          "avg_ret_pct": -0.18,
-          "avg_excess_pct": 1.57,
+          "avg_ret_pct": -0.17,
+          "avg_excess_pct": 1.58,
           "median_excess_pct": 1.81,
           "beat_market_pct": 64.2,
           "win_pct": 51.2

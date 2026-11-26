@@ -1446,8 +1446,8 @@ date,symbol,pattern,rank,close,market_ok,shown,halal
 2026-11-25,HAS,rsi2,9,110.58,False,False,fail
 2026-11-25,CERT,pullback,1,10.79,False,False,pass
 2026-11-25,CRL,pullback,2,332.08,False,False,pass
-2026-11-25,TMO,pullback,3,685.52,False,False,pass
-2026-11-25,RHI,pullback,4,39.4,False,False,pass
+2026-11-25,RHI,pullback,3,39.4,False,False,pass
+2026-11-25,TMO,pullback,4,685.52,False,False,pass
 2026-11-25,EHC,pullback,5,137.67,False,False,pass
 2026-11-25,EXEL,pullback,6,67.25,False,False,pass
 2026-11-25,OSW,pullback,7,31.09,False,False,pass
