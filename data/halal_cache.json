@@ -3235,6 +3235,18 @@
    "totalDebt": 106570000
   }
  },
+ "ROL": {
+  "checked": "2026-11-28",
+  "info": {
+   "avgClose36m": 49.6658,
+   "industry": "Personal Services",
+   "marketCap": 18342596608,
+   "sector": "Consumer Cyclical",
+   "sharesOutstanding": 478045280,
+   "totalCash": 129050000,
+   "totalDebt": 1125708032
+  }
+ },
  "ROP": {
   "checked": "2026-11-10",
   "info": {
